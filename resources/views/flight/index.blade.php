@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Emigrar </title>
-    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="icon" type="image/png" href="{{URL::asset('images/favicon.png')}}">
     <!-- ==================Start Css Link===================== -->
 <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
@@ -46,7 +46,7 @@
 
   <div class="rt-preloder">
     <div class="preloder-box">
-        <img src="assets/images/all-img/preloder.svg" alt="preloder image" draggable="false">
+        <img src="{{URL::asset('images/all-img/preloder.svg')}}" alt="preloder image" draggable="false">
     </div><!-- /.preloder-box -->
 </div><!-- /.rt-preloder -->
 
@@ -82,8 +82,8 @@
     <div class="main-header rt-sticky">
       <nav class="navbar">
         <div class="container">
-          <a href="index.html" class="brand-logo"><img src="assets/images/logo/logo.png" alt=""></a>
-          <a href="index.html" class="sticky-logo"><img src="assets/images/logo/logo.png" alt=""></a>
+          <a href="index.html" class="brand-logo"><img src="{{URL::asset('images/logo/logo.png')}}" alt=""></a>
+          <a href="index.html" class="sticky-logo"><img src="{{URL::asset('images/logo/logo.png')}}" alt=""></a>
           <div class="ml-auto d-flex align-items-center">
 
 
@@ -184,13 +184,13 @@
         <div class="modal-content">
             <div class="modal-body">
                 <div class="rt-modal-headr rt-mb-20 one">
-                    <img src="assets/images/logo/Logo-icon.png" alt="modal logo" draggable="false">
+                    <img src="{{URL::asset('images/logo/Logo-icon.png')}}" alt="modal logo" draggable="false">
                     <h4>Login in to Emigrar</h4>
                     <p>Log in to get in the moment updates on the things
                         that interest you.</p>
                 </div><!-- /.rt-modal-headr -->
                 <div class="rt-modal-headr rt-mb-20 two">
-                    <img src="assets/images/logo/Logo-icon.png" alt="modal logo" draggable="false">
+                    <img src="{{URL::asset('images/logo/Logo-icon.png')}}" alt="modal logo" draggable="false">
                     <h4>Create your Account</h4>
                     <p>Log in to get in the moment updates on the things
                         that interest you.</p>
@@ -264,7 +264,7 @@
 
 
 <section class="rt-banner-area">
-    <div class="single-rt-banner rt-banner-height" style="background-image: url(assets/images/all-img/banner01.png)">
+    <div class="single-rt-banner rt-banner-height bt-bg">
         <div class="container">
             <div class="row  rt-banner-height align-items-center">
                 <div class="col-lg-9">
@@ -322,30 +322,44 @@
                         </div><!-- /.radio-group -->
                         <div class="rt-input-group">
                             <div class="single-input  col-rt-in-3">
-                                <select class="rt-selectactive banner-select" name="from" style="width: 100%">
-                                    <option value="1">from</option>
-                                    <option value="2">Alaska</option>
-                                    <option value="3">Bahamas</option>
-                                    <option value="4">Bermuda</option>
-                                    <option value="5">Canada</option>
-                                    <option value="6">Caribbean</option>
-                                    <option value="7">Europe</option>
-                                    <option value="8">Hawaii</option>
-                                </select>
-                                <span class="input-iconbadge"><img src="assets/images/icons-image/s_icon_1.png" alt="" draggable="false"></span>
+                                <input list="dlist" type="text " class="banner-select form-control has-icon" placeholder="from" name="from" style="width: 100%">
+                                  <datalist id="dlist">
+                                      <option value="Alaska"></option>
+                                      <option value="Bahamas"></option>
+                                      <option value="Bermuda"></option>
+                                      <option value="Canada"></option>
+                                  </datalist>
+{{--                                <select class="rt-selectactive banner-select" name="from" style="width: 100%">--}}
+{{--                                    <option value="1">from</option>--}}
+{{--                                    <option value="2">Alaska</option>--}}
+{{--                                    <option value="3">Bahamas</option>--}}
+{{--                                    <option value="4">Bermuda</option>--}}
+{{--                                    <option value="5">Canada</option>--}}
+{{--                                    <option value="6">Caribbean</option>--}}
+{{--                                    <option value="7">Europe</option>--}}
+{{--                                    <option value="8">Hawaii</option>--}}
+{{--                                </select>--}}
+                                <span class="input-iconbadge"><img src="images/icons-image/s_icon_1.png" alt="" draggable="false"></span>
                             </div><!-- /.single-input -->
                             <div class="single-input  col-rt-in-3">
-                                <select class="rt-selectactive banner-select" name="to" style="width: 100%">
-                                    <option value="1">To</option>
-                                    <option value="2">Alaska</option>
-                                    <option value="3">Bahamas</option>
-                                    <option value="4">Bermuda</option>
-                                    <option value="5">Canada</option>
-                                    <option value="6">Caribbean</option>
-                                    <option value="7">Europe</option>
-                                    <option value="8">Hawaii</option>
-                                </select>
-                                <span class="input-iconbadge"><img src="assets/images/icons-image/s_icon_2.png" alt="" draggable="false"></span>
+                                <input type="text" list="tlist" class=" banner-select form-control has-icon" name="to" style="width: 100%">
+                                <datalist id="tlist">
+                                    <option value="Alaska"></option>
+                                    <option value="Bahamas"></option>
+                                    <option value="Bermuda"></option>
+                                    <option value="Canada"></option>
+                                </datalist>
+{{--                                <select class="rt-selectactive banner-select" name="to" style="width: 100%">--}}
+{{--                                    <option value="1">To</option>--}}
+{{--                                    <option value="2">Alaska</option>--}}
+{{--                                    <option value="3">Bahamas</option>--}}
+{{--                                    <option value="4">Bermuda</option>--}}
+{{--                                    <option value="5">Canada</option>--}}
+{{--                                    <option value="6">Caribbean</option>--}}
+{{--                                    <option value="7">Europe</option>--}}
+{{--                                    <option value="8">Hawaii</option>--}}
+{{--                                </select>--}}
+                                <span class="input-iconbadge"><img src="images/icons-image/s_icon_2.png" alt="" draggable="false"></span>
                             </div><!-- /.single-input -->
                             <div class="single-input  col-rt-in-3">
                                 <input type="text" class="form-control rt-date-picker has-icon" placeholder="Depart">
@@ -517,7 +531,7 @@
 
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="media counter-box-1 align-items-center wow fadeInUp">
-                    <img src="assets/images/counter-icons/counter_iocn_1.png" alt="counter_iocn" draggable="false">
+                    <img src="{{URL::asset('images/counter-icons/counter_iocn_1.png')}}" alt="counter_iocn" draggable="false">
                     <div class="media-body">
                         <h5>Trusted Members</h5>
                         <h6><span class="counter">90,000</span><span>+</span></h6>
@@ -526,7 +540,7 @@
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4 col-md-6 col-12" >
                 <div class="media counter-box-1 align-items-center wow fadeInUp" data-wow-duration="1.5s">
-                    <img src="assets/images/counter-icons/counter_iocn_2.png" alt="counter_iocn" draggable="false">
+                    <img src="{{URL::asset('images/counter-icons/counter_iocn_2.png')}}" alt="counter_iocn" draggable="false">
                     <div class="media-body">
                         <h5>Trusted Members</h5>
                         <h6><span class="counter">2,00</span></h6>
@@ -535,7 +549,7 @@
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="media counter-box-1 align-items-center wow fadeInUp" data-wow-duration="2s">
-                <img src="assets/images/counter-icons/counter_iocn_3.png" alt="counter_iocn" draggable="false">
+                <img src="{{URL::asset('images/counter-icons/counter_iocn_3.png')}}" alt="counter_iocn" draggable="false">
                     <div class="media-body">
                         <h5>Trusted Members</h5>
                         <h6><span class="counter">80,000</span><span>+</span></h6>
@@ -550,7 +564,7 @@
 <!--
     ===========Services Area start==========
  -->
-<section class="emigr-services-area rtbgprefix-contain" style="background-image: url(assets/images/backgrounds/dotbg.png)">
+<section class="emigr-services-area rtbgprefix-contain serv-bg">
     <div class="spacer-bottom"></div><!-- /.spacer-bottom -->
     <div class="container">
         <div class="row">
@@ -570,7 +584,7 @@
             <div class="col-lg-4 col-md-6 mx-auto text-center">
                 <div class="services-box-1 wow fade-in-bottom">
                     <div class="services-thumb">
-                        <img src="assets/images/service-icons/s_icon_1.png" alt="" draggable="false">
+                        <img src="{{URL::asset('images/service-icons/s_icon_1.png')}}" alt="" draggable="false">
                     </div><!-- /.services-thumb -->
                     <h4>Accommodation</h4>
                     <p>No matter where you are travelling, Emigrar is here to help you get the best deals in Hotels around the world.</p>
@@ -579,7 +593,7 @@
             <div class="col-lg-4 col-md-6 mx-auto text-center">
                 <div class="services-box-1 wow fade-in-bottom" data-wow-duration="1.5s">
                     <div class="services-thumb">
-                        <img src="assets/images/service-icons/s_icon_2.png" alt="" draggable="false">
+                        <img src="{{URL::asset('images/service-icons/s_icon_2.png')}}" alt="" draggable="false">
                     </div><!-- /.services-thumb -->
                     <h4>Transportation</h4>
                     <p>Whether you are travelling through Air, Sea or Land, Emigrar can arrange transportation according to.</p>
@@ -588,7 +602,7 @@
             <div class="col-lg-4 col-md-6 mx-auto text-center">
                 <div class="services-box-1 wow fade-in-bottom" data-wow-duration="2s">
                     <div class="services-thumb">
-                    <img src="assets/images/service-icons/s_icon_3.png" alt="" draggable="false">
+                    <img src="{{URL::asset('images/service-icons/s_icon_3.png')}}" alt="" draggable="false">
                     </div><!-- /.services-thumb -->
                     <h4>Expert Trip Planning</h4>
                     <p>Our Talented and Expert Trip Planning Team can make itinerary that suits our clients the best. We will make your travel</p>
@@ -605,12 +619,12 @@
  -->
 
 
- <section class="deal-area   rtbgprefix-full bg-hide-md" style="background-image: url(assets/images/backgrounds/bgshapes_1.png)">
+ <section class="deal-area bg-shape1   rtbgprefix-full bg-hide-md" >
     <div class="container-fluid p-0">
        <div class="deal-carosel-active owl-carousel">
             <div class="row single-deal-carosel align-items-center">
                 <div class="col-lg-5">
-                    <div class="deal-bg" style="background-image: url(assets/images/all-img/deal-bg.jpg)">
+                    <div class="deal-bg p-bg" >
                         <div class="inner-content">
                             <h4 data-animation="fadeInDown" data-duration=".2s" data-delay=".4s">14 Day Classic Tour of Thailand & Beaches</h4>
                             <p data-animation="fade-in-bottom" data-duration=".2s" data-delay=".4s">Grab a promo code for extra savings up to 75% on discounted hotels!</p>
@@ -651,7 +665,7 @@
             </div><!-- /.row -->
             <div class="row single-deal-carosel align-items-center">
                 <div class="col-lg-5">
-                    <div class="deal-bg" style="background-image: url(assets/images/all-img/deal-bg.jpg)">
+                    <div class="deal-bg f1">
                         <div class="inner-content">
                             <h4 data-animation="fadeInDown" data-duration=".2s" data-delay=".4s">14 Day Classic Tour of Thailand & Beaches</h4>
                             <p data-animation="fade-in-bottom" data-duration=".2s" data-delay=".4s">Grab a promo code for extra savings up to 75% on discounted hotels!</p>
@@ -692,7 +706,7 @@
             </div><!-- /.row -->
             <div class="row single-deal-carosel align-items-center">
                 <div class="col-lg-5">
-                    <div class="deal-bg" style="background-image: url(assets/images/all-img/deal-bg.jpg)">
+                    <div class="deal-bg f2" >
                         <div class="inner-content">
                             <h4 data-animation="fadeInDown" data-duration=".2s" data-delay=".4s">14 Day Classic Tour of Thailand & Beaches</h4>
                             <p data-animation="fade-in-bottom" data-duration=".2s" data-delay=".4s">Grab a promo code for extra savings up to 75% on discounted hotels!</p>
@@ -757,7 +771,7 @@
             <div class="col-lg-3 col-md-6 mx-auto text-center">
                 <div class="services-box-2 wow fade-in-bottom">
                     <div class="services-thumb">
-                        <img src="assets/images/service-icons/s_icon_4.png" alt="service-icons" draggable="false">
+                        <img src="{{URL::asset('images/service-icons/s_icon_4.png')}}" alt="service-icons" draggable="false">
                     </div><!-- /.services-thumb -->
                     <span class="inner-counter"></span>
                     <h4>Search</h4>
@@ -768,7 +782,7 @@
             <div class="col-lg-3 col-md-6 mx-auto text-center">
                 <div class="services-box-2 wow fade-in-bottom" data-wow-duration="1s">
                     <div class="services-thumb">
-                        <img src="assets/images/service-icons/s_icon_5.png" alt="service-icons" draggable="false">
+                        <img src="{{URL::asset('images/service-icons/s_icon_5.png')}}" alt="service-icons" draggable="false">
                     </div><!-- /.services-thumb -->
                     <span class="inner-counter"></span>
                     <h4>Compare & Book</h4>
@@ -779,7 +793,7 @@
             <div class="col-lg-3 col-md-6 mx-auto text-center">
                 <div class="services-box-2 wow fade-in-bottom" data-wow-duration="1.5s">
                     <div class="services-thumb">
-                        <img src="assets/images/service-icons/s_icon_6.png" alt="service-icons" draggable="false">
+                        <img src="{{URL::asset('images/service-icons/s_icon_6.png')}}" alt="service-icons" draggable="false">
                     </div><!-- /.services-thumb -->
                     <span class="inner-counter"></span>
                     <h4>Get travel insurance</h4>
@@ -790,7 +804,7 @@
             <div class="col-lg-3 col-md-6 mx-auto text-center">
                 <div class="services-box-2 wow fade-in-bottom" data-wow-duration="2s">
                     <div class="services-thumb">
-                        <img src="assets/images/service-icons/s_icon_7.png" alt="service-icons" draggable="false">
+                        <img src="{{URL::asset('images/service-icons/s_icon_7.png')}}" alt="service-icons" draggable="false">
                     </div><!-- /.services-thumb -->
                     <span class="inner-counter"></span>
                     <h4>Book a room</h4>
@@ -808,7 +822,7 @@
     ============ Portfolio Start===============
  -->
 <div class="spacer-top"></div><!-- /.spacer-top -->
-<section class="portfolio-area rt-section-padding rtbgprefix-full bg-hide-md gradinet-bg-md" style="background-image: url(assets/images/backgrounds/portfoliobg.png)">
+<section class="f3 portfolio-area rt-section-padding rtbgprefix-full bg-hide-md gradinet-bg-md">
     <div class="container">
         <div class="row">
             <div class="col-xl-8 text-center mx-auto text-center">
@@ -838,7 +852,7 @@
         </div><!-- /.row -->
         <div class="row grid">
             <div class="col-lg-4 col-md-6 grid-item cat-1 cat-5 cat-4">
-                <div class="portfolio-box-1 wow fade-in-bottom " style="background-image: url(assets/images/portfolio/port-1.jpg)">
+                <div class="portfolio-box-1 wow fade-in-bottom f4" >
                     <div class="rt-overlay"></div><!-- /.rt-overlay -->
                     <div class="portfolio-badge">
                         <span>From</span>
@@ -859,7 +873,7 @@
                 </div><!-- /.portfolio-box-1 -->
             </div><!-- /.col-md-4 -->
             <div class="col-lg-4 col-md-6 grid-item cat-2 cat-3 cat-5">
-                <div class="portfolio-box-1 wow fade-in-bottom " style="background-image: url(assets/images/portfolio/port-2.jpg)" data-wow-duration="1s">
+                <div class="portfolio-box-1 wow fade-in-bottom f5" data-wow-duration="1s">
                     <div class="rt-overlay"></div><!-- /.rt-overlay -->
                     <div class="portfolio-badge">
                         <span>From</span>
@@ -880,7 +894,7 @@
                 </div><!-- /.portfolio-box-1 -->
             </div><!-- /.col-md-4 -->
             <div class="col-lg-4 col-md-6 grid-item cat-1 cat-4">
-                <div class="portfolio-box-1 wow fade-in-bottom " style="background-image: url(assets/images/portfolio/port-3.jpg)" data-wow-duration="1.3s">
+                <div class="portfolio-box-1 wow fade-in-bottom f6" data-wow-duration="1.3s">
                     <div class="rt-overlay"></div><!-- /.rt-overlay -->
                     <div class="portfolio-badge">
                         <span>From</span>
@@ -901,7 +915,7 @@
                 </div><!-- /.portfolio-box-1 -->
             </div><!-- /.col-md-4 -->
             <div class="col-lg-4 col-md-6 grid-item cat-4 cat-3 cat-5">
-                <div class="portfolio-box-1 wow fade-in-bottom " style="background-image: url(assets/images/portfolio/port-4.jpg)" data-wow-duration="1.6s">
+                <div class="portfolio-box-1 wow fade-in-bottom f7"  data-wow-duration="1.6s">
                     <div class="rt-overlay"></div><!-- /.rt-overlay -->
                     <div class="portfolio-badge">
                         <span>From</span>
@@ -922,7 +936,7 @@
                 </div><!-- /.portfolio-box-1 -->
             </div><!-- /.col-md-4 -->
             <div class="col-lg-4 col-md-6 grid-item cat-1 cat-5">
-                <div class="portfolio-box-1 wow fade-in-bottom " style="background-image: url(assets/images/portfolio/port-5.jpg)" data-wow-duration="1.9s">
+                <div class="portfolio-box-1 wow fade-in-bottom f8" data-wow-duration="1.9s">
                     <div class="rt-overlay"></div><!-- /.rt-overlay -->
                     <div class="portfolio-badge">
                         <span>From</span>
@@ -943,7 +957,7 @@
                 </div><!-- /.portfolio-box-1 -->
             </div><!-- /.col-md-4 -->
             <div class="col-lg-4 col-md-6 grid-item cat-3 cat-5">
-                <div class="portfolio-box-1 wow fade-in-bottom " style="background-image: url(assets/images/portfolio/port-6.jpg)" data-wow-duration="2.2s">
+                <div class="portfolio-box-1 wow fade-in-bottom f9"  data-wow-duration="2.2s">
                     <div class="rt-overlay"></div><!-- /.rt-overlay -->
                     <div class="portfolio-badge">
                         <span>From</span>
@@ -979,9 +993,9 @@
 <div class="spacer-top"></div><!-- /.spacer-top -->
 
 <section class="flight-dela-area" data-scrollax-parent="true">
-    <div class="rt-shape-emenetns-1" style="background-image: url(assets/images/shape-elements/shape_1.png)"
+    <div class="rt-shape-emenetns-1 f10"
         data-scrollax="properties: { translateY: '340px' }"></div><!-- /.rt-shape-emenetns-1 -->
-    <div class="rt-shape-emenetns-2" style="background-image: url(assets/images/shape-elements/shape-2.png)"
+    <div class="rt-shape-emenetns-2 f11"
         data-scrollax="properties: { translateX: '-140px' }"></div><!-- /.rt-shape-elemenets2 -->
     <div class="container">
         <div class="row">
@@ -1006,7 +1020,7 @@
             <div class="col-xl-8 col-lg-10">
                 <div class="row">
                     <div class="col-md-6">
-                        <a class="flight-box wow fade-in-bottom" data-wow-duration="1s" data-wow-delay=".02s" href="#" style="background-image: url(assets/images/flights/flt_1.jpg)">
+                        <a class="flight-box wow fade-in-bottom f12" data-wow-duration="1s" data-wow-delay=".02s" href="#" >
                             <div class="rt-inner-overlay color_1"></div><!-- /.rt-overlay -->
                             <div class="trip-to">
                                 <span>
@@ -1023,7 +1037,7 @@
                         </a><!-- /.flight-box -->
                     </div><!-- /.col-lg-4 -->
                     <div class=" col-md-6">
-                        <a class="flight-box wow fade-in-bottom" href="#" data-wow-duration="1.3s" data-wow-delay=".04s" style="background-image: url(assets/images/flights/flt_2.jpg)">
+                        <a class="flight-box wow fade-in-bottom f13" href="#" data-wow-duration="1.3s" data-wow-delay=".04s" >
                             <div class="rt-inner-overlay color_2"></div><!-- /.rt-overlay -->
                             <div class="trip-to">
                                 <span>
@@ -1040,7 +1054,7 @@
                         </a><!-- /.flight-box -->
                     </div><!-- /.col-lg-4 -->
                     <div class="col-md-6">
-                        <a class="flight-box wow fade-in-bottom" data-wow-duration="1.6s" data-wow-delay=".06s" href="#" style="background-image: url(assets/images/flights/flt_3.jpg)">
+                        <a class="flight-box wow fade-in-bottom f14" data-wow-duration="1.6s" data-wow-delay=".06s" href="#">
                             <div class="rt-inner-overlay color_3"></div><!-- /.rt-overlay -->
                             <div class="trip-to">
                                 <span>
@@ -1057,7 +1071,7 @@
                         </a><!-- /.flight-box -->
                     </div><!-- /.col-lg-4 -->
                     <div class="col-md-6">
-                        <a class="flight-box wow fade-in-bottom" data-wow-duration="1.9s" data-wow-delay=".08s" href="#" style="background-image: url(assets/images/flights/flt_4.jpg)">
+                        <a class="flight-box wow fade-in-bottom f15" data-wow-duration="1.9s" data-wow-delay=".08s" href="#" >
                             <div class="rt-inner-overlay color_4"></div><!-- /.rt-overlay -->
                             <div class="trip-to">
                                 <span>
@@ -1074,7 +1088,7 @@
                         </a><!-- /.flight-box -->
                     </div><!-- /.col-lg-4 -->
                     <div class="col-md-6">
-                        <a class="flight-box wow fade-in-bottom" data-wow-duration="2.2s" data-wow-delay=".010s" href="#" style="background-image: url(assets/images/flights/flt_5.jpg)">
+                        <a class="flight-box wow fade-in-bottom f16" data-wow-duration="2.2s" data-wow-delay=".010s" href="#">
                             <div class="rt-inner-overlay color_5"></div><!-- /.rt-overlay -->
                             <div class="trip-to">
                                 <span>
@@ -1091,7 +1105,7 @@
                         </a><!-- /.flight-box -->
                     </div><!-- /.col-lg-4 -->
                     <div class="col-md-6">
-                        <a class="flight-box wow fade-in-bottom" data-wow-duration="2.6s" data-wow-delay=".12s" href="#" style="background-image: url(assets/images/flights/flt_6.jpg)">
+                        <a class="flight-box wow fade-in-bottom f17" data-wow-duration="2.6s" data-wow-delay=".12s" href="#" >
                             <div class="rt-inner-overlay color_6"></div><!-- /.rt-overlay -->
                             <div class="trip-to">
                                 <span>
@@ -1127,7 +1141,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="cta-box-1 d-flex flex-lg-row flex-column align-items-center text-center text-lg-left justify-content-lg-between rtbgprefix-cover text-white justify-content-center" style="background-image: url(assets/images/backgrounds/cat_1.jpg)">
+                <div class="cta-box-1 d-flex flex-lg-row flex-column align-items-center text-center text-lg-left justify-content-lg-between rtbgprefix-cover text-white justify-content-center f18" >
                     <div class="left-column">
                         <h4 class="wow fade-in-top" data-wow-duration="1s" data-wow-delay="0.2s">
                             Not sure where to go next? <span>We're here to inspire you</span>
@@ -1153,15 +1167,14 @@
 <div class="spacer-top"></div><!-- /.spacer-top -->
 
 
-<section class="app-area rtbgprefix-cover" style="background-image: url(assets/images/backgrounds/app_bg.png)"
+<section class="app-area rtbgprefix-cover f19"
     data-scrollax-parent="true">
-    <div class="rt-shape-elements-1 rtbgprefix-contain"
-        style="background-image: url(assets/images/shape-elements/shape-3.png)"
+    <div class="rt-shape-elements-1 rtbgprefix-contain f20"
         data-scrollax="properties: { translateY: '50px' }"></div><!-- /.rt-shape-elements-1 -->
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-5 text-center text-lg-left">
-                <img src="assets/images/all-img/app-mbl.png" alt="mockup image" draggable="false" class="wow fade-in-left" data-wow-duration="1s" data-wow-delay="0.2s">
+                <img src="{{URL::asset('images/all-img/app-mbl.png')}}" alt="mockup image" draggable="false" class="wow fade-in-left" data-wow-duration="1s" data-wow-delay="0.2s">
             </div><!-- /.col-lg-5 -->
             <div class="col-lg-7">
                 <div class="rt-section-title-wrapper">
@@ -1216,11 +1229,11 @@
     ============= video area start==========
  -->
 
- <div class="play-video rtbgprefix-full bg-hide-md" style="background-image: url(assets/images/backgrounds/videobg.png)">
+ <div class="play-video rtbgprefix-full bg-hide-md f21">
     <div class="container">
         <div class="row">
             <div class="col-lg-9 mx-auto">
-                <div class="play-video-box rtbgprefix-cover" style="background-image: url(assets/images/backgrounds/play-video-bg.png)">
+                <div class="play-video-box rtbgprefix-cover f35" >
     <a href="https://vimeo.com/310740632" class="rt-btn rt-video-light playVideo"></a>
 </div><!-- /.play-video-box -->
             </div><!-- /.col-lg-10 -->
@@ -1232,7 +1245,7 @@
     ============= Testimonilas area start==========
  -->
 <section class="testimonials-area" data-scrollax-parent="true">
-    <div class="rt-shape-emenetns-1" style="background-image: url(assets/images/shape-elements/shape-4.png)"
+    <div class="rt-shape-emenetns-1 f22"
         data-scrollax="properties: { translateY: '-140px' }"></div><!-- /.rt-shape-emenetns-1 -->
     <div class="container">
         <div class="row">
@@ -1255,7 +1268,7 @@
                 <div class="testimoninal-active-1">
     <div class="singleTbox-1 text-center active position-1" data-position="position-1">
         <div class="testi-thumb">
-            <div class="inner-bg" style="background-image: url(assets/images/testimonials/t_1.png)"></div><!-- /.inner-bg -->
+            <div class="inner-bg f23"></div><!-- /.inner-bg -->
             <span class="social-badge"><i class="fab fa-linkedin-in    "></i></span>
         </div>
         <!-- /.testi-thumb -->
@@ -1282,7 +1295,7 @@
     </div><!-- /.singleTbox-1 -->
     <div class="singleTbox-1 text-center inactive position-2" data-position="position-2">
         <div class="testi-thumb">
-            <div class="inner-bg" style="background-image: url(assets/images/testimonials/t_2.png)"></div><!-- /.inner-bg -->
+            <div class="inner-bg f24" ></div><!-- /.inner-bg -->
             <span class="social-badge"><i class="fab fa-linkedin-in    "></i></span>
         </div>
         <!-- /.testi-thumb -->
@@ -1309,7 +1322,7 @@
     </div><!-- /.singleTbox-1 -->
     <div class="singleTbox-1 text-center inactive position-3" data-position="position-3">
         <div class="testi-thumb">
-            <div class="inner-bg" style="background-image: url(assets/images/testimonials/t_3.png)"></div><!-- /.inner-bg -->
+            <div class="inner-bg f25" ></div><!-- /.inner-bg -->
             <span class="social-badge"><i class="fab fa-linkedin-in    "></i></span>
         </div>
         <!-- /.testi-thumb -->
@@ -1336,7 +1349,7 @@
     </div><!-- /.singleTbox-1 -->
     <div class="singleTbox-1 text-center inactive position-4" data-position="position-4">
         <div class="testi-thumb">
-            <div class="inner-bg" style="background-image: url(assets/images/testimonials/t_4.png)"></div><!-- /.inner-bg -->
+            <div class="inner-bg f26" ></div><!-- /.inner-bg -->
             <span class="social-badge"><i class="fab fa-linkedin-in    "></i></span>
         </div>
         <!-- /.testi-thumb -->
@@ -1363,7 +1376,7 @@
     </div><!-- /.singleTbox-1 -->
     <div class="singleTbox-1 text-center inactive position-5" data-position="position-5">
         <div class="testi-thumb">
-            <div class="inner-bg" style="background-image: url(assets/images/testimonials/t_5.png)"></div><!-- /.inner-bg -->
+            <div class="inner-bg f27" ></div><!-- /.inner-bg -->
             <span class="social-badge"><i class="fab fa-linkedin-in    "></i></span>
         </div>
         <!-- /.testi-thumb -->
@@ -1390,7 +1403,7 @@
     </div><!-- /.singleTbox-1 -->
     <div class="singleTbox-1 text-center inactive position-6" data-position="position-6">
         <div class="testi-thumb">
-            <div class="inner-bg" style="background-image: url(assets/images/testimonials/t_6.png)"></div><!-- /.inner-bg -->
+            <div class="inner-bg f28" ></div><!-- /.inner-bg -->
             <span class="social-badge"><i class="fab fa-linkedin-in    "></i></span>
         </div>
         <!-- /.testi-thumb -->
@@ -1417,7 +1430,7 @@
     </div><!-- /.singleTbox-1 -->
     <div class="singleTbox-1 text-center inactive position-7" data-position="position-7">
         <div class="testi-thumb">
-            <div class="inner-bg" style="background-image: url(assets/images/testimonials/t_7.png)"></div><!-- /.inner-bg -->
+            <div class="inner-bg f29"</div><!-- /.inner-bg -->
             <span class="social-badge"><i class="fab fa-linkedin-in    "></i></span>
         </div>
         <!-- /.testi-thumb -->
@@ -1444,7 +1457,7 @@
     </div><!-- /.singleTbox-1 -->
     <div class="singleTbox-1 text-center inactive position-8" data-position="position-8">
         <div class="testi-thumb">
-            <div class="inner-bg" style="background-image: url(assets/images/testimonials/t_8.png)"></div><!-- /.inner-bg -->
+            <div class="inner-bg f30" ></div><!-- /.inner-bg -->
             <span class="social-badge"><i class="fab fa-linkedin-in    "></i></span>
         </div>
         <!-- /.testi-thumb -->
@@ -1471,7 +1484,7 @@
     </div><!-- /.singleTbox-1 -->
     <div class="singleTbox-1 text-center inactive position-9" data-position="position-9">
         <div class="testi-thumb">
-            <div class="inner-bg" style="background-image: url(assets/images/testimonials/t_9.png)"></div><!-- /.inner-bg -->
+            <div class="inner-bg f31" ></div><!-- /.inner-bg -->
             <span class="social-badge"><i class="fab fa-linkedin-in    "></i></span>
         </div>
         <!-- /.testi-thumb -->
@@ -1498,7 +1511,7 @@
     </div><!-- /.singleTbox-1 -->
     <div class="singleTbox-1 text-center inactive position-10" data-position="position-10">
         <div class="testi-thumb">
-            <div class="inner-bg" style="background-image: url(assets/images/testimonials/t_10.png)"></div><!-- /.inner-bg -->
+            <div class="inner-bg f32" ></div><!-- /.inner-bg -->
             <span class="social-badge"><i class="fab fa-linkedin-in    "></i></span>
         </div>
         <!-- /.testi-thumb -->
@@ -1560,42 +1573,42 @@
                 <ul class="rt-border-brands">
     <li class="single-border-brands">
         <a href="#" class="wow flipInX d-block">
-            <img src="assets/images/brands/brands-1.png" alt="brands image" draggable="false">
+            <img src="{{URL::asset('images/brands/brands-1.png')}}" alt="brands image" draggable="false">
         </a>
     </li><!-- /.single-border-brands -->
     <li class="single-border-brands">
         <a href="#" class="wow flipInX d-block" data-wow-duration="1s">
-            <img src="assets/images/brands/brands-2.png" alt="brands image" draggable="false">
+            <img src="{{URL::asset('images/brands/brands-2.png')}}" alt="brands image" draggable="false">
         </a>
     </li><!-- /.single-border-brands -->
     <li class="single-border-brands">
         <a href="#" class="wow flipInX d-block" data-wow-duration="1.5s">
-            <img src="assets/images/brands/brands-3.png" alt="brands image" draggable="false">
+            <img src="{{URL::asset('images/brands/brands-3.png')}}" alt="brands image" draggable="false">
         </a>
     </li><!-- /.single-border-brands -->
     <li class="single-border-brands">
         <a href="#" class="wow flipInX d-block" data-wow-duration="2s">
-            <img src="assets/images/brands/brands-4.png" alt="brands image" draggable="false">
+            <img src="{{URL::asset('images/brands/brands-4.png')}}" alt="brands image" draggable="false">
         </a>
     </li><!-- /.single-border-brands -->
     <li class="single-border-brands">
         <a href="#" class="wow flipInX d-block" data-wow-duration="2.5s">
-            <img src="assets/images/brands/brands-4.png" alt="brands image" draggable="false">
+            <img src="{{URL::asset('images/brands/brands-4.png')}}" alt="brands image" draggable="false">
         </a>
     </li><!-- /.single-border-brands -->
     <li class="single-border-brands">
         <a href="#" class="wow flipInX d-block" data-wow-duration="3s">
-            <img src="assets/images/brands/brands-3.png" alt="brands image" draggable="false">
+            <img src="{{URL::asset('images/brands/brands-3.png')}}" alt="brands image" draggable="false">
         </a>
     </li><!-- /.single-border-brands -->
     <li class="single-border-brands">
         <a href="#" class="wow flipInX d-block" data-wow-duration="3.5s">
-            <img src="assets/images/brands/brands-2.png" alt="brands image" draggable="false">
+            <img src="{{URL::asset('images/brands/brands-2.png')}}" alt="brands image" draggable="false">
         </a>
     </li><!-- /.single-border-brands -->
     <li class="single-border-brands">
         <a href="#" class="wow flipInX d-block" data-wow-duration="4s">
-            <img src="assets/images/brands/brands-1.png" alt="brands image" draggable="false">
+            <img src="{{URL::asset('images/brands/brands-1.png')}}" alt="brands image" draggable="false">
         </a>
     </li><!-- /.single-border-brands -->
 </ul><!-- /.rt-border-brands -->
@@ -1607,8 +1620,8 @@
     !============= Footer Area Start ===========!
  -->
 <section class="rt-site-footer" data-scrollax-parent="true">
-    <div class="rt-shape-emenetns-1" style="background-image: url(assets/images/shape-elements/shape-4.png)" data-scrollax="properties: { translateY: '340px' }"></div><!-- /.rt-shape-emenetns-1 -->
-    <div class="footer-top rtbgprefix-cover" style="background-image: url(assets/images/backgrounds/footerbg.png)">
+    <div class="rt-shape-emenetns-1 f33" data-scrollax="properties: { translateY: '340px' }"></div><!-- /.rt-shape-emenetns-1 -->
+    <div class="footer-top rtbgprefix-cover f34">
         <div class="footer-subscripbe-box wow fade-in-bottom">
            <div class="container">
                <div class="row">
@@ -1727,11 +1740,11 @@
                 <div class="col-lg-6 text-center text-lg-right">
                     <div class="rt-footer-social wow fade-in-bottom" data-wow-duration="1.5s">
                         <ul>
-                            <li><a href="#"><img src="assets/images/brands/card-1.png" alt="cardimage" draggable="false"></a></li>
-                            <li><a href="#"><img src="assets/images/brands/card-2.png" alt="cardimage" draggable="false"></a></li>
-                            <li><a href="#"><img src="assets/images/brands/card-3.png" alt="cardimage" draggable="false"></a></li>
-                            <li><a href="#"><img src="assets/images/brands/card-4.png" alt="cardimage" draggable="false"></a></li>
-                            <li><a href="#"><img src="assets/images/brands/card-5.png" alt="cardimage" draggable="false"></a></li>
+                            <li><a href="#"><img src="{{URL::asset('images/brands/card-1.png')}}" alt="cardimage" draggable="false"></a></li>
+                            <li><a href="#"><img src="{{URL::asset('images/brands/card-2.png')}}" alt="cardimage" draggable="false"></a></li>
+                            <li><a href="#"><img src="{{URL::asset('images/brands/card-3.png')}}" alt="cardimage" draggable="false"></a></li>
+                            <li><a href="#"><img src="{{URL::asset('images/brands/card-4.png')}}" alt="cardimage" draggable="false"></a></li>
+                            <li><a href="#"><img src="{{URL::asset('images/brands/card-5.png')}}" alt="cardimage" draggable="false"></a></li>
 
                         </ul>
                     </div><!-- /.rt-footer-social -->
@@ -1760,16 +1773,16 @@
 <script src="{{URL::asset('js/TweenMax.min.js')}}"></script>
 <script src="{{URL::asset('js/scrollax.min.js')}}"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyCy7becgYuLwns3uumNm6WdBYkBpLfy44k"></script>
-<script src="{{URL::asset('assets/js/wow.js')}}"></script>
-<script src="{{URL::asset('assets/js/jquery.overlayScrollbars.min.js')}}"></script>
-<script src="{{URL::asset('assets/js/jquery-ui.js')}}"></script>
-<script src="{{URL::asset('assets/js/jquery.appear.js')}}"></script>
-<script src="{{URL::asset('assets/js/select2.min.js')}}"></script>
-<script src="{{URL::asset('assets/js/slick.min.js')}}"></script>
-<script src="{{URL::asset('assets/js/slider-range.js')}}"></script>
-<script src="{{URL::asset('assets/js/vivus.min.js')}}"></script>
-<script src="{{URL::asset('assets/js/tippy.all.min.js')}}"></script>
-<script src="{{URL::asset('assets/js/app.js')}}"></script>
+<script src="{{URL::asset('js/wow.js')}}"></script>
+<script src="{{URL::asset('js/jquery.overlayScrollbars.min.js')}}"></script>
+<script src="{{URL::asset('js/jquery-ui.js')}}"></script>
+<script src="{{URL::asset('js/jquery.appear.js')}}"></script>
+<script src="{{URL::asset('js/select2.min.js')}}"></script>
+<script src="{{URL::asset('js/slick.min.js')}}"></script>
+<script src="{{URL::asset('js/slider-range.js')}}"></script>
+<script src="{{URL::asset('js/vivus.min.js')}}"></script>
+<script src="{{URL::asset('js/tippy.all.min.js')}}"></script>
+<script src="{{URL::asset('js/app.js')}}"></script>
 
 <!-- ==================End Js Link===================== -->
 
