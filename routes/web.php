@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('flight/index');
 });
+Route::get('/flight',function(){
+   return view('flight/flight-1');
+})->name('flight1');

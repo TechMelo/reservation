@@ -109,7 +109,7 @@
                 </li>
                 <li class="menu-item-has-children"><a href="#">Flight Pages</a>
                     <ul class="sub-menu">
-                        <li><a href="flight-1.html">Flight One</a></li>
+                        <li><a href="{{route('flight1')}}">Flight One</a></li>
                         <li><a href="flight-details.html">Flight Two</a></li>
                     </ul>
                 </li>
@@ -339,10 +339,10 @@
 {{--                                    <option value="7">Europe</option>--}}
 {{--                                    <option value="8">Hawaii</option>--}}
 {{--                                </select>--}}
-                                <span class="input-iconbadge"><img src="images/icons-image/s_icon_1.png" alt="" draggable="false"></span>
+                                <span class="input-iconbadge"><img src="{{URL::asset('images/icons-image/s_icon_1.png')}}" alt="" draggable="false"></span>
                             </div><!-- /.single-input -->
                             <div class="single-input  col-rt-in-3">
-                                <input type="text" list="tlist" class=" banner-select form-control has-icon" name="to" style="width: 100%">
+                                <input type="text" list="tlist" placeholder="To" class=" banner-select form-control has-icon" name="to" style="width: 100%">
                                 <datalist id="tlist">
                                     <option value="Alaska"></option>
                                     <option value="Bahamas"></option>
@@ -359,7 +359,7 @@
 {{--                                    <option value="7">Europe</option>--}}
 {{--                                    <option value="8">Hawaii</option>--}}
 {{--                                </select>--}}
-                                <span class="input-iconbadge"><img src="images/icons-image/s_icon_2.png" alt="" draggable="false"></span>
+                                <span class="input-iconbadge"><img src="{{URL::asset('images/icons-image/s_icon_2.png')}}" alt="" draggable="false"></span>
                             </div><!-- /.single-input -->
                             <div class="single-input  col-rt-in-3">
                                 <input type="text" class="form-control rt-date-picker has-icon" placeholder="Depart">

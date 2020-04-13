@@ -18873,6 +18873,63 @@ background-image: url("../images/all-img/deal-bg.jpg");
  .f35{
     background-image: url("../images/backgrounds/play-video-bg.png");
 }
-
-
+ .f36{
+     background-image: url("../images/backgrounds/bredcump.png");
+ }
+.f37{
+     background-image: url("../images/all-img/hotel-1.jpg");
+ }
+.f38{
+     background-image: url("../images/all-img/hotel-2.jpg");
+ }
+.f39{
+     background-image: url("../images/all-img/hotel-3.jpg");
+ }
+.f40{
+     background-image: url("../images/all-img/hotel-4.jpg");
+ }
+.f41{
+     background-image: url("../images/all-img/hotel-5.jpg");
+ }
+.f42{
+     background-image: url("../images/all-img/hotel-6.jpg");
+ }
+.f43{
+     background-image: url("../images/all-img/hotel-7.jpg");
+ }
+.f44{
+     background-image: url("../images/all-img/hotel-8.jpg");
+ }
+.f45{
+     background-image: url("../images/all-img/hotel-9.jpg");
+ }
+.f46{
+     background-image: url("../images/all-img/hotel-10.jpg");
+ }
+.f47{
+     background-image: url("../images/all-img/hotel-11.jpg");
+ }
+.f48{
+     background-image: url("../images/all-img/hotel-12.jpg");
+ }
+.f49{
+     background-image: url("../images/all-img/hotel-13.jpg");
+ }
+.f50{
+     background-image: url("../images/shape-elements/shape-4.png");
+ }
+.f51{
+     background-image: url("../images/backgrounds/footerbg.png");
+ }
+.breadcrumbs-content h3
+{
+    position: relative !important;
+    bottom: 50px !important;
+    left: 20px !important;
+    font-size: 20px !important;
+}
+.rt-breadcump-height
+{
+    height: 250px !important;
+}
 /*# sourceMappingURL=app.css.map */
