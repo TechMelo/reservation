@@ -12147,6 +12147,10 @@ p
 {
     display: none;
 }
+.mobile-menu2
+{
+    display: none;
+}
 
 .menu-click
 {
@@ -12195,6 +12199,10 @@ p
 }
 
 .mobile-menu
+{
+    display: none;
+}
+.mobile-menu2
 {
     display: none;
 }
@@ -12699,9 +12707,15 @@ span.menu-title
         -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
             filter: alpha(opacity=100);
     }
-    .mobile-menu
+    .mobile-menu2
     {
         display: block;
+
+        text-align: center;
+    }
+    .mobile-menu
+    {
+        display:none !important;
 
         text-align: center;
     }
@@ -18921,6 +18935,30 @@ background-image: url("../images/all-img/deal-bg.jpg");
 .f51{
      background-image: url("../images/backgrounds/footerbg.png");
  }
+.f52{
+    background-image: url("../images/backgrounds/bredcump.png");
+}
+.f53{
+    background-image: url("../images/shape-elements/shape-4.png");
+}
+.f54{
+    background-image: url("..");
+}
+.f55{
+    background-image: url("..");
+}
+.f56{
+    background-image: url("..");
+}
+.f57{
+    background-image: url("..");
+}
+.f58{
+    background-image: url("..");
+}
+.f59{
+    background-image: url("..");
+}
 .breadcrumbs-content h3
 {
     position: relative !important;

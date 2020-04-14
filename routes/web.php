@@ -19,3 +19,6 @@ Route::get('/', function () {
 Route::get('/flight',function(){
    return view('flight/flight-1');
 })->name('flight1');
+Route::get('/flight_details',function(){
+   return view('flight/flight-details');
+})->name('flight2');

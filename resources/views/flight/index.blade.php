@@ -79,9 +79,16 @@
 </div> <!-- end top header -->
 
 
-    <div class="main-header rt-sticky">
+
       <nav class="navbar">
         <div class="container">
+                        <div class="mobile-menu2">
+                            <div class="menu-click">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
           <a href="index.html" class="brand-logo"><img src="{{URL::asset('images/logo/logo.png')}}" alt=""></a>
           <a href="index.html" class="sticky-logo"><img src="{{URL::asset('images/logo/logo.png')}}" alt=""></a>
           <div class="ml-auto d-flex align-items-center">
@@ -110,7 +117,7 @@
                 <li class="menu-item-has-children"><a href="#">Flight Pages</a>
                     <ul class="sub-menu">
                         <li><a href="{{route('flight1')}}">Flight One</a></li>
-                        <li><a href="flight-details.html">Flight Two</a></li>
+                        <li><a href="{{route('flight2')}}">Flight Two</a></li>
                     </ul>
                 </li>
                 <li class="menu-item-has-children"><a href="#">train Pages</a>

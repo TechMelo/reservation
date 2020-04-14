@@ -885,19 +885,67 @@
                     </div><!-- /.flight-time -->
                     <div class="flight-detils">
                         <span class="d-block"><i class="icofont-clock-time"></i><!-- /.time -->4h5m</span>
-                        <span class="d-block"><a href="#collapseExample" class="flt-d-clic" data-toggle="collapse" role="button"
-                                aria-expanded="false" aria-controls="collapseExample">Flight details <i
-                                    class="icofont-simple-down"></i></a></span>
-                    </div><!-- /.flight-detils -->
+
+                    </div>
+                    <!-- /.flight-detils -->
                     <div class="trip">
                         <span class="d-blok">$610</span>
                         <span class="d-block">Roundtrip</span>
                     </div><!-- /.trip -->
                     <div class="book-now">
                         <a href="flight-details.html" class="rt-btn  pill rt-gradient text-uppercase">Book</a>
-                    </div><!-- /.book-now -->
-                </div><!-- /.top-content -->
-                <div class="collapse bottom-content" id="collapseExample">
+                    </div>
+
+                   <!-- /.book-now -->
+                </div>
+                <div class="row ml-1">
+                <span class="d-block ml-1"><a href="#collapseExample00" class="flt-d-clic" data-toggle="collapse" role="button"
+                                         aria-expanded="false" aria-controls="collapseExample">Flight details <i
+                            class="icofont-simple-down"></i></a></span>
+                <span class="d-block ml-4"><a href="#collapseExample01" class="flt-d-clic" data-toggle="collapse" role="button"
+                                         aria-expanded="false" aria-controls="collapseExample">Bagage <i
+                            class="icofont-simple-down"></i></a></span>
+                    <span class="d-block ml-4"><a href="#collapseExample02" class="flt-d-clic" data-toggle="collapse" role="button"
+                                                  aria-expanded="false" aria-controls="collapseExample">Fare rules<i
+                                class="icofont-simple-down"></i></a></span>
+                </div>
+                <!-- /.top-content -->
+                <div class="collapse bottom-content" id="collapseExample00">
+                    <h5>Flight Details</h5>
+                    <p><span>Scoot - TR979 | Airbus A320 | Economy</span> <span><i class="icofont-clock-time"></i>4h5m</span></p>
+                    <ul class="flight-timeline">
+
+                        <li>
+                            <span>Nov 12 10:55</span>
+
+                        </li>
+                        <li><span>HKG - Hong Kong Hong Kong International Airport T2</span></li>
+                        <li>
+                            <span>Nov 12 15:00</span>
+
+                        </li>
+                        <li><span>SIN - Singapore Changi Airport T2</span></li>
+                    </ul>
+                </div><!-- /.bottom content -->
+                <div class="collapse bottom-content" id="collapseExample01">
+                    <h5>Bagage</h5>
+                    <p><span>Scoot - TR979 | Airbus A320 | Economy</span> <span><i class="icofont-clock-time"></i>4h5m</span></p>
+                    <ul class="flight-timeline">
+
+                        <li>
+                            <span>Nov 12 10:55</span>
+
+                        </li>
+                        <li><span>HKG - Hong Kong Hong Kong International Airport T2</span></li>
+                        <li>
+                            <span>Nov 12 15:00</span>
+
+                        </li>
+                        <li><span>SIN - Singapore Changi Airport T2</span></li>
+                    </ul>
+                </div><!-- /.bottom content -->
+                <div class="collapse bottom-content" id="collapseExample02">
+                    <h5>Fare Rules</h5>
                     <p><span>Scoot - TR979 | Airbus A320 | Economy</span> <span><i class="icofont-clock-time"></i>4h5m</span></p>
                     <ul class="flight-timeline">
 
