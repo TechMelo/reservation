@@ -22,3 +22,7 @@ Route::get('/flight',function(){
 Route::get('/flight_details',function(){
    return view('flight/flight-details');
 })->name('flight2');
+Route::get('/voucher',function(){
+    return view('flight/voucher');
+})->name('voucher');
+

@@ -19101,6 +19101,11 @@ background-image: url("../images/all-img/deal-bg.jpg");
 .f59{
     background-image: url("..");
 }
+.hr-price
+{
+    position: relative;
+    width: 80%;
+}
 .breadcrumbs-content h3
 {
     position: relative !important;
@@ -19137,4 +19142,5 @@ background-image: url("../images/all-img/deal-bg.jpg");
         display: none;
     }
 }
+
 /*# sourceMappingURL=app.css.map */
