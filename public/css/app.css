@@ -5630,6 +5630,7 @@ html
 }
 @media only screen and (max-width: 479px)
 {
+
     html
     {
         font-size: 45%;
@@ -5642,9 +5643,11 @@ html
     {
  height: 650px !important;
     }
+
 }
 @media (max-width: 320px)
 {
+
     html
     {
         font-size: 40%;
@@ -5684,6 +5687,11 @@ h1,
 }
 @media (max-width: 767.98px)
 {
+    #scrollUp
+    {
+        position: fixed !important;
+        bottom:90px !important;
+    }
     h1,
     .h1
     {
@@ -8318,6 +8326,7 @@ p
     padding-left: 18px;
 }
 
+
 .rt-banner-searchbox
 {
     display: -webkit-box;
@@ -8353,7 +8362,9 @@ p
     {
         height: auto;
         padding: 15px;
+
     }
+
 }
 
 .rt-input-group
@@ -12221,6 +12232,14 @@ p
 {
     display: none;
 }
+.white-menu ul > li > a
+{
+    color: #fff;
+}
+.white-menu  ul > li > a:hover
+{
+    color: #496cfe;
+}
 
 .white-menu .main-menu > ul > li > a
 {
@@ -12723,7 +12742,19 @@ span.menu-title
             filter: alpha(opacity=100);
     }
     /*     ************************Modifications*****************/
-    .bottom-bar .nav-item{
+    .b-bar-fix .nav-item
+    {
+        position: relative !important;
+        bottom: 50px !important;
+    }
+    .rt-fix{
+        margin-bottom: 100px !important;
+    }
+    .footer-bottom
+    {
+        margin-bottom: 80px;
+    }
+    .b-bar .nav-item{
         position: relative !important;
         bottom: 35px !important;
     }
@@ -12765,6 +12796,10 @@ span.menu-title
     }
 
     .bottom-bar-l
+    {
+        display: none !important;
+    }
+    .bottom-bar-2
     {
         display: none !important;
     }
@@ -14004,6 +14039,11 @@ span.menu-title
 {
     height: 478px;
 }
+.rt-breadcump-height2
+{
+    height: 250px;
+}
+
 @media (max-width: 767.98px)
 {
     .rt-breadcump .rt-breadcump-height.with-logn-height
@@ -14023,6 +14063,10 @@ span.menu-title
 .rt-breadcump .breadcrumbs-content
 {
     padding-top: 247px;
+}
+.breadcrumbs-content2
+{
+    padding-top: 150px;
 }
 @media (max-width: 767.98px)
 {
@@ -19064,6 +19108,11 @@ background-image: url("../images/all-img/deal-bg.jpg");
     left: 20px !important;
     font-size: 20px !important;
 }
+.breadcrumbs-content2 h3
+{
+
+    font-size: 30px !important;
+}
 .rt-breadcump-height
 {
     height: 250px !important;
@@ -19078,6 +19127,7 @@ background-image: url("../images/all-img/deal-bg.jpg");
 }
 @media only screen and (max-width:770px)
 {
+
     .rt-breadcump-height
     {
         height: 450px !important;
