@@ -89,13 +89,21 @@
                                 <span></span>
                             </div>
                         </div>
-          <a href="index.html" class="brand-logo"><img src="{{URL::asset('images/logo/logo.png')}}" alt=""></a>
+          <a href="index.html" class="brand-logo"><img src="{{URL::asset('images/logo/Logo-icon.png')}}" alt=""></a>
           <a href="index.html" class="sticky-logo"><img src="{{URL::asset('images/logo/logo.png')}}" alt=""></a>
           <div class="ml-auto d-flex align-items-center">
 
 
 <div class="main-menu">
     <ul>
+        <li class="menu-logo d-none">
+            <div class="row">
+                <div class="col-8"><a href="index.html" class=""><img src="{{URL::asset('images/logo/logo-white.png')}}" alt=""></a></div>
+                <div class="col-4 my-auto"><a class="mb-3 menu-click menu-click-cross mr-3"
+                        href=""><i class="fas fa-times text-white"></i></a>
+                </div>
+            </div>
+            </li>
         <li class="current-menu-item"><a href="#home">Home</a></li>
         <li><a href="trip-1.html">Trip package</a></li>
         <li><a href="service-1.html">Services</a></li>
@@ -170,13 +178,33 @@
             <span></span>
         </div>
     </div>
-</div><!-- end main menu -->
-            <div class="rt-nav-tolls d-flex align-items-center">
-    <span class="d-md-inline d-none"><a href="contact.html" class="rt-btn rt-gradient2 rt-rounded text-uppercase rt-Bshadow-1">Contact
-            Us</a></span>
 </div>
+</div><!-- end main menu -->
+      <div  class="rt-nav-tolls d-flex align-items-center">
+              <div class="mobile-right-menu mb-2">
+           <span class="d-none d-sm-inline right-nav ">
+              <a href="#" class="dropdown-toggle text-white" id="dropdownMenuButton" data-toggle="dropdown"
+                 aria-haspopup="true" aria-expanded="false"><i class="fas fa-globe-americas mr-2"></i>Eng</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">English</a>
+                            <a class="dropdown-item" href="#">French</a>
+                            <a class="dropdown-item" href="#">Trukis</a>
+                        </div>
+          </span>
+                  <span class="d-none d-sm-inline right-nav">
+                    <a href="#" class="text-white"><i class="fas fa-sign-in-alt mr-2"></i>Login</a>
+                  </span>
+                  <span class="d-none d-sm-inline right-nav">
+                    <a href="#" class="text-white"><i class="fas fa-user-plus mr-2"></i>Register</a>
+                  </span>
+              </div>
+         <span id="cbtn"  class=""><a  href="contact.html" class="rt-btn rt-gradient2 rt-rounded text-uppercase rt-Bshadow-1">Contact
+            Us</a>
+         </span>
 
-          </div>
+    </div>
+
+
         </div>
       </nav>
     </div><!-- /.bootom-header -->
@@ -487,7 +515,7 @@
             </div>
         </div><!-- /.rt-banner-searchbox -->
 
-
+<div class="bottom-bar-l">
         <ul class="nav serachnavs wow fade-in-bottom" id="rtMultiTab" role="tablist" data-wow-duration="1.5s" data-wow-delay="1.5s">
             <li class="nav-item">
                 <a class="nav-link active" id="first-tab" data-target="#rt-item_b_first" data-secondary="#rt-item_a_first"
@@ -519,6 +547,40 @@
                 </a>
             </li>
         </ul>
+</div>
+                        <div class="bottom-bar">
+        <ul class="nav serachnavs wow fade-in-bottom justify-content-center mx-auto list-inline" id="rtMultiTab" role="tablist" data-wow-duration="0.5s" data-wow-delay="1.5s">
+            <li class="list-inline-item nav-item mx-5 my-3">
+                <a class="nav-link active px-3" id="first-tab2" data-target="#rt-item_b_first" data-secondary="#rt-item_a_first"
+                    data-toggle="tab" href="#first" role="tab" aria-controls="first-tab" aria-selected="false">
+                    <i class="icofont-airplane"></i>
+                    <span>Flights</span>
+                </a>
+            </li>
+            <li class="list-inline-item nav-item mx-5 my-3">
+                <a class="nav-link inactive px-3" id="second-tab2" data-target="#rt-item_b_second" data-secondary="#rt-item_a_second"
+                    data-toggle="tab" href="#second" role="tab" aria-controls="second-tab" aria-selected="true">
+
+                    <i class="icofont-hotel"></i>
+                    <span>Hotels</span>
+                </a>
+            </li>
+            <li class=" list-inline-item nav-item mx-5 my-3">
+                <a class="nav-link inactive" id="third-tab2" data-target="#rt-item_b_thrid" data-secondary="#rt-item_a_third"
+                    data-toggle="tab" href="#third" role="tab" aria-controls="third-tab" aria-selected="false">
+                    <i class="icofont-car-alt-4"></i>
+                    <span>Cars</span>
+                </a>
+            </li>
+            <li class="list-inline-item nav-item mx-5 my-3">
+                <a class="  nav-link inactive" id="four-tab2" data-target="#rt-item_b_four" data-secondary="#rt-item_a_four"
+                    data-toggle="tab" href="#four" role="tab" aria-controls="four-tab" aria-selected="false">
+                    <i class="icofont-train-line"></i>
+                    <span>Trains</span>
+                </a>
+            </li>
+        </ul>
+                        </div>
                     </div><!-- end banner content -->
                 </div><!-- end column -->
             </div><!-- end row -->

@@ -4,7 +4,7 @@
 * ----------------------------------------------------------------------------------------
     Template Name: mr stater
     Template URI: https://spellbit.com/
-    Description: 
+    Description:
     Author: mahedi amin
     Author URI: https://mahediamin.com
     Version: 1.0.0
@@ -66,7 +66,7 @@ jQuery(document).ready(function ($) {
 
   initparallax();
   /*---------------====================
-  02.Mobile Menu 
+  02.Mobile Menu
   ================-------------------*/
 
   $(".menu-item-has-children > a").on("click", function () {
@@ -182,7 +182,7 @@ jQuery(document).ready(function ($) {
       }
     });
     feedFooter.run();
-  } // slider active 
+  } // slider active
 
 
   if ($('.rt-slider-active').length > 0) {
@@ -467,4 +467,16 @@ jQuery(document).ready(function ($) {
   jQuery(window).load(function () {
     jQuery(".rt-preloder").fadeOut(300);
   });
+    $(document).on('click', '#rtMultiTab2 a', function (e) {
+        var otherTabs = $(this).attr('data-secondary').split(',');
+
+        for (var i = 0; i < otherTabs.length; i++) {
+            var nav = $('<ul class="nav d-none" id="tmpNav"></ul>');
+            nav.append('<li class="nav-item"><a href="#" data-toggle="tab" data-target="' + otherTabs[i] + '">nav</a></li>"');
+            nav.find('a').tab('show');
+        }
+    });
+    jQuery(window).load(function () {
+        jQuery(".rt-preloder").fadeOut(300);
+    });
 }); // end ready function
