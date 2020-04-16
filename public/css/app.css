@@ -19135,6 +19135,10 @@ background-image: url("../images/all-img/deal-bg.jpg");
 {
     display: none;
 }
+.pay-label
+{
+    margin-top: -20px;
+}
 @media only screen and (max-width:770px)
 {
 

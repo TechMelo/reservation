@@ -259,15 +259,42 @@
             <h4 class="f-size-24 text-capitalize rt-mb-30  rt-semiblod">Payment</h4>
             <h6 class="text-333 rt-medium  rt-semiblod rt-mb-10">Choose your pament method</h6>
             <div class="row text-333 mb-3 mx-auto">
-                <div class="col-4 col-lg-2"><img height="100px" src="{{URL::asset('images/payment/1.jpg')}}" alt=""></div>
-                <div class="col-4 col-lg-2"><img height="100px" src="{{URL::asset('images/payment/2.jpg')}}" alt=""></div>
-                <div class="col-4 col-lg-2"><img height="100px" src="{{URL::asset('images/payment/3.jpg')}}" alt=""></div>
-                <div class="col-4 col-lg-2"><img height="100px"  src="{{URL::asset('images/payment/4.jpg')}}" alt=""></div>
-                <div class="col-4 col-lg-2"><img height="100px" src="{{URL::asset('images/payment/5.jpg')}}" alt=""></div>
-                <div class="col-4 col-lg-2"><img height="100px" src="{{URL::asset('images/payment/6.jpg')}}" alt=""></div>
-                <div class="col-4 col-lg-2"><img height="100px"  src="{{URL::asset('images/payment/7.jpg')}}" alt=""></div>
-                <div class="col-4 col-lg-2"><img height="100px" src="{{URL::asset('images/payment/8.jpg')}}" alt=""></div>
-                <div class="col-4 col-lg-2"><img height="100px" src="{{URL::asset('images/payment/9.jpg')}}" alt=""></div>
+                <div class="col-4 col-lg-3">
+                    <div class="row"><img class="mx-auto" height="100px" src="{{URL::asset('images/payment/pay at home.png')}}" alt="pay at home"></div>
+                    <div class="row"><span class="mx-auto pay-label">Pay at Home</span></div>
+                </div>
+                <div class="col-4 col-lg-3">
+                    <div class="row"><img class="mx-auto" height="100px" src="{{URL::asset('images/payment/pay at point.png')}}" alt="pay at point"></div>
+                    <div class="row"><span class="mx-auto pay-label">Pay at point</span></div>
+                </div>
+                <div class="col-4 col-lg-3">
+                    <div class="row"><img class="mx-auto" height="100px" src="{{URL::asset('images/payment/pay by credit.png')}}" alt="pay by credit"></div>
+                    <div class="row"><span class="mx-auto pay-label">Pay by credit</span></div>
+                </div>
+                <div class="col-4 col-lg-3">
+                    <div class="row"><img class="mx-auto" height="100px" src="{{URL::asset('images/payment/pay later.png')}}" alt="pay later"></div>
+                    <div class="row"><span class="mx-auto pay-label">pay later</span></div>
+                </div>
+                <div class="col-4 col-lg-3">
+                    <div class="row"><img class="mx-auto" height="100px" src="{{URL::asset('images/payment/fastpay.png')}}" alt="fastpay"></div>
+                    <div class="row"></div>
+                </div>
+                <div class="col-4 col-lg-3">
+                    <div class="row"><img class="mx-auto" height="100px" src="{{URL::asset('images/payment/zaincash.png')}}" alt="zaincash"></div>
+                    <div class="row"></div>
+                </div>
+                <div class="col-4 col-lg-3">
+                    <div class="row"><img class="mx-auto" height="100px" src="{{URL::asset('images/payment/asiahawala.png')}}" alt="asiahawala"></div>
+                    <div class="row"></div>
+                </div>
+                <div class="col-4 col-lg-3">
+                    <div class="row"><img class="mx-auto" height="100px" src="{{URL::asset('images/payment/mastercard.png')}}" alt="mastercard"></div>
+                    <div class="row"></div>
+                </div>
+                <div class="col-4 col-lg-3">
+                    <div class="row"><img class="mx-auto" height="100px" src="{{URL::asset('images/payment/paypal.png')}}" alt="paypal"></div>
+                    <div class="row pay-label"></div>
+                </div>
 
             </div><!-- /.row -->
             <div class="row text-333 ">
