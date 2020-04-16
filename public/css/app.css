@@ -19106,6 +19106,11 @@ background-image: url("../images/all-img/deal-bg.jpg");
     position: relative;
     width: 80%;
 }
+.voucher-cont
+{
+    top: -80px;
+    position: relative;
+}
 .breadcrumbs-content h3
 {
     position: relative !important;
@@ -19140,6 +19145,10 @@ background-image: url("../images/all-img/deal-bg.jpg");
     .breadcrumbs-content
     {
         display: none;
+    }
+    .voucher-cont{
+        top: -50px;
+        position: relative;
     }
 }
 

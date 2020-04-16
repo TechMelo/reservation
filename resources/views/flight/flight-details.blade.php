@@ -1,14 +1,5 @@
 @extends('layouts.index')
 @section('content')
-
-
-
-
-
-
-
-
-
     <div class="bottom-bar b-bar">
         <ul class="nav serachnavs wow fade-in-bottom justify-content-center mx-auto list-inline" id="rtMultiTab" role="tablist" data-wow-duration="0.5s" data-wow-delay="1.5s">
             <li class="list-inline-item nav-item mx-5 my-3">
