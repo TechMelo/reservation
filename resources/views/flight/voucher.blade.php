@@ -3,6 +3,39 @@
     <div class="rt-breadcump rt-breadcump-height2">
         <div class="rt-page-bg rtbgprefix-cover f52" >
         </div><!-- /.rt-page-bg -->
+        <div class="bottom-bar b-bar">
+            <ul class="nav serachnavs wow fade-in-bottom justify-content-center mx-auto list-inline" id="rtMultiTab" role="tablist" data-wow-duration="0.5s" data-wow-delay="1.5s">
+                <li class="list-inline-item nav-item mx-5 my-3">
+                    <a class="nav-link active px-3" id="first-tab2" data-target="#rt-item_b_first" data-secondary="#rt-item_a_first"
+                       data-toggle="tab" href="#first" role="tab" aria-controls="first-tab" aria-selected="false">
+                        <i class="icofont-airplane"></i>
+                        <span>Flights</span>
+                    </a>
+                </li>
+                <li class="list-inline-item nav-item mx-5 my-3">
+                    <a class="nav-link inactive px-3" id="second-tab2" data-target="#rt-item_b_second" data-secondary="#rt-item_a_second"
+                       data-toggle="tab" href="#second" role="tab" aria-controls="second-tab" aria-selected="true">
+
+                        <i class="icofont-hotel"></i>
+                        <span>Hotels</span>
+                    </a>
+                </li>
+                <li class=" list-inline-item nav-item mx-5 my-3">
+                    <a class="nav-link inactive" id="third-tab2" data-target="#rt-item_b_thrid" data-secondary="#rt-item_a_third"
+                       data-toggle="tab" href="#third" role="tab" aria-controls="third-tab" aria-selected="false">
+                        <i class="icofont-car-alt-4"></i>
+                        <span>Cars</span>
+                    </a>
+                </li>
+                <li class="list-inline-item nav-item mx-5 my-3">
+                    <a class="  nav-link inactive" id="four-tab2" data-target="#rt-item_b_four" data-secondary="#rt-item_a_four"
+                       data-toggle="tab" href="#four" role="tab" aria-controls="four-tab" aria-selected="false">
+                        <i class="icofont-train-line"></i>
+                        <span>Trains</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
         <div class="container">
             <div class="row rt-breadcump-height">
                 <div class="col-12">
@@ -225,19 +258,20 @@
         <div class="flight-list-box rt-mb-30 pt-30">
             <h4 class="f-size-24 text-capitalize rt-mb-30  rt-semiblod">Payment</h4>
             <h6 class="text-333 rt-medium  rt-semiblod rt-mb-10">Choose your pament method</h6>
-            <div class="row text-333 mb-3">
-                <div class="col-md-2 col-sm-6"><img height="100px" src="{{URL::asset('images/payment/1.jpg')}}" alt=""></div>
-                <div class="col-md-2 col-sm-6"><img height="100px" src="{{URL::asset('images/payment/2.jpg')}}" alt=""></div>
-                <div class="col-md-2 col-sm-6"><img height="100px" src="{{URL::asset('images/payment/3.jpg')}}" alt=""></div>
-                <div class="col-md-2 col-sm-6"><img height="100px"  src="{{URL::asset('images/payment/4.jpg')}}" alt=""></div>
-                <div class="col-md-2 col-sm-6"><img height="100px" src="{{URL::asset('images/payment/5.jpg')}}" alt=""></div>
-                <div class="col-md-2 col-sm-6"><img height="100px" src="{{URL::asset('images/payment/6.jpg')}}" alt=""></div>
+            <div class="row text-333 mb-3 mx-auto">
+                <div class="col-4 col-lg-2"><img height="100px" src="{{URL::asset('images/payment/1.jpg')}}" alt=""></div>
+                <div class="col-4 col-lg-2"><img height="100px" src="{{URL::asset('images/payment/2.jpg')}}" alt=""></div>
+                <div class="col-4 col-lg-2"><img height="100px" src="{{URL::asset('images/payment/3.jpg')}}" alt=""></div>
+                <div class="col-4 col-lg-2"><img height="100px"  src="{{URL::asset('images/payment/4.jpg')}}" alt=""></div>
+                <div class="col-4 col-lg-2"><img height="100px" src="{{URL::asset('images/payment/5.jpg')}}" alt=""></div>
+                <div class="col-4 col-lg-2"><img height="100px" src="{{URL::asset('images/payment/6.jpg')}}" alt=""></div>
+                <div class="col-4 col-lg-2"><img height="100px"  src="{{URL::asset('images/payment/7.jpg')}}" alt=""></div>
+                <div class="col-4 col-lg-2"><img height="100px" src="{{URL::asset('images/payment/8.jpg')}}" alt=""></div>
+                <div class="col-4 col-lg-2"><img height="100px" src="{{URL::asset('images/payment/9.jpg')}}" alt=""></div>
 
             </div><!-- /.row -->
             <div class="row text-333 ">
-                <div class="col-md-2"><img height="100px"  src="{{URL::asset('images/payment/7.jpg')}}" alt=""></div>
-                <div class="col-md-2"><img height="100px" src="{{URL::asset('images/payment/8.jpg')}}" alt=""></div>
-                <div class="col-md-2"><img height="100px" src="{{URL::asset('images/payment/9.jpg')}}" alt=""></div>
+
             </div><!-- /.row -->
         </div><!-- /.row -->
     </div><!-- /.flight-list-box -->
