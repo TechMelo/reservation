@@ -112,256 +112,53 @@
                 <div class="flt-dtls-box rt-mb-30">
                     <div class="upper-top-content d-md-flex flex-md-row justify-content-md-between align-items-center">
                         <div class="left">
-                            <span>Hong Kong</span> <span><img src="{{URL::asset('images/all-img/shp-ln-1.png')}}" alt="line image" draggable="false"></span> <span>Singapore</span>
-                            <p>Nov 12, 2018 | 1 adult</p>
+                            <span>Candlewood Suites NYC - </span<span>Times Square</span>
+                            <p>Times Square | 4.8 km from downtown   | Near the subway</p>
                         </div><!-- /.left -->
                         <div class="right">
                             <a href="#" class="rt-btn rt-gradient3 rt-Bshadow-3  pill text-uppercase rt-sm2">Update</a>
                         </div><!-- /.right -->
                     </div><!-- /.upper-top-content -->
-                    <div class="flight-list-box desktop-v-details">
-                        <div
-                            class="top-content d-flex flex-lg-row flex-column align-items-lg-center justify-content-left  justify-content-lg-between">
-                            <div class="flight-logo">
-                                <img src="{{URL::asset('images/all-img/flt-logo-1.png')}}" alt="flt logo" draggable="false">
-                            </div><!-- /.flight-logo -->
-                            <div class="pricing">
-                                <h5>Scoot</h5>
-                                <p>TR978 | Airbus A320-212</p>
-                            </div><!-- /.pricing -->
-                            <div class="flight-time d-flex justify-content-between align-items-center">
-                                <div class="left">
-                                    <span class="d-block">10:55</span>
-                                    <span class="d-block">HKG T2</span>
-                                </div><!-- /.left -->
-                                <div class="middle">
-                                    <img src="{{URL::asset('images/all-img/time-shape-line.png')}}" alt="time shape" draggable="false">
-                                </div><!-- /.middle -->
-                                <div class="right">
-                                    <span class="d-block">15.00</span>
-                                    <span class="d-block">SIN T2</span>
-                                </div><!-- /.rght -->
-                            </div><!-- /.flight-time -->
-                            <div class="flight-detils">
-                                <span class="d-block"><i class="icofont-clock-time"></i><!-- /.time -->4h5m</span>
+                    <div class="flight-list-box">
+                        <div class="hotel-inner-content row">
+                            <div class="hotel-thumb col-md-3">
+                                <div class="hotel-bg rtbgprefix-cover" style="background-image: url(assets/images/all-img/hotel-2.jpg)">
+                                    <div class="inner-icon">
+                                        <i class="icofont-gift"></i>
+                                    </div><!-- /.inner-icon -->
+                                </div>
+                            </div><!-- /.hotel-thumb -->
+                            <div class="hotel-text col-md-9">
+                                <div class="top-2 d-flex flex-column flex-md-row justify-content-md-between rt-mb-20">
+                                    <div>
+                                        <span class="d-block f-size-12">Check-in:</span>
+                                        <span class="d-block rt-strong heading-color-1">Tue,Nov 13,2018</span>
+                                        <span class="d-block f-size-12">From 14:00</span>
+                                    </div>
+                                    <div>
+                                        <span class="d-block f-size-12">Check-out:</span>
+                                        <span class="d-block rt-strong heading-color-1">Fri,Nov 16,2018</span>
+                                        <span class="d-block f-size-12">Before 12:00</span>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="d-block rt-medium heading-color-1">3 Nights</span>
+                                        <span class="d-block"><a href="#">Change Dates</a></span>
+                                    </div>
+                                </div><!-- /.top-2 -->
 
-                            </div><!-- /.flight-detils -->
-                            <div class="trip">
-                                <span class="d-blok">$610</span>
-                                <span class="d-block">Roundtrip</span>
-                            </div><!-- /.trip -->
-                            <div class="book-now">
-                                <a href="#" class="rt-btn  pill rt-gradient text-uppercase">Book</a>
-                            </div><!-- /.book-now -->
+                                <div class="rt-divider style-three"></div><!-- /.rt-divider -->
 
-                        </div><!-- /.top-content -->
-                        <div class="row ml-1">
-                <span class="d-block ml-1"><a href="#collapseExample00" class="flt-d-clic" data-toggle="collapse" role="button"
-                                              aria-expanded="false" aria-controls="collapseExample">Flight details <i
-                            class="icofont-simple-down"></i></a></span>
-                            <span class="d-block ml-4"><a href="#collapseExample01" class="flt-d-clic" data-toggle="collapse" role="button"
-                                                          aria-expanded="false" aria-controls="collapseExample">Bagage <i
-                                        class="icofont-simple-down"></i></a></span>
-                            <span class="d-block ml-4"><a href="#collapseExample02" class="flt-d-clic" data-toggle="collapse" role="button"
-                                                          aria-expanded="false" aria-controls="collapseExample">Fare rules<i
-                                        class="icofont-simple-down"></i></a></span>
-                        </div>
-                        <div class="collapse bottom-content" id="collapseExample">
-                            <p><span>Scoot - TR979 | Airbus A320 | Economy</span> <span><i class="icofont-clock-time"></i>4h5m</span></p>
-                            <ul class="flight-timeline">
+                                <div class="footer3-elements rt-mt-20">
+                                    <span class="d-block heading-color-1 rt-strong">Superior Room - Minimum 2 nights</span>
 
-                                <li>
-                                    <span>Nov 12 10:55</span>
+                                    <div class="clearfix f-size-12 text-555"><span class="float-left ">Max. guests per room</span> <span class="float-right">02</span></div>
+                                    <div class="clearfix f-size-12 text-555"><span class="float-left">Bed</span> <span class="float-right">1 double bed or 2 single beds</span></div>
+                                    <div class="clearfix f-size-12 text-555"><span class="float-left">Breakfast</span> <span class="float-right">No Breakfast</span></div>
 
-                                </li>
-                                <li><span>HKG - Hong Kong Hong Kong International Airport T2</span></li>
-                                <li>
-                                    <span>Nov 12 15:00</span>
-
-                                </li>
-                                <li><span>SIN - Singapore Changi Airport T2</span></li>
-                            </ul>
-                        </div><!-- /.bottom content -->
-                        <div class="collapse bottom-content" id="collapseExample00">
-                            <h5>Flight Details</h5>
-                            <p><span>Scoot - TR979 | Airbus A320 | Economy</span> <span><i class="icofont-clock-time"></i>4h5m</span></p>
-                            <ul class="flight-timeline">
-
-                                <li>
-                                    <span>Nov 12 10:55</span>
-
-                                </li>
-                                <li><span>HKG - Hong Kong Hong Kong International Airport T2</span></li>
-                                <li>
-                                    <span>Nov 12 15:00</span>
-
-                                </li>
-                                <li><span>SIN - Singapore Changi Airport T2</span></li>
-                            </ul>
-                        </div><!-- /.bottom content -->
-                        <div class="collapse bottom-content" id="collapseExample01">
-                            <h5>Bagage</h5>
-                            <p><span>Scoot - TR979 | Airbus A320 | Economy</span> <span><i class="icofont-clock-time"></i>4h5m</span></p>
-                            <ul class="flight-timeline">
-
-                                <li>
-                                    <span>Nov 12 10:55</span>
-
-                                </li>
-                                <li><span>HKG - Hong Kong Hong Kong International Airport T2</span></li>
-                                <li>
-                                    <span>Nov 12 15:00</span>
-
-                                </li>
-                                <li><span>SIN - Singapore Changi Airport T2</span></li>
-                            </ul>
-                        </div><!-- /.bottom content -->
-                        <div class="collapse bottom-content" id="collapseExample02">
-                            <h5>Fare Rules</h5>
-                            <p><span>Scoot - TR979 | Airbus A320 | Economy</span> <span><i class="icofont-clock-time"></i>4h5m</span></p>
-                            <ul class="flight-timeline">
-
-                                <li>
-                                    <span>Nov 12 10:55</span>
-
-                                </li>
-                                <li><span>HKG - Hong Kong Hong Kong International Airport T2</span></li>
-                                <li>
-                                    <span>Nov 12 15:00</span>
-
-                                </li>
-                                <li><span>SIN - Singapore Changi Airport T2</span></li>
-                            </ul>
-                        </div>
+                                </div><!-- /.footer3-elements -->
+                            </div><!-- /.hotel-text -->
+                        </div><!-- /.hotel-inner-content -->
                     </div><!-- /.flight-list-box -->
-                    <div class="flight-list-box tablet-v-details">
-                        <div
-                            class="row">
-                            <div class="col-2">
-                                <div class="flight-logo">
-                                    <img src="{{URL::asset('images/all-img/flt-logo-1.png')}}" alt="flt logo" draggable="false">
-                                </div><!-- /.flight-logo -->
-                            </div>
-                            <div class="col-1"></div>
-                            <div class="col-2 ">
-                                <div class="pricing ">
-                                    <h5>Scoot</h5>
-                                    <p>TR978 | Airbus A320-212</p>
-                                </div><!-- /.pricing -->
-                            </div>
-                            <div class="col-2 ">
-                                <div class="flight-detils">
-                                    <span class="d-block"><i class="icofont-clock-time"></i><!-- /.time -->4h5m</span>
-
-                                </div><!-- /.flight-detils -->
-                            </div>
-                            <div class="col-2">
-                                <div class="trip ">
-                                    <span class="d-blok">$610</span>
-                                    <span class="d-block">Roundtrip</span>
-                                </div><!-- /.trip -->
-                            </div>
-                            <div class="col-2">
-                                <div class="book-now ">
-                                    <a href="#" class="rt-btn  pill rt-gradient text-uppercase">Book</a>
-                                </div><!-- /.book-now -->
-                            </div>
-                            <div class="col-1"></div>
-                        </div><!-- /.top-content -->
-                        <div class=" top-content ">
-                            <div class="flight-time d-flex justify-content-between align-items-center">
-                                <div class="left">
-                                    <span class="d-block">10:55</span>
-                                    <span class="d-block">HKG T2</span>
-                                </div><!-- /.left -->
-                                <div class="middle">
-                                    <img src="{{URL::asset('images/all-img/time-shape-line.png')}}" alt="time shape" draggable="false">
-                                </div><!-- /.middle -->
-                                <div class="right">
-                                    <span class="d-block">15.00</span>
-                                    <span class="d-block">SIN T2</span>
-                                </div><!-- /.rght -->
-                            </div><!-- /.flight-time --></div>
-                        <div class="row ml-1">
-
-                <span class="d-block ml-1"><a href="#collapseExample00" class="flt-d-clic" data-toggle="collapse" role="button"
-                                              aria-expanded="false" aria-controls="collapseExample">Flight details <i
-                            class="icofont-simple-down"></i></a></span>
-                            <span class="d-block ml-4"><a href="#collapseExample01" class="flt-d-clic" data-toggle="collapse" role="button"
-                                                          aria-expanded="false" aria-controls="collapseExample">Bagage <i
-                                        class="icofont-simple-down"></i></a></span>
-                            <span class="d-block ml-4"><a href="#collapseExample02" class="flt-d-clic" data-toggle="collapse" role="button"
-                                                          aria-expanded="false" aria-controls="collapseExample">Fare rules<i
-                                        class="icofont-simple-down"></i></a></span>
-                        </div>
-                        <div class="collapse bottom-content" id="collapseExample">
-                            <p><span>Scoot - TR979 | Airbus A320 | Economy</span> <span><i class="icofont-clock-time"></i>4h5m</span></p>
-                            <ul class="flight-timeline">
-
-                                <li>
-                                    <span>Nov 12 10:55</span>
-
-                                </li>
-                                <li><span>HKG - Hong Kong Hong Kong International Airport T2</span></li>
-                                <li>
-                                    <span>Nov 12 15:00</span>
-
-                                </li>
-                                <li><span>SIN - Singapore Changi Airport T2</span></li>
-                            </ul>
-                        </div><!-- /.bottom content -->
-                        <div class="collapse bottom-content" id="collapseExample00">
-                            <h5>Flight Details</h5>
-                            <p><span>Scoot - TR979 | Airbus A320 | Economy</span> <span><i class="icofont-clock-time"></i>4h5m</span></p>
-                            <ul class="flight-timeline">
-
-                                <li>
-                                    <span>Nov 12 10:55</span>
-
-                                </li>
-                                <li><span>HKG - Hong Kong Hong Kong International Airport T2</span></li>
-                                <li>
-                                    <span>Nov 12 15:00</span>
-
-                                </li>
-                                <li><span>SIN - Singapore Changi Airport T2</span></li>
-                            </ul>
-                        </div><!-- /.bottom content -->
-                        <div class="collapse bottom-content" id="collapseExample01">
-                            <h5>Bagage</h5>
-                            <p><span>Scoot - TR979 | Airbus A320 | Economy</span> <span><i class="icofont-clock-time"></i>4h5m</span></p>
-                            <ul class="flight-timeline">
-
-                                <li>
-                                    <span>Nov 12 10:55</span>
-
-                                </li>
-                                <li><span>HKG - Hong Kong Hong Kong International Airport T2</span></li>
-                                <li>
-                                    <span>Nov 12 15:00</span>
-
-                                </li>
-                                <li><span>SIN - Singapore Changi Airport T2</span></li>
-                            </ul>
-                        </div><!-- /.bottom content -->
-                        <div class="collapse bottom-content" id="collapseExample02">
-                            <h5>Fare Rules</h5>
-                            <p><span>Scoot - TR979 | Airbus A320 | Economy</span> <span><i class="icofont-clock-time"></i>4h5m</span></p>
-                            <ul class="flight-timeline">
-
-                                <li>
-                                    <span>Nov 12 10:55</span>
-
-                                </li>
-                                <li><span>HKG - Hong Kong Hong Kong International Airport T2</span></li>
-                                <li>
-                                    <span>Nov 12 15:00</span>
-
-                                </li>
-                                <li><span>SIN - Singapore Changi Airport T2</span></li>
-                            </ul>
-                        </div>
-                    </div><!-- /.flight-list-box sm -->
                 </div><!-- /.flt-dtls-box -->
                 <div class="flight-list-box rt-mb-30 ask-for-login d-md-flex flex-md-row justify-content-md-between align-items-center pt-30">
                     <div class="left">
@@ -395,11 +192,20 @@
                                 <label for="lst-name">Last Name</label>
                                 <input type="text" class="form-control" id="lst-name" placeholder="Enter Your Last Name ">
                             </div><!-- /.col-md-6 -->
-                            <div class="col-lg-6 rt-mb-30">
-                                <label for="select-1">Nationality</label>
-                                <input type="text" class="form-control" id="nationality" placeholder="Enter Your Nationality ">
+{{--                            <div class="col-lg-6 rt-mb-30">--}}
+{{--                                <label for="select-1">Nationality</label>--}}
+{{--                                <input type="text" class="form-control" id="nationality" placeholder="Enter Your Nationality ">--}}
 
-                            </div><!-- /.col-md-6 -->
+{{--                            </div><!-- /.col-md-6 -->--}}
+                            <div class="col-md-6 rt-mb-30">
+                                <label for="select-2">ID</label>
+                                <select id="select-2">
+                                    <option value="1">Passport</option>
+                                    <option value="2">NID</option>
+                                    <option value="3">NTO</option>
+
+                                </select>
+                            </div>
                             <div class="col-lg-6 rt-mb-30">
                                 <div class="row">
                                     <div class="col-md-6">
@@ -421,19 +227,11 @@
                                     </div><!-- /.col-md-6 -->
                                 </div><!-- /.row -->
                             </div><!-- /.col-md-6 -->
-                            <div class="col-md-6 rt-mb-30">
-                                <label for="select-2">ID</label>
-                                <select id="select-2">
-                                    <option value="1">Passport</option>
-                                    <option value="2">NID</option>
-                                    <option value="3">NTO</option>
-
-                                </select>
-                            </div><!-- /.col-md-6 -->
-                            <div class="col-md-6 rt-mb-30">
-                                <label for="issue-country">Issue Country</label>
-                                <input type="text" placeholder="enter country name" class="form-control">
-                            </div><!-- /.col-md-6 -->
+                            <!-- /.col-md-6 -->
+{{--                            <div class="col-md-6 rt-mb-30">--}}
+{{--                                <label for="issue-country">Issue Country</label>--}}
+{{--                                <input type="text" placeholder="enter country name" class="form-control">--}}
+{{--                            </div><!-- /.col-md-6 -->--}}
 {{--                            <div class="col-md-6">--}}
 {{--                                <p class="f-size-14">Please ensure the ID is valid for at least 6 months--}}
 {{--                                after the date of departure.</p>--}}
@@ -482,28 +280,23 @@
                         <ul>
                             <li class="clearfix">
 
-                                <span>Adult</span>
-                                <span class="float-right">$203.94 x 1</span>
+                                <span>1 Room x 3 Nights</span>
+                                <span class="float-right">£ 435.2</span>
                             </li>
                             <li class="clearfix">
 
-                                <span>Fare</span>
-                                <span class="float-right">$170</span>
-                            </li>
-                            <li class="clearfix">
-
-                                <span>taxex & Fees</span>
-                                <span class="float-right">$33.34</span>
+                                <span>Taxes & Fees</span>
+                                <span class="float-right">$£ 87.04</span>
                             </li>
                             <li class="clearfix sub-total">
 
                                 <span>Total</span>
-                                <span class="float-right"><small>$</small>203.94</span>
+                                <span class="float-right"><small>£</small>522.24</span>
                             </li>
 
                         </ul>
                         <div class="text-center rt-mb-30">
-                            <a href="#" class="rt-btn rt-gradient pill rt-sm">Continue Booking</a>
+                            <a href="#" class="rt-btn rt-gradient pill rt-sm2">Continue Booking</a>
                         </div><!-- /.text-center -->
                         <p class="f-size-12 line-height-12">By proceeding, I acknowledge that I
                             have read and agree to Emigrar

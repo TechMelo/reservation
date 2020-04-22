@@ -479,4 +479,22 @@ jQuery(document).ready(function ($) {
     jQuery(window).load(function () {
         jQuery(".rt-preloder").fadeOut(300);
     });
+    var alterClass = function() {
+        var ww = document.body.clientWidth;
+        if (ww < 950) {
+            $('.filtercoll').addClass('collapse');
+            $('.sortcoll').addClass('collapse');
+
+        } else if (ww >= 950) {
+            $('.sortscoll').removeClass('collapse');
+            $('.filtercoll').removeClass('collapse');
+        };
+
+    };
+
+    $(window).resize(function(){
+        alterClass();
+    });
+    //Fire it when the page first loads:
+    alterClass();
 }); // end ready function

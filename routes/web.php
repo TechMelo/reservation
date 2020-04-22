@@ -16,13 +16,42 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('flight/index');
 });
-Route::get('/flight',function(){
-   return view('flight/flight-1');
-})->name('flight1');
+Route::get('/flights',function(){
+    $page='flight';
+   return view('flight/search_page',compact('page'));
+})->name('flights');
+Route::get('/tours',function(){
+    $page='tour';
+   return view('flight/search_page',compact('page'));
+})->name('tours');
+
+Route::get('/hotels',function(){
+    $page='hotel';
+   return view('flight/search_page',compact('page'));
+})->name('hotels');
+
 Route::get('/flight_details',function(){
    return view('flight/flight-details');
 })->name('flight2');
+
+Route::get('/hotel_details',function(){
+   return view('hotel/hotel-details');
+})->name('hotel_details');
+Route::get('/tour_details',function(){
+   return view('tour/tour-details');
+})->name('tour_details');
+Route::get('/tour_booking',function(){
+   return view('tour/tour-booking');
+})->name('tour_booking');
+
+Route::get('/hotel_specs',function(){
+   return view('hotel/hotel-specs');
+})->name('hotel_specs');
+
 Route::get('/voucher',function(){
     return view('flight/voucher');
+})->name('voucher');
+Route::get('/voucher',function(){
+    return view('voucher/index');
 })->name('voucher');
 

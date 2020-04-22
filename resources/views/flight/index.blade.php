@@ -17,6 +17,77 @@
             <div class="row  rt-banner-height align-items-center">
                 <div class="col-lg-9">
                     <div class="rt-banner-content">
+                        <div class="bottom-bar b-bar">
+                            <ul class="nav nav-scroll serachnavs scroll wow fade-in-bottom justify-content-center mx-auto list-inline" id="rtMultiTab" role="tablist" data-wow-duration="0.5s" data-wow-delay="1.5s">
+                                <li class="list-inline-item nav-item mx-5 my-3">
+                                    <a class="nav-link active px-3" id="first-tab" data-target="#rt-item_b_first" data-secondary="#rt-item_a_first"
+                                       data-toggle="tab" href="#first" role="tab" aria-controls="first-tab" aria-selected="false">
+                                        <i class="icofont-airplane"></i>
+                                        <span>Flights</span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item nav-item mx-5 my-3">
+                                    <a class="nav-link inactive px-3" id="second-tab" data-target="#rt-item_b_second" data-secondary="#rt-item_a_second"
+                                       data-toggle="tab" href="#second" role="tab" aria-controls="second-tab" aria-selected="true">
+
+                                        <i class="icofont-hotel"></i>
+                                        <span>Hotels</span>
+                                    </a>
+                                </li>
+                                <li class=" list-inline-item nav-item mx-5 my-3">
+                                    <a class="nav-link inactive" id="third-tab" data-target="#rt-item_b_thrid" data-secondary="#rt-item_a_third"
+                                       data-toggle="tab" href="#third" role="tab" aria-controls="third-tab" aria-selected="false">
+                                        <i class="icofont-car-alt-4"></i>
+                                        <span>Cars</span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item nav-item mx-5 my-3">
+                                    <a class="  nav-link inactive" id="four-tab" data-target="#rt-item_b_four" data-secondary="#rt-item_a_four"
+                                       data-toggle="tab" href="#four" role="tab" aria-controls="four-tab" aria-selected="false">
+                                        <i class="icofont-train-line"></i>
+                                        <span>Transfer</span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item nav-item mx-5 my-3">
+                                    <a class="nav-link inactive" id="fifth-tab" data-target="#rt-item_b_fifth" data-secondary="#rt-item_a_fifth"
+                                       data-toggle="tab" href="#fifth" role="tab" aria-controls="four-tab" aria-selected="false">
+                                        <i class="icofont-train-line"></i>
+                                        <span>Bus</span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item nav-item mx-5 my-3">
+                                    <a class="nav-link inactive" id="sixth-tab" data-target="#rt-item_b_sixth" data-secondary="#rt-item_a_sixth"
+                                       data-toggle="tab" href="#sixth" role="tab" aria-controls="sixth-tab" aria-selected="false">
+                                        <i class="icofont-train-line"></i>
+                                        <span>Group</span>
+                                    </a>
+                                </li>
+
+                                <li class="list-inline-item nav-item mx-5 my-3">
+                                    <a class="nav-link inactive" id="seventh-tab" data-target="#rt-item_b_seventh" data-secondary="#rt-item_a_seventh"
+                                       data-toggle="tab" href="#seventh" role="tab" aria-controls="seventh-tab" aria-selected="false">
+                                        <i class="icofont-train-line"></i>
+                                        <span>tours</span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item nav-item mx-5 my-3">
+                                    <a class="nav-link inactive" id="eigth-tab" data-target="#rt-item_b_eigth" data-secondary="#rt-item_a_eigth"
+                                       data-toggle="tab" href="#eigth" role="tab" aria-controls="eigth-tab" aria-selected="false">
+                                        <i class="icofont-train-line"></i>
+                                        <span>Insurance</span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item nav-item mx-5 my-3">
+                                    <a class="nav-link inactive" id="ninth-tab" data-target="#rt-item_b_ninth" data-secondary="#rt-item_a_ninth"
+                                       data-toggle="tab" href="#ninth" role="tab" aria-controls="ninth-tab" aria-selected="false">
+                                        <i class="icofont-train-line btn-top-margin-fix"></i>
+                                        <span>Special</span>
+                                        <span class="minus-top-margin">Ticket</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="explore">
                         <h1 class="wow fade-in-bottom" data-wow-duration="1s" data-wow-delay="0.5s">
                             Explore <br>
                             The World!
@@ -25,7 +96,7 @@
                             You can create a Custom Trip.Search Our Lowest Fares to <br>
                             Your Favorite Destinations.Find a better way to travel
                         </p>
-
+                        </div>
         <div class="rt-banner-searchbox standard-search wow fade-in-bottom" data-wow-duration="1s" data-wow-delay="1s">
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane show active" id="rt-item_a_first" role="tabpanel" aria-labelledby="rt-item_a_first">
@@ -45,7 +116,7 @@
                             </div>
                             <div class="dropdown form-check-inline rt-searchlink mr-md-5">
                                 <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">
+                                   aria-haspopup="true" aria-expanded="false">
                                     1 Adult
                                 </a>
 
@@ -57,7 +128,7 @@
                             </div><!-- ./dropdown -->
                             <div class="dropdown form-check-inline rt-searchlink">
                                 <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">
+                                   aria-haspopup="true" aria-expanded="false">
                                     Economy
                                 </a>
 
@@ -71,12 +142,12 @@
                         <div class="rt-input-group">
                             <div class="single-input  col-rt-in-3">
                                 <input list="dlist" type="text " class="banner-select form-control has-icon" placeholder="from" name="from" style="width: 100%">
-                                  <datalist id="dlist">
-                                      <option value="Alaska"></option>
-                                      <option value="Bahamas"></option>
-                                      <option value="Bermuda"></option>
-                                      <option value="Canada"></option>
-                                  </datalist>
+                                <datalist id="dlist">
+                                    <option value="Alaska"></option>
+                                    <option value="Bahamas"></option>
+                                    <option value="Bermuda"></option>
+                                    <option value="Canada"></option>
+                                </datalist>
                                 <span class="input-iconbadge"><img src="{{URL::asset('images/icons-image/s_icon_1.png')}}" alt="" draggable="false"></span>
                             </div><!-- /.single-input -->
                             <div class="single-input  col-rt-in-3">
@@ -87,16 +158,16 @@
                                     <option value="Bermuda"></option>
                                     <option value="Canada"></option>
                                 </datalist>
-{{--                                <select class="rt-selectactive banner-select" name="to" style="width: 100%">--}}
-{{--                                    <option value="1">To</option>--}}
-{{--                                    <option value="2">Alaska</option>--}}
-{{--                                    <option value="3">Bahamas</option>--}}
-{{--                                    <option value="4">Bermuda</option>--}}
-{{--                                    <option value="5">Canada</option>--}}
-{{--                                    <option value="6">Caribbean</option>--}}
-{{--                                    <option value="7">Europe</option>--}}
-{{--                                    <option value="8">Hawaii</option>--}}
-{{--                                </select>--}}
+                                {{--                                <select class="rt-selectactive banner-select" name="to" style="width: 100%">--}}
+                                {{--                                    <option value="1">To</option>--}}
+                                {{--                                    <option value="2">Alaska</option>--}}
+                                {{--                                    <option value="3">Bahamas</option>--}}
+                                {{--                                    <option value="4">Bermuda</option>--}}
+                                {{--                                    <option value="5">Canada</option>--}}
+                                {{--                                    <option value="6">Caribbean</option>--}}
+                                {{--                                    <option value="7">Europe</option>--}}
+                                {{--                                    <option value="8">Hawaii</option>--}}
+                                {{--                                </select>--}}
                                 <span class="input-iconbadge"><img src="{{URL::asset('images/icons-image/s_icon_2.png')}}" alt="" draggable="false"></span>
                             </div><!-- /.single-input -->
                             <div class="single-input  col-rt-in-3">
@@ -118,7 +189,7 @@
                         <div class="rt-radio-group">
                             <div class="dropdown form-check-inline rt-searchlink">
                                 <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink24" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">
+                                   aria-haspopup="true" aria-expanded="false">
                                     Guestes per room
                                 </a>
 
@@ -138,11 +209,11 @@
                                     <option value="Bermuda"></option>
                                     <option value="Canada"></option>
                                 </datalist>
-{{--                                <span class="input-iconbadge"><img src="{{URL::asset('images/icons-image/s_icon_1.png')}}" alt="" draggable="false"></span>--}}
+                                {{--                                <span class="input-iconbadge"><img src="{{URL::asset('images/icons-image/s_icon_1.png')}}" alt="" draggable="false"></span>--}}
                             </div><!-- /.single-input -->
                             <div class="single-input  col-rt-in-3">
-                               <input type="text" class="form-control rt-date-picker has-icon" placeholder="Depart">
-                               <span class="input-iconbadge"><i class="icofont-ui-calendar"></i></span>
+                                <input type="text" class="form-control rt-date-picker has-icon" placeholder="Depart">
+                                <span class="input-iconbadge"><i class="icofont-ui-calendar"></i></span>
                             </div><!-- /.single-input -->
                             <div class="single-input  col-rt-in-3">
                                 <input type="text" class="form-control rt-date-picker has-icon" placeholder="Return">
@@ -160,69 +231,254 @@
                 <div class="tab-pane  rtIncative" id="rt-item_a_third" role="tabpanel" aria-labelledby="rt-item_a_third">
                     <form action="#">
 
-                    <div class="rt-input-group">
-                        <div class="single-input  col-rt-in-3">
-                            <input list="dlist" type="text " class="banner-select form-control " placeholder="destination" name="destination" style="width: 100%">
-                            <datalist id="dlist">
-                                <option value="Alaska"></option>
-                                <option value="Bahamas"></option>
-                                <option value="Bermuda"></option>
-                                <option value="Canada"></option>
-                            </datalist>
-{{--                            <span class="input-iconbadge"><img src="{{URL::asset('images/icons-image/s_icon_1.png')}}" alt="" draggable="false"></span>--}}
-                        </div><!-- /.single-input -->
-                        <div class="single-input  col-rt-in-3">
-                            <input type="text" class="form-control rt-date-picker has-icon" placeholder="Depart">
-                            <span class="input-iconbadge"><i class="icofont-ui-calendar"></i></span>
-                        </div><!-- /.single-input -->
-                        <div class="single-input  col-rt-in-3">
-                            <input type="text" class="form-control rt-date-picker has-icon" placeholder="Return">
-                            <span class="input-iconbadge"><i class="icofont-ui-calendar"></i></span>
-                        </div><!-- /.single-input -->
-                        <div class="single-input  col-rt-in-3">
-                            <input type="text" class="form-control" placeholder="keywords(optional)">
-                        </div><!-- /.single-input -->
-                        <div class="single-input  col-rt-in-1">
-                            <button type="submit"><i class="icofont-search"></i></button>
-                        </div><!-- /.single-input -->
-                    </div><!-- /.rt-input-group -->
+                        <div class="rt-input-group">
+                            <div class="single-input  col-rt-in-3">
+                                <input list="dlist" type="text " class="banner-select form-control " placeholder="destination" name="destination" style="width: 100%">
+                                <datalist id="dlist">
+                                    <option value="Alaska"></option>
+                                    <option value="Bahamas"></option>
+                                    <option value="Bermuda"></option>
+                                    <option value="Canada"></option>
+                                </datalist>
+                                {{--                            <span class="input-iconbadge"><img src="{{URL::asset('images/icons-image/s_icon_1.png')}}" alt="" draggable="false"></span>--}}
+                            </div><!-- /.single-input -->
+                            <div class="single-input  col-rt-in-3">
+                                <input type="text" class="form-control rt-date-picker has-icon" placeholder="Depart">
+                                <span class="input-iconbadge"><i class="icofont-ui-calendar"></i></span>
+                            </div><!-- /.single-input -->
+                            <div class="single-input  col-rt-in-3">
+                                <input type="text" class="form-control rt-date-picker has-icon" placeholder="Return">
+                                <span class="input-iconbadge"><i class="icofont-ui-calendar"></i></span>
+                            </div><!-- /.single-input -->
+                            <div class="single-input  col-rt-in-3">
+                                <input type="text" class="form-control" placeholder="keywords(optional)">
+                            </div><!-- /.single-input -->
+                            <div class="single-input  col-rt-in-1">
+                                <button type="submit"><i class="icofont-search"></i></button>
+                            </div><!-- /.single-input -->
+                        </div><!-- /.rt-input-group -->
                     </form><!-- ./ form -->
                 </div>
                 <div class="tab-pane  rtIncative" id="rt-item_a_four" role="tabpanel" aria-labelledby="rt-item_a_four">
                     <form action="#">
-                    <div class="rt-input-group">
+                        <div class="rt-input-group">
 
-                        <div class="single-input  col-rt-in-3">
-                            <input type="text" list="tlist" placeholder="To" class=" banner-select form-control " name="to" style="width: 100%">
-                            <datalist id="tlist">
-                                <option value="Alaska"></option>
-                                <option value="Bahamas"></option>
-                                <option value="Bermuda"></option>
-                                <option value="Canada"></option>
-                            </datalist>
-                            {{--                                <select class="rt-selectactive banner-select" name="to" style="width: 100%">--}}
-                            {{--                                    <option value="1">To</option>--}}
-                            {{--                                    <option value="2">Alaska</option>--}}
-                            {{--                                    <option value="3">Bahamas</option>--}}
-                            {{--                                    <option value="4">Bermuda</option>--}}
-                            {{--                                    <option value="5">Canada</option>--}}
-                            {{--                                    <option value="6">Caribbean</option>--}}
-                            {{--                                    <option value="7">Europe</option>--}}
-                            {{--                                    <option value="8">Hawaii</option>--}}
-                            {{--                                </select>--}}
+                            <div class="single-input  col-rt-in-3">
+                                <input type="text" list="tlist" placeholder="To" class=" banner-select form-control " name="to" style="width: 100%">
+                                <datalist id="tlist">
+                                    <option value="Alaska"></option>
+                                    <option value="Bahamas"></option>
+                                    <option value="Bermuda"></option>
+                                    <option value="Canada"></option>
+                                </datalist>
+                                {{--                                <select class="rt-selectactive banner-select" name="to" style="width: 100%">--}}
+                                {{--                                    <option value="1">To</option>--}}
+                                {{--                                    <option value="2">Alaska</option>--}}
+                                {{--                                    <option value="3">Bahamas</option>--}}
+                                {{--                                    <option value="4">Bermuda</option>--}}
+                                {{--                                    <option value="5">Canada</option>--}}
+                                {{--                                    <option value="6">Caribbean</option>--}}
+                                {{--                                    <option value="7">Europe</option>--}}
+                                {{--                                    <option value="8">Hawaii</option>--}}
+                                {{--                                </select>--}}
 
-                        </div>
-                        <div class="single-input  col-rt-in-3">
-                            <input type="text" class="form-control rt-date-picker has-icon" placeholder="Depart">
-                            <span class="input-iconbadge"><i class="icofont-ui-calendar"></i></span>
-                        </div><!-- /.single-input -->
-                        <div class="single-input  col-rt-in-3">
-                            <input type="text" class="form-control" placeholder="train no( opt)">
-                        </div><!-- /.single-input -->
-                        <div class="single-input  col-rt-in-1">
-                            <button type="submit"><i class="icofont-search"></i></button>
-                        </div><!-- /.single-input -->
-                    </div><!-- /.rt-input-group -->
+                            </div>
+                            <div class="single-input  col-rt-in-3">
+                                <input type="text" class="form-control rt-date-picker has-icon" placeholder="Depart">
+                                <span class="input-iconbadge"><i class="icofont-ui-calendar"></i></span>
+                            </div><!-- /.single-input -->
+                            <div class="single-input  col-rt-in-3">
+                                <input type="text" class="form-control" placeholder="train no( opt)">
+                            </div><!-- /.single-input -->
+                            <div class="single-input  col-rt-in-1">
+                                <button type="submit"><i class="icofont-search"></i></button>
+                            </div><!-- /.single-input -->
+                        </div><!-- /.rt-input-group -->
+                    </form><!-- ./ form -->
+                </div>
+                <div class="tab-pane  rtIncative" id="rt-item_a_fifth" role="tabpanel" aria-labelledby="rt-item_a_fifth">
+                    <form action="#">
+                        <div class="rt-input-group">
+
+                            <div class="single-input  col-rt-in-3">
+                                <input type="text" list="tlist" placeholder="To" class=" banner-select form-control " name="to" style="width: 100%">
+                                <datalist id="tlist">
+                                    <option value="Alaska"></option>
+                                    <option value="Bahamas"></option>
+                                    <option value="Bermuda"></option>
+                                    <option value="Canada"></option>
+                                </datalist>
+                                {{--                                <select class="rt-selectactive banner-select" name="to" style="width: 100%">--}}
+                                {{--                                    <option value="1">To</option>--}}
+                                {{--                                    <option value="2">Alaska</option>--}}
+                                {{--                                    <option value="3">Bahamas</option>--}}
+                                {{--                                    <option value="4">Bermuda</option>--}}
+                                {{--                                    <option value="5">Canada</option>--}}
+                                {{--                                    <option value="6">Caribbean</option>--}}
+                                {{--                                    <option value="7">Europe</option>--}}
+                                {{--                                    <option value="8">Hawaii</option>--}}
+                                {{--                                </select>--}}
+
+                            </div>
+                            <div class="single-input  col-rt-in-3">
+                                <input type="text" class="form-control rt-date-picker has-icon" placeholder="Depart">
+                                <span class="input-iconbadge"><i class="icofont-ui-calendar"></i></span>
+                            </div><!-- /.single-input -->
+                            <div class="single-input  col-rt-in-3">
+                                <input type="text" class="form-control" placeholder="train no( opt)">
+                            </div><!-- /.single-input -->
+                            <div class="single-input  col-rt-in-1">
+                                <button type="submit"><i class="icofont-search"></i></button>
+                            </div><!-- /.single-input -->
+                        </div><!-- /.rt-input-group -->
+                    </form><!-- ./ form -->
+                </div>
+                <div class="tab-pane  rtIncative" id="rt-item_a_sixth" role="tabpanel" aria-labelledby="rt-item_a_sixth">
+                    <form action="#">
+                        <div class="rt-input-group">
+
+                            <div class="single-input  col-rt-in-3">
+                                <input type="text" list="tlist" placeholder="To" class=" banner-select form-control " name="to" style="width: 100%">
+                                <datalist id="tlist">
+                                    <option value="Alaska"></option>
+                                    <option value="Bahamas"></option>
+                                    <option value="Bermuda"></option>
+                                    <option value="Canada"></option>
+                                </datalist>
+                                {{--                                <select class="rt-selectactive banner-select" name="to" style="width: 100%">--}}
+                                {{--                                    <option value="1">To</option>--}}
+                                {{--                                    <option value="2">Alaska</option>--}}
+                                {{--                                    <option value="3">Bahamas</option>--}}
+                                {{--                                    <option value="4">Bermuda</option>--}}
+                                {{--                                    <option value="5">Canada</option>--}}
+                                {{--                                    <option value="6">Caribbean</option>--}}
+                                {{--                                    <option value="7">Europe</option>--}}
+                                {{--                                    <option value="8">Hawaii</option>--}}
+                                {{--                                </select>--}}
+
+                            </div>
+                            <div class="single-input  col-rt-in-3">
+                                <input type="text" class="form-control rt-date-picker has-icon" placeholder="Depart">
+                                <span class="input-iconbadge"><i class="icofont-ui-calendar"></i></span>
+                            </div><!-- /.single-input -->
+                            <div class="single-input  col-rt-in-3">
+                                <input type="text" class="form-control" placeholder="train no( opt)">
+                            </div><!-- /.single-input -->
+                            <div class="single-input  col-rt-in-1">
+                                <button type="submit"><i class="icofont-search"></i></button>
+                            </div><!-- /.single-input -->
+                        </div><!-- /.rt-input-group -->
+                    </form><!-- ./ form -->
+                </div>
+                <div class="tab-pane  rtIncative" id="rt-item_a_seventh" role="tabpanel" aria-labelledby="rt-item_a_seventh">
+                    <form action="#">
+                        <div class="rt-input-group">
+
+                            <div class="single-input  col-rt-in-3">
+                                <input type="text" list="tlist" placeholder="To" class=" banner-select form-control " name="to" style="width: 100%">
+                                <datalist id="tlist">
+                                    <option value="Alaska"></option>
+                                    <option value="Bahamas"></option>
+                                    <option value="Bermuda"></option>
+                                    <option value="Canada"></option>
+                                </datalist>
+                                {{--                                <select class="rt-selectactive banner-select" name="to" style="width: 100%">--}}
+                                {{--                                    <option value="1">To</option>--}}
+                                {{--                                    <option value="2">Alaska</option>--}}
+                                {{--                                    <option value="3">Bahamas</option>--}}
+                                {{--                                    <option value="4">Bermuda</option>--}}
+                                {{--                                    <option value="5">Canada</option>--}}
+                                {{--                                    <option value="6">Caribbean</option>--}}
+                                {{--                                    <option value="7">Europe</option>--}}
+                                {{--                                    <option value="8">Hawaii</option>--}}
+                                {{--                                </select>--}}
+
+                            </div>
+                            <div class="single-input  col-rt-in-3">
+                                <input type="text" class="form-control rt-date-picker has-icon" placeholder="Depart">
+                                <span class="input-iconbadge"><i class="icofont-ui-calendar"></i></span>
+                            </div><!-- /.single-input -->
+                            <div class="single-input  col-rt-in-3">
+                                <input type="text" class="form-control" placeholder="train no( opt)">
+                            </div><!-- /.single-input -->
+                            <div class="single-input  col-rt-in-1">
+                                <button type="submit"><i class="icofont-search"></i></button>
+                            </div><!-- /.single-input -->
+                        </div><!-- /.rt-input-group -->
+                    </form><!-- ./ form -->
+                </div>
+                <div class="tab-pane  rtIncative" id="rt-item_a_eigth" role="tabpanel" aria-labelledby="rt-item_a_eigth">
+                    <form action="#">
+                        <div class="rt-input-group">
+
+                            <div class="single-input  col-rt-in-3">
+                                <input type="text" list="tlist" placeholder="To" class=" banner-select form-control " name="to" style="width: 100%">
+                                <datalist id="tlist">
+                                    <option value="Alaska"></option>
+                                    <option value="Bahamas"></option>
+                                    <option value="Bermuda"></option>
+                                    <option value="Canada"></option>
+                                </datalist>
+                                {{--                                <select class="rt-selectactive banner-select" name="to" style="width: 100%">--}}
+                                {{--                                    <option value="1">To</option>--}}
+                                {{--                                    <option value="2">Alaska</option>--}}
+                                {{--                                    <option value="3">Bahamas</option>--}}
+                                {{--                                    <option value="4">Bermuda</option>--}}
+                                {{--                                    <option value="5">Canada</option>--}}
+                                {{--                                    <option value="6">Caribbean</option>--}}
+                                {{--                                    <option value="7">Europe</option>--}}
+                                {{--                                    <option value="8">Hawaii</option>--}}
+                                {{--                                </select>--}}
+
+                            </div>
+                            <div class="single-input  col-rt-in-3">
+                                <input type="text" class="form-control rt-date-picker has-icon" placeholder="Depart">
+                                <span class="input-iconbadge"><i class="icofont-ui-calendar"></i></span>
+                            </div><!-- /.single-input -->
+                            <div class="single-input  col-rt-in-3">
+                                <input type="text" class="form-control" placeholder="train no( opt)">
+                            </div><!-- /.single-input -->
+                            <div class="single-input  col-rt-in-1">
+                                <button type="submit"><i class="icofont-search"></i></button>
+                            </div><!-- /.single-input -->
+                        </div><!-- /.rt-input-group -->
+                    </form><!-- ./ form -->
+                </div>
+                <div class="tab-pane  rtIncative" id="rt-item_a_ninth" role="tabpanel" aria-labelledby="rt-item_a_ninth">
+                    <form action="#">
+                        <div class="rt-input-group">
+
+                            <div class="single-input  col-rt-in-3">
+                                <input type="text" list="tlist" placeholder="To" class=" banner-select form-control " name="to" style="width: 100%">
+                                <datalist id="tlist">
+                                    <option value="Alaska"></option>
+                                    <option value="Bahamas"></option>
+                                    <option value="Bermuda"></option>
+                                    <option value="Canada"></option>
+                                </datalist>
+                                {{--                                <select class="rt-selectactive banner-select" name="to" style="width: 100%">--}}
+                                {{--                                    <option value="1">To</option>--}}
+                                {{--                                    <option value="2">Alaska</option>--}}
+                                {{--                                    <option value="3">Bahamas</option>--}}
+                                {{--                                    <option value="4">Bermuda</option>--}}
+                                {{--                                    <option value="5">Canada</option>--}}
+                                {{--                                    <option value="6">Caribbean</option>--}}
+                                {{--                                    <option value="7">Europe</option>--}}
+                                {{--                                    <option value="8">Hawaii</option>--}}
+                                {{--                                </select>--}}
+
+                            </div>
+                            <div class="single-input  col-rt-in-3">
+                                <input type="text" class="form-control rt-date-picker has-icon" placeholder="Depart">
+                                <span class="input-iconbadge"><i class="icofont-ui-calendar"></i></span>
+                            </div><!-- /.single-input -->
+                            <div class="single-input  col-rt-in-3">
+                                <input type="text" class="form-control" placeholder="train no( opt)">
+                            </div><!-- /.single-input -->
+                            <div class="single-input  col-rt-in-1">
+                                <button type="submit"><i class="icofont-search"></i></button>
+                            </div><!-- /.single-input -->
+                        </div><!-- /.rt-input-group -->
                     </form><!-- ./ form -->
                 </div>
             </div>
@@ -245,55 +501,61 @@
                     <span>Hotels</span>
                 </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item px-3">
                 <a class="nav-link inactive" id="third-tab" data-target="#rt-item_b_thrid" data-secondary="#rt-item_a_third"
                     data-toggle="tab" href="#third" role="tab" aria-controls="third-tab" aria-selected="false">
-                    <i class="icofont-car-alt-4"></i>
+                    <i class="icofont-car-alt-4 btn-top-margin-fix"></i>
                     <span>Cars</span>
+                    <span class="minus-top-margin">Rental</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link inactive" id="four-tab" data-target="#rt-item_b_four" data-secondary="#rt-item_a_four"
                     data-toggle="tab" href="#four" role="tab" aria-controls="four-tab" aria-selected="false">
                     <i class="icofont-train-line"></i>
-                    <span>Trains</span>
+                    <span>Transfer</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link inactive" id="four-tab" data-target="#rt-item_b_fifth" data-secondary="#rt-item_a_fifth"
+                    data-toggle="tab" href="#fifth" role="tab" aria-controls="fifth-tab" aria-selected="false">
+                    <i class="icofont-train-line"></i>
+                    <span>Bus</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link inactive" id="sixth-tab" data-target="#rt-item_b_sixth" data-secondary="#rt-item_a_sixth"
+                    data-toggle="tab" href="#sixth" role="tab" aria-controls="four-tab" aria-selected="false">
+                    <i class="icofont-train-line"></i>
+                    <span>Group</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link inactive" id="seventh-tab" data-target="#rt-item_b_seventh" data-secondary="#rt-item_a_seventh"
+                    data-toggle="tab" href="#seventh" role="tab" aria-controls="seventh-tab" aria-selected="false">
+                    <i class="icofont-train-line"></i>
+                    <span>tours</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link inactive" id="eigth-tab" data-target="#rt-item_b_eigth" data-secondary="#rt-item_a_eigth"
+                    data-toggle="tab" href="#eigth" role="tab" aria-controls="eigth-tab" aria-selected="false">
+                    <i class="icofont-train-line"></i>
+                    <span>Insurance</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link inactive" id="ninth-tab" data-target="#rt-item_b_four" data-secondary="#rt-item_a_ninth"
+                    data-toggle="tab" href="#ninth" role="tab" aria-controls="ninth-tab" aria-selected="false">
+                    <i class="icofont-train-line btn-top-margin-fix"></i>
+                    <span>Special</span>
+                    <span class="minus-top-margin">Ticket</span>
                 </a>
             </li>
         </ul>
 </div>
-                        <div class="bottom-bar b-bar">
-        <ul class="nav serachnavs wow fade-in-bottom justify-content-center mx-auto list-inline" id="rtMultiTab" role="tablist" data-wow-duration="0.5s" data-wow-delay="1.5s">
-            <li class="list-inline-item nav-item mx-5 my-3">
-                <a class="nav-link active px-3" id="first-tab2" data-target="#rt-item_b_first" data-secondary="#rt-item_a_first"
-                    data-toggle="tab" href="#first" role="tab" aria-controls="first-tab" aria-selected="false">
-                    <i class="icofont-airplane"></i>
-                    <span>Flights</span>
-                </a>
-            </li>
-            <li class="list-inline-item nav-item mx-5 my-3">
-                <a class="nav-link inactive px-3" id="second-tab2" data-target="#rt-item_b_second" data-secondary="#rt-item_a_second"
-                    data-toggle="tab" href="#second" role="tab" aria-controls="second-tab" aria-selected="true">
 
-                    <i class="icofont-hotel"></i>
-                    <span>Hotels</span>
-                </a>
-            </li>
-            <li class=" list-inline-item nav-item mx-5 my-3">
-                <a class="nav-link inactive" id="third-tab2" data-target="#rt-item_b_thrid" data-secondary="#rt-item_a_third"
-                    data-toggle="tab" href="#third" role="tab" aria-controls="third-tab" aria-selected="false">
-                    <i class="icofont-car-alt-4"></i>
-                    <span>Cars</span>
-                </a>
-            </li>
-            <li class="list-inline-item nav-item mx-5 my-3">
-                <a class="  nav-link inactive" id="four-tab2" data-target="#rt-item_b_four" data-secondary="#rt-item_a_four"
-                    data-toggle="tab" href="#four" role="tab" aria-controls="four-tab" aria-selected="false">
-                    <i class="icofont-train-line"></i>
-                    <span>Trains</span>
-                </a>
-            </li>
-        </ul>
-                        </div>
                     </div><!-- end banner content -->
                 </div><!-- end column -->
             </div><!-- end row -->

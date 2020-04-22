@@ -15,8 +15,9 @@
     <div class="container">
         <div class="row rt-breadcump-height with-logn-height">
             <div class="col-12">
+
                 <div class="breadcrumbs-content">
-                    <h3>Flight</h3>
+                    <h3>{{$page}}</h3>
                     <div class="breadcrumbs">
                         <span class="divider"><i class="icofont-home"></i></span>
                         <a href="#" title="Home">Home</a>
@@ -32,10 +33,80 @@
     <div class="bredcump-search">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div class="rt-fix rt-banner-searchbox flight-search wow fade-in-bottom" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="col-lg-10 mx-auto ">
+                    <div class="bottom-bar b-bar">
+                        <ul class="nav nav-scroll serachnavs scroll wow fade-in-bottom justify-content-center mx-auto list-inline" id="rtMultiTab" role="tablist" data-wow-duration="0.5s" data-wow-delay="1.5s">
+                            <li class="list-inline-item nav-item mx-5 my-3">
+                                <a class="nav-link {{$page=='flight'?"active":"inactive"}} px-3" id="first-tab" data-target="#rt-item_b_first" data-secondary="#rt-item_a_first"
+                                   data-toggle="tab" href="#first" role="tab" aria-controls="first-tab" aria-selected="false">
+                                    <i class="icofont-airplane"></i>
+                                    <span>Flights</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item nav-item mx-5 my-3">
+                                <a class="nav-link {{$page=='hotel'?"active":"inactive"}} px-3" id="second-tab" data-target="#rt-item_b_second" data-secondary="#rt-item_a_second"
+                                   data-toggle="tab" href="#second" role="tab" aria-controls="second-tab" aria-selected="true">
+
+                                    <i class="icofont-hotel"></i>
+                                    <span>Hotels</span>
+                                </a>
+                            </li>
+                            <li class=" list-inline-item nav-item mx-5 my-3">
+                                <a class="nav-link {{$page=='car'?"active":"inactive"}}" id="third-tab" data-target="#rt-item_b_thrid" data-secondary="#rt-item_a_third"
+                                   data-toggle="tab" href="#third" role="tab" aria-controls="third-tab" aria-selected="false">
+                                    <i class="icofont-car-alt-4"></i>
+                                    <span>Cars</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item nav-item mx-5 my-3">
+                                <a class="  nav-link {{$page=='transfer'?"active":"inactive"}}" id="four-tab" data-target="#rt-item_b_four" data-secondary="#rt-item_a_four"
+                                   data-toggle="tab" href="#four" role="tab" aria-controls="four-tab" aria-selected="false">
+                                    <i class="icofont-train-line"></i>
+                                    <span>Transfer</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item nav-item mx-5 my-3">
+                                <a class="nav-link {{$page=='bus'?"active":"inactive"}}" id="fifth-tab" data-target="#rt-item_b_fifth" data-secondary="#rt-item_a_fifth"
+                                   data-toggle="tab" href="#fifth" role="tab" aria-controls="fifth-tab" aria-selected="false">
+                                    <i class="icofont-train-line"></i>
+                                    <span>Bus</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item nav-item mx-5 my-3">
+                                <a class="nav-link {{$page=='group'?"active":"inactive"}}" id="sixth-tab" data-target="#rt-item_b_sixth" data-secondary="#rt-item_a_sixth"
+                                   data-toggle="tab" href="#sixth" role="tab" aria-controls="sixth-tab" aria-selected="false">
+                                    <i class="icofont-train-line"></i>
+                                    <span>Group</span>
+                                </a>
+                            </li>
+
+                            <li class="list-inline-item nav-item mx-5 my-3">
+                                <a class="nav-link {{$page=='tour'?"active":"inactive"}}" id="seventh-tab" data-target="#rt-item_b_seventh" data-secondary="#rt-item_a_seventh"
+                                   data-toggle="tab" href="#seventh" role="tab" aria-controls="seventh-tab" aria-selected="false">
+                                    <i class="icofont-train-line"></i>
+                                    <span>tours</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item nav-item mx-5 my-3">
+                                <a class="nav-link {{$page=='insurance'?"active":"inactive"}}" id="eigth-tab" data-target="#rt-item_b_eigth" data-secondary="#rt-item_a_eigth"
+                                   data-toggle="tab" href="#eigth" role="tab" aria-controls="four-tab" aria-selected="false">
+                                    <i class="icofont-train-line"></i>
+                                    <span>Insurance</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item nav-item mx-5 my-3">
+                                <a class="nav-link {{$page=='special'?"active":"inactive"}}" id="ninth-tab" data-target="#rt-item_b_ninth" data-secondary="#rt-item_a_ninth"
+                                   data-toggle="tab" href="#ninth" role="tab" aria-controls="ninth-tab" aria-selected="false">
+                                    <i class="icofont-train-line btn-top-margin-fix"></i>
+                                    <span>Special</span>
+                                    <span class="minus-top-margin">Ticket</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class=" rt-banner-searchbox flight-search wow fade-in-bottom" data-wow-duration="1s" data-wow-delay="1s">
                         <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane show active" id="rt-item_a_first" role="tabpanel" aria-labelledby="rt-item_a_first">
+                            <div class="tab-pane {{$page=='flight'?"show active":"rtIncative"}}" id="rt-item_a_first" role="tabpanel" aria-labelledby="rt-item_a_first">
                                <form action="#">
                                    <div class="rt-radio-group">
                                        <div class="custom-control custom-radio custom-control-inline">
@@ -142,7 +213,7 @@
                                    </div><!-- /.rt-input-group -->
                                </form><!-- ./ form -->
                             </div>
-                            <div class="tab-pane  rtIncative" id="rt-item_a_second" role="tabpanel" aria-labelledby="rt-item_a_second">
+                            <div class="tab-pane  {{$page=='hotel'?"show active":"rtIncative"}}" id="rt-item_a_second" role="tabpanel" aria-labelledby="rt-item_a_second">
                                  <form action="#">
                                      <div class="rt-radio-group">
                                          <div class="dropdown form-check-inline rt-searchlink">
@@ -188,7 +259,7 @@
                                      </div><!-- /.rt-input-group -->
                                  </form><!-- ./ form -->
                             </div>
-                            <div class="tab-pane  rtIncative" id="rt-item_a_third" role="tabpanel" aria-labelledby="rt-item_a_third">
+                            <div class="tab-pane  {{$page=='car'?"show active":"rtIncative"}}" id="rt-item_a_third" role="tabpanel" aria-labelledby="rt-item_a_third">
                                 <form action="#">
 
                                     <div class="rt-input-group">
@@ -221,7 +292,7 @@
                                     </div><!-- /.rt-input-group -->
                                 </form><!-- ./ form -->
                             </div>
-                            <div class="tab-pane  rtIncative" id="rt-item_a_four" role="tabpanel" aria-labelledby="rt-item_a_four">
+                            <div class="tab-pane  {{$page=='transfer'?"show active":"rtIncative"}}" id="rt-item_a_four" role="tabpanel" aria-labelledby="rt-item_a_four">
                                 <form action="#">
                                     <div class="rt-input-group">
                                         <div class="single-input  col-rt-in-3">
@@ -258,46 +329,199 @@
                                     </div><!-- /.rt-input-group -->
                                 </form><!-- ./ form -->
                             </div>
+                            <div class="tab-pane  {{$page=='bus'?"show active":"rtIncative"}}" id="rt-item_a_fifth" role="tabpanel" aria-labelledby="rt-item_a_fifth">
+                                <form action="#">
+                                    <div class="rt-input-group">
+                                        <div class="single-input  col-rt-in-3">
+                                            <input list="dlist" type="text " class="banner-select form-control " placeholder="from" name="from" style="width: 100%">
+                                            <datalist id="dlist">
+                                                <option value="Alaska"></option>
+                                                <option value="Bahamas"></option>
+                                                <option value="Bermuda"></option>
+                                                <option value="Canada"></option>
+                                            </datalist>
+{{--                                            <span class="input-iconbadge"><img src="{{URL::asset('images/icons-image/s_icon_1.png')}}" alt="" draggable="false"></span>--}}
+                                        </div>
+                                        <div class="single-input  col-rt-in-3">
+                                            <input list="tlist" type="text " class="banner-select form-control " placeholder="to" name="to" style="width: 100%">
+                                            <datalist id="tlist">
+                                                <option value="Alaska"></option>
+                                                <option value="Bahamas"></option>
+                                                <option value="Bermuda"></option>
+                                                <option value="Canada"></option>
+                                            </datalist>
+{{--                                            <span class="input-iconbadge"><img src="{{URL::asset('images/icons-image/s_icon_1.png')}}" alt="" draggable="false"></span>--}}
+                                        </div>
+                                        <div class="single-input  col-rt-in-3">
+                                            <input type="text" class="form-control rt-date-picker has-icon"
+                                                placeholder="Depart">
+                                            <span class="input-iconbadge"><i class="icofont-ui-calendar"></i></span>
+                                        </div><!-- /.single-input -->
+                                        <div class="single-input  col-rt-in-3">
+                                            <input type="text" class="form-control" placeholder="train no( opt)">
+                                        </div><!-- /.single-input -->
+                                        <div class="single-input  col-rt-in-1">
+                                            <button type="submit"><i class="icofont-search"></i></button>
+                                        </div><!-- /.single-input -->
+                                    </div><!-- /.rt-input-group -->
+                                </form><!-- ./ form -->
+                            </div>
+                            <div class="tab-pane  {{$page=='group'?"show active":"rtIncative"}}" id="rt-item_a_sixth" role="tabpanel" aria-labelledby="rt-item_a_sixth">
+                                <form action="#">
+                                    <div class="rt-input-group">
+                                        <div class="single-input  col-rt-in-3">
+                                            <input list="dlist" type="text " class="banner-select form-control " placeholder="from" name="from" style="width: 100%">
+                                            <datalist id="dlist">
+                                                <option value="Alaska"></option>
+                                                <option value="Bahamas"></option>
+                                                <option value="Bermuda"></option>
+                                                <option value="Canada"></option>
+                                            </datalist>
+{{--                                            <span class="input-iconbadge"><img src="{{URL::asset('images/icons-image/s_icon_1.png')}}" alt="" draggable="false"></span>--}}
+                                        </div>
+                                        <div class="single-input  col-rt-in-3">
+                                            <input list="tlist" type="text " class="banner-select form-control " placeholder="to" name="to" style="width: 100%">
+                                            <datalist id="tlist">
+                                                <option value="Alaska"></option>
+                                                <option value="Bahamas"></option>
+                                                <option value="Bermuda"></option>
+                                                <option value="Canada"></option>
+                                            </datalist>
+{{--                                            <span class="input-iconbadge"><img src="{{URL::asset('images/icons-image/s_icon_1.png')}}" alt="" draggable="false"></span>--}}
+                                        </div>
+                                        <div class="single-input  col-rt-in-3">
+                                            <input type="text" class="form-control rt-date-picker has-icon"
+                                                placeholder="Depart">
+                                            <span class="input-iconbadge"><i class="icofont-ui-calendar"></i></span>
+                                        </div><!-- /.single-input -->
+                                        <div class="single-input  col-rt-in-3">
+                                            <input type="text" class="form-control" placeholder="train no( opt)">
+                                        </div><!-- /.single-input -->
+                                        <div class="single-input  col-rt-in-1">
+                                            <button type="submit"><i class="icofont-search"></i></button>
+                                        </div><!-- /.single-input -->
+                                    </div><!-- /.rt-input-group -->
+                                </form><!-- ./ form -->
+                            </div>
+                            <div class="tab-pane  {{$page=='tour'?"show active":"rtIncative"}}" id="rt-item_a_seventh" role="tabpanel" aria-labelledby="rt-item_a_seventh">
+                                <form action="#">
+                                    <div class="rt-input-group">
+                                        <div class="single-input  col-rt-in-3">
+                                            <input list="dlist" type="text " class="banner-select form-control " placeholder="from" name="from" style="width: 100%">
+                                            <datalist id="dlist">
+                                                <option value="Alaska"></option>
+                                                <option value="Bahamas"></option>
+                                                <option value="Bermuda"></option>
+                                                <option value="Canada"></option>
+                                            </datalist>
+{{--                                            <span class="input-iconbadge"><img src="{{URL::asset('images/icons-image/s_icon_1.png')}}" alt="" draggable="false"></span>--}}
+                                        </div>
+                                        <div class="single-input  col-rt-in-3">
+                                            <input list="tlist" type="text " class="banner-select form-control " placeholder="to" name="to" style="width: 100%">
+                                            <datalist id="tlist">
+                                                <option value="Alaska"></option>
+                                                <option value="Bahamas"></option>
+                                                <option value="Bermuda"></option>
+                                                <option value="Canada"></option>
+                                            </datalist>
+{{--                                            <span class="input-iconbadge"><img src="{{URL::asset('images/icons-image/s_icon_1.png')}}" alt="" draggable="false"></span>--}}
+                                        </div>
+                                        <div class="single-input  col-rt-in-3">
+                                            <input type="text" class="form-control rt-date-picker has-icon"
+                                                placeholder="Depart">
+                                            <span class="input-iconbadge"><i class="icofont-ui-calendar"></i></span>
+                                        </div><!-- /.single-input -->
+                                        <div class="single-input  col-rt-in-3">
+                                            <input type="text" class="form-control" placeholder="train no( opt)">
+                                        </div><!-- /.single-input -->
+                                        <div class="single-input  col-rt-in-1">
+                                            <button type="submit"><i class="icofont-search"></i></button>
+                                        </div><!-- /.single-input -->
+                                    </div><!-- /.rt-input-group -->
+                                </form><!-- ./ form -->
+                            </div>
+                            <div class="tab-pane  {{$page=='insurance'?"show active":"rtIncative"}}" id="rt-item_a_eigth" role="tabpanel" aria-labelledby="rt-item_a_eigth">
+                                <form action="#">
+                                    <div class="rt-input-group">
+                                        <div class="single-input  col-rt-in-3">
+                                            <input list="dlist" type="text " class="banner-select form-control " placeholder="from" name="from" style="width: 100%">
+                                            <datalist id="dlist">
+                                                <option value="Alaska"></option>
+                                                <option value="Bahamas"></option>
+                                                <option value="Bermuda"></option>
+                                                <option value="Canada"></option>
+                                            </datalist>
+                                            {{--                                            <span class="input-iconbadge"><img src="{{URL::asset('images/icons-image/s_icon_1.png')}}" alt="" draggable="false"></span>--}}
+                                        </div>
+                                        <div class="single-input  col-rt-in-3">
+                                            <input list="tlist" type="text " class="banner-select form-control " placeholder="to" name="to" style="width: 100%">
+                                            <datalist id="tlist">
+                                                <option value="Alaska"></option>
+                                                <option value="Bahamas"></option>
+                                                <option value="Bermuda"></option>
+                                                <option value="Canada"></option>
+                                            </datalist>
+                                            {{--                                            <span class="input-iconbadge"><img src="{{URL::asset('images/icons-image/s_icon_1.png')}}" alt="" draggable="false"></span>--}}
+                                        </div>
+                                        <div class="single-input  col-rt-in-3">
+                                            <input type="text" class="form-control rt-date-picker has-icon"
+                                                   placeholder="Depart">
+                                            <span class="input-iconbadge"><i class="icofont-ui-calendar"></i></span>
+                                        </div><!-- /.single-input -->
+                                        <div class="single-input  col-rt-in-3">
+                                            <input type="text" class="form-control" placeholder="train no( opt)">
+                                        </div><!-- /.single-input -->
+                                        <div class="single-input  col-rt-in-1">
+                                            <button type="submit"><i class="icofont-search"></i></button>
+                                        </div><!-- /.single-input -->
+                                    </div><!-- /.rt-input-group -->
+                                </form><!-- ./ form -->
+                            </div>
+                            <div class="tab-pane  {{$page=='special'?"show active":"rtIncative"}}" id="rt-item_a_ninth" role="tabpanel" aria-labelledby="rt-item_a_ninth">
+                                <form action="#">
+                                    <div class="rt-input-group">
+                                        <div class="single-input  col-rt-in-3">
+                                            <input list="dlist" type="text " class="banner-select form-control " placeholder="from" name="from" style="width: 100%">
+                                            <datalist id="dlist">
+                                                <option value="Alaska"></option>
+                                                <option value="Bahamas"></option>
+                                                <option value="Bermuda"></option>
+                                                <option value="Canada"></option>
+                                            </datalist>
+{{--                                            <span class="input-iconbadge"><img src="{{URL::asset('images/icons-image/s_icon_1.png')}}" alt="" draggable="false"></span>--}}
+                                        </div>
+                                        <div class="single-input  col-rt-in-3">
+                                            <input list="tlist" type="text " class="banner-select form-control " placeholder="to" name="to" style="width: 100%">
+                                            <datalist id="tlist">
+                                                <option value="Alaska"></option>
+                                                <option value="Bahamas"></option>
+                                                <option value="Bermuda"></option>
+                                                <option value="Canada"></option>
+                                            </datalist>
+{{--                                            <span class="input-iconbadge"><img src="{{URL::asset('images/icons-image/s_icon_1.png')}}" alt="" draggable="false"></span>--}}
+                                        </div>
+                                        <div class="single-input  col-rt-in-3">
+                                            <input type="text" class="form-control rt-date-picker has-icon"
+                                                placeholder="Depart">
+                                            <span class="input-iconbadge"><i class="icofont-ui-calendar"></i></span>
+                                        </div><!-- /.single-input -->
+                                        <div class="single-input  col-rt-in-3">
+                                            <input type="text" class="form-control" placeholder="train no( opt)">
+                                        </div><!-- /.single-input -->
+                                        <div class="single-input  col-rt-in-1">
+                                            <button type="submit"><i class="icofont-search"></i></button>
+                                        </div><!-- /.single-input -->
+                                    </div><!-- /.rt-input-group -->
+                                </form><!-- ./ form -->
+                            </div>
+
                         </div>
                     </div><!-- /.rt-banner-searchbox -->
-                    <div class="bottom-bar b-bar-fix">
-                        <ul class="nav serachnavs wow fade-in-bottom justify-content-center mx-auto list-inline" id="rtMultiTab" role="tablist" data-wow-duration="0.5s" data-wow-delay="1.5s">
-                            <li class="list-inline-item nav-item mx-5 ">
-                                <a class="nav-link active px-3" id="first-tab2" data-target="#rt-item_b_first" data-secondary="#rt-item_a_first"
-                                   data-toggle="tab" href="#first" role="tab" aria-controls="first-tab" aria-selected="false">
-                                    <i class="icofont-airplane"></i>
-                                    <span>Flights</span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item nav-item mx-5 ">
-                                <a class="nav-link inactive px-3" id="second-tab2" data-target="#rt-item_b_second" data-secondary="#rt-item_a_second"
-                                   data-toggle="tab" href="#second" role="tab" aria-controls="second-tab" aria-selected="true">
-
-                                    <i class="icofont-hotel"></i>
-                                    <span>Hotels</span>
-                                </a>
-                            </li>
-                            <li class=" list-inline-item nav-item mx-5 ">
-                                <a class="nav-link inactive" id="third-tab2" data-target="#rt-item_b_thrid" data-secondary="#rt-item_a_third"
-                                   data-toggle="tab" href="#third" role="tab" aria-controls="third-tab" aria-selected="false">
-                                    <i class="icofont-car-alt-4"></i>
-                                    <span>Cars</span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item nav-item mx-5">
-                                <a class="  nav-link inactive" id="four-tab2" data-target="#rt-item_b_four" data-secondary="#rt-item_a_four"
-                                   data-toggle="tab" href="#four" role="tab" aria-controls="four-tab" aria-selected="false">
-                                    <i class="icofont-train-line"></i>
-                                    <span>Trains</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
 <div class="bottom-bar-2">
                     <ul class="nav serachnavs wow fade-in-bottom" id="rtMultiTab" role="tablist" data-wow-duration="1.5s"
                         data-wow-delay="1.5s">
                         <li class="nav-item">
-                            <a class="nav-link active" id="first-tab" data-target="#rt-item_b_first"
+                            <a class="nav-link {{$page=='flight'?"active":"inactive"}}" id="first-tab" data-target="#rt-item_b_first"
                                 data-secondary="#rt-item_a_first" data-toggle="tab" href="#first" role="tab" aria-controls="first-tab"
                                 aria-selected="false">
                                 <i class="icofont-airplane"></i>
@@ -305,7 +529,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link inactive" id="second-tab" data-target="#rt-item_b_second"
+                            <a class="nav-link {{$page=='hotel'?"active":"inactive"}}" id="second-tab" data-target="#rt-item_b_second"
                                 data-secondary="#rt-item_a_second" data-toggle="tab" href="#second" role="tab" aria-controls="second-tab"
                                 aria-selected="true">
 
@@ -314,19 +538,55 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link inactive" id="third-tab" data-target="#rt-item_b_thrid"
+                            <a class="nav-link {{$page=='car'?"active":"inactive"}}" id="third-tab" data-target="#rt-item_b_thrid"
                                 data-secondary="#rt-item_a_third" data-toggle="tab" href="#third" role="tab" aria-controls="third-tab"
                                 aria-selected="false">
                                 <i class="icofont-car-alt-4"></i>
                                 <span>Cars</span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link inactive" id="four-tab" data-target="#rt-item_b_four"
-                                data-secondary="#rt-item_a_four" data-toggle="tab" href="#four" role="tab" aria-controls="four-tab"
-                                aria-selected="false">
+                        <li class=" nav-item">
+                            <a class="  nav-link {{$page=='transfer'?"active":"inactive"}}" id="four-tab" data-target="#rt-item_b_four" data-secondary="#rt-item_a_four"
+                               data-toggle="tab" href="#four" role="tab" aria-controls="four-tab" aria-selected="false">
                                 <i class="icofont-train-line"></i>
-                                <span>Trains</span>
+                                <span>Transfer</span>
+                            </a>
+                        </li>
+                        <li class=" nav-item">
+                            <a class="nav-link {{$page=='bus'?"active":"inactive"}}" id="fifth-tab" data-target="#rt-item_b_fifth" data-secondary="#rt-item_a_fifth"
+                               data-toggle="tab" href="#fifth" role="tab" aria-controls="fifth-tab" aria-selected="false">
+                                <i class="icofont-train-line"></i>
+                                <span>Bus</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{$page=='group'?"active":"inactive"}}" id="sixth-tab" data-target="#rt-item_b_sixth" data-secondary="#rt-item_a_sixth"
+                               data-toggle="tab" href="#sixth" role="tab" aria-controls="sixth-tab" aria-selected="false">
+                                <i class="icofont-train-line"></i>
+                                <span>Group</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link {{$page=='tour'?"active":"inactive"}}" id="seventh-tab" data-target="#rt-item_b_seventh" data-secondary="#rt-item_a_seventh"
+                               data-toggle="tab" href="#seventh" role="tab" aria-controls="seventh-tab" aria-selected="false">
+                                <i class="icofont-train-line"></i>
+                                <span>tours</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{$page=='insurance'?"active":"inactive"}}" id="eigth-tab" data-target="#rt-item_b_eigth" data-secondary="#rt-item_a_eigth"
+                               data-toggle="tab" href="#eigth" role="tab" aria-controls=eigth-tab" aria-selected="false">
+                                <i class="icofont-train-line"></i>
+                                <span>Insurance</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{$page=='special'?"active":"inactive"}}" id="ninth-tab" data-target="#rt-item_b_ninth" data-secondary="#rt-item_a_four"
+                               data-toggle="tab" href="#ninth" role="tab" aria-controls="ninth-tab" aria-selected="false">
+                                <i class="icofont-train-line btn-top-margin-fix"></i>
+                                <span>Special</span>
+                                <span class="minus-top-margin">Ticket</span>
                             </a>
                         </li>
                     </ul>
@@ -339,14 +599,25 @@
 <div class="spacer-bottom"></div><!-- /.spacer-bottom -->
 <section class="content-area">
     <div class="container">
+        <div class="row ">
+            <div class="col-6">
+                   <a href=".filtercoll" class=""  data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                       <h5>Filter  <i class="fas fa-sort"></i></h5></a></div>
+
+            <div class="col6">
+                <a href=".sortcoll" class="" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <h5>Sort   <i class="fas fa-filter"></i></h5></a></div>
+
+        </div>
         <div class="row">
             <div class="col-12">
                 <div class="tab-content" id="rt-BototmTab">
-    <div class="tab-pane show active fade-in-bottom" id="rt-item_b_first" role="tabpanel"
-        aria-labelledby="rt-item_b_first">
-        <div class="row">
+    <div class="tab-pane {{$page=='flight'?"show active":"rtIncative"}} fade-in-bottom" id="rt-item_b_first" role="tabpanel" aria-labelledby="rt-item_b_first">
+
+
+        <div  class="row ">
             <div class="col-xl-3 col-lg-4 col-md-6 mx-auto">
-                <div class="rt-sidebar-group">
+                <div class="rt-sidebar-group filtercoll" >
     <div class="rt-widget widget_range-slider">
         <h3 class="rt-widget-title">
             Filter by Price
@@ -624,7 +895,7 @@
             <div class="col-xl-9 col-lg-10 mx-auto mt-5 mt-xl-0">
                 <div class="row">
                            <div class="col-lg-12">
-            <div class="flight-list-box rt-mb-30">
+            <div id="" class="flight-list-box rt-mb-30 sortcoll ">
                 <form action="#" class="row">
                     <div class="col-lg-3 col-md-6 mb-3 mb-lg-0">
                         <button class="rt-btn pill rt-sm rt-gradient d-block">Recommended</button>
@@ -696,6 +967,9 @@
                     <span class="d-block ml-4"><a href="#collapseExample02" class="flt-d-clic" data-toggle="collapse" role="button"
                                                   aria-expanded="false" aria-controls="collapseExample">Fare rules<i
                                 class="icofont-simple-down"></i></a></span>
+                    <span class="d-block ml-4"><a href="#collapseExample03" class="flt-d-clic" data-toggle="collapse" role="button"
+                                                  aria-expanded="false" aria-controls="collapseExample">Price Breakdown<i
+                                class="icofont-simple-down"></i></a></span>
                 </div>
                 <!-- /.top-content -->
                 <div class="collapse bottom-content" id="collapseExample00">
@@ -734,6 +1008,24 @@
                 </div><!-- /.bottom content -->
                 <div class="collapse bottom-content" id="collapseExample02">
                     <h5>Fare Rules</h5>
+                    <p><span>Scoot - TR979 | Airbus A320 | Economy</span> <span><i class="icofont-clock-time"></i>4h5m</span></p>
+                    <ul class="flight-timeline">
+
+                        <li>
+                            <span>Nov 12 10:55</span>
+
+                        </li>
+                        <li><span>HKG - Hong Kong Hong Kong International Airport T2</span></li>
+                        <li>
+                            <span>Nov 12 15:00</span>
+
+                        </li>
+                        <li><span>SIN - Singapore Changi Airport T2</span></li>
+                    </ul>
+                </div><!-- /.bottom content -->
+
+                <div class="collapse bottom-content" id="collapseExample03">
+                    <h5>Price Breakdown</h5>
                     <p><span>Scoot - TR979 | Airbus A320 | Economy</span> <span><i class="icofont-clock-time"></i>4h5m</span></p>
                     <ul class="flight-timeline">
 
@@ -1368,7 +1660,7 @@
             </div><!-- /.flight-box -->
         </div><!-- /.col-lg-12 -->
         <div class="col-lg-12 col-md-6">
-            <div class="flight-list-box rt-mb-30">
+            <div class="flight-list-box sortcoll rt-mb-30">
                 <div
                     class="top-content d-flex flex-lg-row flex-column align-items-lg-center justify-content-left  justify-content-lg-between">
                     <div class="flight-logo">
@@ -1405,7 +1697,7 @@
                         <a href="flight-details.html" class="rt-btn  pill rt-gradient text-uppercase">Book</a>
                     </div><!-- /.book-now -->
                 </div><!-- /.top-content -->
-                <div class="collapse bottom-content" id="collapseExample13">
+                <div class="bottom-content" id="collapseExample13">
                     <p><span>Scoot - TR979 | Airbus A320 | Economy</span> <span><i class="icofont-clock-time"></i>4h5m</span></p>
                     <ul class="flight-timeline">
 
@@ -1438,11 +1730,11 @@
             </div><!-- /.col-lg-9 -->
         </div><!-- /.row -->
     </div>
-    <div class="tab-pane rtIncative fade-in-bottom" id="rt-item_b_second" role="tabpanel" aria-labelledby="rt-item_b_second">
+    <div class="tab-pane {{$page=='hotel'?"show active":"rtIncative"}} fade-in-bottom" id="rt-item_b_second" role="tabpanel" aria-labelledby="rt-item_b_second">
         <div class="row">
-            <div class="col-xl-3 mx-auto col-lg-3 col-md-6">
-                <div class="rt-sidebar-group">
-    <div class="rt-widget widget_rating">
+            <div class="col-xl-3 mx-auto col-lg-3 col-md-6" >
+                <div class="rt-sidebar-group filtercoll" >
+    <div  class="rt-widget widget_rating">
         <h3 class="rt-widget-title">
             Star Rating
         </h3><!-- /.rt-widget-title -->
@@ -1507,6 +1799,9 @@
             </li>
         </ul>
     </div><!-- /.rt-widget -->
+
+    <div class="rt-widget widget_range-slider">
+    </div>
     <div class="rt-widget widget_range-slider">
         <h3 class="rt-widget-title">
             Filter by Price
@@ -1813,9 +2108,9 @@
             </div><!-- /.col-lg-3 -->
             <div class="col-xl-9 col-lg-9 mt-5 mt-lg-0">
 
-                <div class="box-style__1 rt-mb-30">
+                <div class="box-style__1 rt-mb-30 sortcoll">
                     <form action="#" class="row">
-                        <div class="col-lg-3 col-md-6 mb-3 mb-lg-0">
+                        <div class="col-lg-3 col-md-6 mb-3 mb-lg-0 ">
                             <button class="rt-btn pill rt-sm rt-gradient d-block">Recommended</button>
                         </div><!-- /.col-lg-4 -->
                         <div class="col-lg-3 col-md-6 mb-3 mb-lg-0">
@@ -1872,7 +2167,7 @@
                                     <span data-tippy="time"><img src="{{URL::asset('images/all-img/hottel-cion-9.png')}}" alt="hotel iamge"  draggable="false"></span>
                                 </div><!-- /.left -->
                                 <div class="right">
-                                    <a href="hotel-3.html" class="rt-btn rt-gradient pill rt-sm2 text-uppercase">View Details</a>
+                                    <a href="{{route('hotel_details')}}" class="rt-btn rt-gradient pill rt-sm2 text-uppercase">View Details</a>
                                 </div><!-- /.right -->
                             </div><!-- /.footer-elements -->
                         </div><!-- /.hotel-text -->
@@ -2437,10 +2732,10 @@
             </div><!-- /.col-lg-9 -->
         </div><!-- /.row -->
     </div>
-    <div class="tab-pane rtIncative fade-in-bottom" id="rt-item_b_thrid" role="tabpanel" aria-labelledby="rt-item_b_thrid">
+    <div class="tab-pane {{$page=='car'?"show active":"rtIncative"}} fade-in-bottom" id="rt-item_b_thrid" role="tabpanel" aria-labelledby="rt-item_b_thrid">
         <div class="row">
             <div class="col-lg-3 mx-auto col-md-7 mb-5 mb-lg-0">
-                <div class="rt-sidebar-group">
+                <div class="rt-sidebar-group filtercoll">
     <div class="rt-widget widget_rating">
         <h3 class="rt-widget-title">
             Star Rating
@@ -2743,7 +3038,7 @@
 </div><!-- /.rt-sidebar-group -->
             </div><!-- /.col-lg-3 -->
             <div class="col-lg-9">
-                        <div class="flight-list-box rt-mb-30">
+                        <div class="flight-list-box sortcoll  rt-mb-30">
             <form action="#" class="row">
                     <div class="col-lg-3 col-md-6 mb-3 mb-lg-0">
                         <button class="rt-btn pill rt-sm rt-gradient d-block">Recommended</button>
@@ -3243,10 +3538,10 @@
             </div><!-- /.col-lg-9 -->
         </div><!-- /.row -->
     </div>
-    <div class="tab-pane rtIncative fade-in-bottom" id="rt-item_b_four" role="tabpanel" aria-labelledby="rt-item_b_four">
+    <div class="tab-pane {{$page=='transfer'?"show active":"rtIncative"}} fade-in-bottom" id="rt-item_b_four" role="tabpanel" aria-labelledby="rt-item_b_four">
         <div class="row">
             <div class="col-lg-3 mx-auto mb-5 mb-lg-0 col-md-6">
-                <div class="rt-sidebar-group">
+                <div class="rt-sidebar-group filtercoll">
     <div class="rt-widget widget_range-slider">
         <h3 class="rt-widget-title">
             Filter by Price
@@ -3388,7 +3683,7 @@
 </div><!-- /.rt-sidebar-group -->
             </div><!-- /.col-lg-3 -->
             <div class="col-lg-9">
-                <div class="flight-list-box rt-mb-30">
+                <div class="flight-list-box sortcoll rt-mb-30">
     <form action="#" class="row">
         <div class="col-lg-3 col-md-6 mb-3 mb-lg-0">
             <button class="rt-btn pill rt-sm rt-gradient d-block">Recommended</button>
@@ -3600,7 +3895,1870 @@
             </div><!-- /.col-lg-9 -->
         </div><!-- /.row -->
     </div>
-</div>
+    <div class="tab-pane {{$page=='bus'?"show active":"rtIncative"}} fade-in-bottom" id="rt-item_b_fifth" role="tabpanel" aria-labelledby="rt-item_b_fifth">
+        <div class="row">
+            <div class="col-lg-3 mx-auto mb-5 mb-lg-0 col-md-6">
+                <div class="rt-sidebar-group filtercoll">
+    <div class="rt-widget widget_range-slider">
+        <h3 class="rt-widget-title">
+            Filter by Price
+        </h3><!-- /.rt-widget-title -->
+
+        <div class="slider-range"></div>
+        <div class="price_slider_amount">
+            <div class="clearfix">
+                <div class="float-left">
+                    <span>Price:</span>
+                </div><!-- /.float-left -->
+                <div class="float-right">
+                    <input type="text" class="amount" name="price" placeholder="Add Your Price" />
+                </div><!-- /.float-right -->
+            </div><!-- /.clearfix -->
+        </div>
+        <div class="text-center">
+            <input type="submit" value="Filter" class="rt-btn rt-gradient rounded-sm rt-sm text-uppercase" />
+        </div><!-- /.text-center -->
+    </div><!-- /.rt-widget -->
+    <div class="rt-widget widget_plane_time">
+        <h3 class="rt-widget-title">
+            Departure Time
+        </h3><!-- /.rt-widget-title -->
+        <ul>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-1">
+                    <label class="form-check-label" for="train_gridCheckrt-1">
+                        00:00-06:00
+                    </label>
+                </div><!-- ./orm-group -->
+            </li>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-2">
+                    <label class="form-check-label" for="train_gridCheckrt-2">
+                    06:00-12:00
+                    </label>
+                </div><!-- ./orm-group -->
+            </li>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-2-train-1">
+                    <label class="form-check-label" for="train_gridCheckrt-2-train-1">
+                    12:00-18:00
+                    </label>
+                </div><!-- ./orm-group -->
+            </li>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-2-train-2">
+                    <label class="form-check-label" for="train_gridCheckrt-2-train-2">
+                    18:00-24:00
+                    </label>
+                </div><!-- ./orm-group -->
+            </li>
+        </ul>
+    </div><!-- /.rt-widget -->
+    <div class="rt-widget widget_plane_time">
+        <h3 class="rt-widget-title">
+            Arrival Time
+        </h3><!-- /.rt-widget-title -->
+        <ul>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-3tx">
+                    <label class="form-check-label" for="train_gridCheckrt-3tx">
+                    00:00-06:00
+                    </label>
+                </div><!-- ./orm-group -->
+
+            </li>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-4sa">
+                    <label class="form-check-label" for="train_gridCheckrt-4sa">
+                        06:00-12:00
+                    </label>
+                </div><!-- ./orm-group -->
+
+            </li>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-5">
+                    <label class="form-check-label" for="train_gridCheckrt-5">
+                    12:00-18:00
+                    </label>
+                </div><!-- ./orm-group -->
+
+            </li>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-51">
+                    <label class="form-check-label" for="train_gridCheckrt-51">
+                        18:00-24:00
+                    </label>
+                </div><!-- ./orm-group -->
+            </li>
+         </ul>
+    </div><!-- /.rt-widget -->
+    <div class="rt-widget widget_plane_time">
+        <h3 class="rt-widget-title">
+            Arrival Station
+        </h3><!-- /.rt-widget-title -->
+        <ul>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-11">
+                    <label class="form-check-label" for="train_gridCheckrt-11">
+                        Beijing South
+                    </label>
+                </div><!-- ./orm-group -->
+
+            </li>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-111">
+                    <label class="form-check-label" for="train_gridCheckrt-111">
+                        Beijing
+                    </label>
+                </div><!-- ./orm-group -->
+
+            </li>
+
+        </ul>
+
+    </div><!-- /.rt-widget -->
+</div><!-- /.rt-sidebar-group -->
+            </div><!-- /.col-lg-3 -->
+            <div class="col-lg-9">
+                <div class="flight-list-box sortcoll rt-mb-30">
+    <form action="#" class="row">
+        <div class="col-lg-3 col-md-6 mb-3 mb-lg-0">
+            <button class="rt-btn pill rt-sm rt-gradient d-block">Recommended</button>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3 col-md-6 mb-3 mb-lg-0">
+            <select class="rt-selectactive banner-select" name="from" style="width: 100%">
+                <option value="1">Price</option>
+                <option value="2">100</option>
+                <option value="3">100</option>
+                <option value="4">400</option>
+                <option value="5">500</option>
+            </select>
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3 rt-input-group mini col-md-6  mb-3 mb-md-0">
+            <input type="text" class="rt-date-picker form-control" placeholder="Departure Time">
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3 rt-input-group mini col-md-6 ">
+            <input type="text" class="form-control rt-date-picker" placeholder="Arrival Time ">
+        </div><!-- /.col-lg-3 -->
+    </form>
+</div><!-- /.flight-list-box -->
+
+<div class="flight-list-box rt-mb-30 row">
+    <div class="col-md-3 mb-md-0 mb-4">
+        <div class="d-flex justify-content-between">
+            <span class="rt-medium f-size-24 primary-color">G102</span>
+            <ul class="rt-llist train-timeline">
+                <li class="f-size-18 text-424">
+                    06:26
+                </li>
+                <li class="f-size-18 text-424">
+                    12:29
+                </li>
+            </ul>
+        </div>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-3 mb-md-0 mb-4 text-center text-md-right train-border">
+        <span class="f-size-12 text-424"><i class="icofont-clock-time rt-mr-3"></i>4h5m</span>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-6">
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>25.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    </div><!-- /.col-md-4 -->
+</div><!-- /.flight-box -->
+<div class="flight-list-box rt-mb-30 row">
+    <div class="col-md-3 mb-md-0 mb-4">
+        <div class="d-flex justify-content-between">
+            <span class="rt-medium f-size-24 primary-color">G102</span>
+            <ul class="rt-llist train-timeline">
+                <li class="f-size-18 text-424">
+                    06:26
+                </li>
+                <li class="f-size-18 text-424">
+                    12:29
+                </li>
+            </ul>
+        </div>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-3 mb-md-0 mb-4 text-center text-md-right train-border">
+        <span class="f-size-12 text-424"><i class="icofont-clock-time rt-mr-3"></i>4h5m</span>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-6">
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>25.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    </div><!-- /.col-md-4 -->
+</div><!-- /.flight-box -->
+<div class="flight-list-box rt-mb-30 row">
+    <div class="col-md-3 mb-md-0 mb-4">
+        <div class="d-flex justify-content-between">
+            <span class="rt-medium f-size-24 primary-color">G102</span>
+            <ul class="rt-llist train-timeline">
+                <li class="f-size-18 text-424">
+                    06:26
+                </li>
+                <li class="f-size-18 text-424">
+                    12:29
+                </li>
+            </ul>
+        </div>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-3 mb-md-0 mb-4 text-center text-md-right train-border">
+        <span class="f-size-12 text-424"><i class="icofont-clock-time rt-mr-3"></i>4h5m</span>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-6">
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>25.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    </div><!-- /.col-md-4 -->
+</div><!-- /.flight-box -->
+<div class="flight-list-box rt-mb-30 row">
+    <div class="col-md-3 mb-md-0 mb-4">
+        <div class="d-flex justify-content-between">
+            <span class="rt-medium f-size-24 primary-color">G102</span>
+            <ul class="rt-llist train-timeline">
+                <li class="f-size-18 text-424">
+                    06:26
+                </li>
+                <li class="f-size-18 text-424">
+                    12:29
+                </li>
+            </ul>
+        </div>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-3 mb-md-0 mb-4 text-center text-md-right train-border">
+        <span class="f-size-12 text-424"><i class="icofont-clock-time rt-mr-3"></i>4h5m</span>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-6">
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>25.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    </div><!-- /.col-md-4 -->
+</div><!-- /.flight-box -->
+<div class="flight-list-box rt-mb-30 row">
+    <div class="col-md-3 mb-md-0 mb-4">
+        <div class="d-flex justify-content-between">
+            <span class="rt-medium f-size-24 primary-color">G102</span>
+            <ul class="rt-llist train-timeline">
+                <li class="f-size-18 text-424">
+                    06:26
+                </li>
+                <li class="f-size-18 text-424">
+                    12:29
+                </li>
+            </ul>
+        </div>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-3 mb-md-0 mb-4 text-center text-md-right train-border">
+        <span class="f-size-12 text-424"><i class="icofont-clock-time rt-mr-3"></i>4h5m</span>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-6">
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>25.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    </div><!-- /.col-md-4 -->
+</div><!-- /.flight-box -->
+                <nav aria-label="Page navigation example">
+    <ul class="pagination  rt-paganation justify-content-center">
+        <li class="page-item"><a class="page-link" href="#"><i class="icofont-rounded-double-left"></i></a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="#">01</a></li>
+        <li class="page-item"><a class="page-link" href="#">02</a></li>
+        <li class="page-item"><a class="page-link" href="#">03</a></li>
+        <li class="page-item"><a class="page-link" href="#"><i class="icofont-rounded-double-right"></i></a>
+        </li>
+    </ul>
+</nav>
+            </div><!-- /.col-lg-9 -->
+        </div><!-- /.row -->
+    </div>
+    <div class="tab-pane {{$page=='group'?"show active":"rtIncative"}} fade-in-bottom" id="rt-item_b_sixth" role="tabpanel" aria-labelledby="rt-item_b_sixth">
+        <div class="row">
+            <div class="col-lg-3 mx-auto mb-5 mb-lg-0 col-md-6">
+                <div class="rt-sidebar-group filtercoll">
+    <div class="rt-widget widget_range-slider">
+        <h3 class="rt-widget-title">
+            Filter by Price
+        </h3><!-- /.rt-widget-title -->
+
+        <div class="slider-range"></div>
+        <div class="price_slider_amount">
+            <div class="clearfix">
+                <div class="float-left">
+                    <span>Price:</span>
+                </div><!-- /.float-left -->
+                <div class="float-right">
+                    <input type="text" class="amount" name="price" placeholder="Add Your Price" />
+                </div><!-- /.float-right -->
+            </div><!-- /.clearfix -->
+        </div>
+        <div class="text-center">
+            <input type="submit" value="Filter" class="rt-btn rt-gradient rounded-sm rt-sm text-uppercase" />
+        </div><!-- /.text-center -->
+    </div><!-- /.rt-widget -->
+    <div class="rt-widget widget_plane_time">
+        <h3 class="rt-widget-title">
+            Departure Time
+        </h3><!-- /.rt-widget-title -->
+        <ul>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-1">
+                    <label class="form-check-label" for="train_gridCheckrt-1">
+                        00:00-06:00
+                    </label>
+                </div><!-- ./orm-group -->
+            </li>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-2">
+                    <label class="form-check-label" for="train_gridCheckrt-2">
+                    06:00-12:00
+                    </label>
+                </div><!-- ./orm-group -->
+            </li>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-2-train-1">
+                    <label class="form-check-label" for="train_gridCheckrt-2-train-1">
+                    12:00-18:00
+                    </label>
+                </div><!-- ./orm-group -->
+            </li>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-2-train-2">
+                    <label class="form-check-label" for="train_gridCheckrt-2-train-2">
+                    18:00-24:00
+                    </label>
+                </div><!-- ./orm-group -->
+            </li>
+        </ul>
+    </div><!-- /.rt-widget -->
+    <div class="rt-widget widget_plane_time">
+        <h3 class="rt-widget-title">
+            Arrival Time
+        </h3><!-- /.rt-widget-title -->
+        <ul>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-3tx">
+                    <label class="form-check-label" for="train_gridCheckrt-3tx">
+                    00:00-06:00
+                    </label>
+                </div><!-- ./orm-group -->
+
+            </li>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-4sa">
+                    <label class="form-check-label" for="train_gridCheckrt-4sa">
+                        06:00-12:00
+                    </label>
+                </div><!-- ./orm-group -->
+
+            </li>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-5">
+                    <label class="form-check-label" for="train_gridCheckrt-5">
+                    12:00-18:00
+                    </label>
+                </div><!-- ./orm-group -->
+
+            </li>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-51">
+                    <label class="form-check-label" for="train_gridCheckrt-51">
+                        18:00-24:00
+                    </label>
+                </div><!-- ./orm-group -->
+            </li>
+         </ul>
+    </div><!-- /.rt-widget -->
+    <div class="rt-widget widget_plane_time">
+        <h3 class="rt-widget-title">
+            Arrival Station
+        </h3><!-- /.rt-widget-title -->
+        <ul>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-11">
+                    <label class="form-check-label" for="train_gridCheckrt-11">
+                        Beijing South
+                    </label>
+                </div><!-- ./orm-group -->
+
+            </li>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-111">
+                    <label class="form-check-label" for="train_gridCheckrt-111">
+                        Beijing
+                    </label>
+                </div><!-- ./orm-group -->
+
+            </li>
+
+        </ul>
+
+    </div><!-- /.rt-widget -->
+</div><!-- /.rt-sidebar-group -->
+            </div><!-- /.col-lg-3 -->
+            <div class="col-lg-9">
+                <div class="flight-list-box sortcoll rt-mb-30">
+    <form action="#" class="row">
+        <div class="col-lg-3 col-md-6 mb-3 mb-lg-0">
+            <button class="rt-btn pill rt-sm rt-gradient d-block">Recommended</button>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3 col-md-6 mb-3 mb-lg-0">
+            <select class="rt-selectactive banner-select" name="from" style="width: 100%">
+                <option value="1">Price</option>
+                <option value="2">100</option>
+                <option value="3">100</option>
+                <option value="4">400</option>
+                <option value="5">500</option>
+            </select>
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3 rt-input-group mini col-md-6  mb-3 mb-md-0">
+            <input type="text" class="rt-date-picker form-control" placeholder="Departure Time">
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3 rt-input-group mini col-md-6 ">
+            <input type="text" class="form-control rt-date-picker" placeholder="Arrival Time ">
+        </div><!-- /.col-lg-3 -->
+    </form>
+</div><!-- /.flight-list-box -->
+
+<div class="flight-list-box rt-mb-30 row">
+    <div class="col-md-3 mb-md-0 mb-4">
+        <div class="d-flex justify-content-between">
+            <span class="rt-medium f-size-24 primary-color">G102</span>
+            <ul class="rt-llist train-timeline">
+                <li class="f-size-18 text-424">
+                    06:26
+                </li>
+                <li class="f-size-18 text-424">
+                    12:29
+                </li>
+            </ul>
+        </div>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-3 mb-md-0 mb-4 text-center text-md-right train-border">
+        <span class="f-size-12 text-424"><i class="icofont-clock-time rt-mr-3"></i>4h5m</span>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-6">
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>25.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    </div><!-- /.col-md-4 -->
+</div><!-- /.flight-box -->
+<div class="flight-list-box rt-mb-30 row">
+    <div class="col-md-3 mb-md-0 mb-4">
+        <div class="d-flex justify-content-between">
+            <span class="rt-medium f-size-24 primary-color">G102</span>
+            <ul class="rt-llist train-timeline">
+                <li class="f-size-18 text-424">
+                    06:26
+                </li>
+                <li class="f-size-18 text-424">
+                    12:29
+                </li>
+            </ul>
+        </div>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-3 mb-md-0 mb-4 text-center text-md-right train-border">
+        <span class="f-size-12 text-424"><i class="icofont-clock-time rt-mr-3"></i>4h5m</span>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-6">
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>25.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    </div><!-- /.col-md-4 -->
+</div><!-- /.flight-box -->
+<div class="flight-list-box rt-mb-30 row">
+    <div class="col-md-3 mb-md-0 mb-4">
+        <div class="d-flex justify-content-between">
+            <span class="rt-medium f-size-24 primary-color">G102</span>
+            <ul class="rt-llist train-timeline">
+                <li class="f-size-18 text-424">
+                    06:26
+                </li>
+                <li class="f-size-18 text-424">
+                    12:29
+                </li>
+            </ul>
+        </div>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-3 mb-md-0 mb-4 text-center text-md-right train-border">
+        <span class="f-size-12 text-424"><i class="icofont-clock-time rt-mr-3"></i>4h5m</span>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-6">
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>25.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    </div><!-- /.col-md-4 -->
+</div><!-- /.flight-box -->
+<div class="flight-list-box rt-mb-30 row">
+    <div class="col-md-3 mb-md-0 mb-4">
+        <div class="d-flex justify-content-between">
+            <span class="rt-medium f-size-24 primary-color">G102</span>
+            <ul class="rt-llist train-timeline">
+                <li class="f-size-18 text-424">
+                    06:26
+                </li>
+                <li class="f-size-18 text-424">
+                    12:29
+                </li>
+            </ul>
+        </div>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-3 mb-md-0 mb-4 text-center text-md-right train-border">
+        <span class="f-size-12 text-424"><i class="icofont-clock-time rt-mr-3"></i>4h5m</span>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-6">
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>25.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    </div><!-- /.col-md-4 -->
+</div><!-- /.flight-box -->
+<div class="flight-list-box rt-mb-30 row">
+    <div class="col-md-3 mb-md-0 mb-4">
+        <div class="d-flex justify-content-between">
+            <span class="rt-medium f-size-24 primary-color">G102</span>
+            <ul class="rt-llist train-timeline">
+                <li class="f-size-18 text-424">
+                    06:26
+                </li>
+                <li class="f-size-18 text-424">
+                    12:29
+                </li>
+            </ul>
+        </div>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-3 mb-md-0 mb-4 text-center text-md-right train-border">
+        <span class="f-size-12 text-424"><i class="icofont-clock-time rt-mr-3"></i>4h5m</span>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-6">
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>25.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    </div><!-- /.col-md-4 -->
+</div><!-- /.flight-box -->
+                <nav aria-label="Page navigation example">
+    <ul class="pagination  rt-paganation justify-content-center">
+        <li class="page-item"><a class="page-link" href="#"><i class="icofont-rounded-double-left"></i></a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="#">01</a></li>
+        <li class="page-item"><a class="page-link" href="#">02</a></li>
+        <li class="page-item"><a class="page-link" href="#">03</a></li>
+        <li class="page-item"><a class="page-link" href="#"><i class="icofont-rounded-double-right"></i></a>
+        </li>
+    </ul>
+</nav>
+            </div><!-- /.col-lg-9 -->
+        </div><!-- /.row -->
+    </div>
+    <div class="tab-pane {{$page=='tour'?"show active":"rtIncative"}} fade-in-bottom" id="rt-item_b_seventh" role="tabpanel" aria-labelledby="rt-item_b_seventh">
+                        <div class="row">
+                            <div class="col-lg-3 mx-auto mb-5 mb-lg-0 col-md-6">
+                                <div class="rt-sidebar-group filtercoll">
+                                    <div class="rt-widget widget_rating">
+                                        <h3 class="rt-widget-title">
+                                            Star Rating
+                                        </h3><!-- /.rt-widget-title -->
+                                        <ul>
+                                            <li class="clearfix">
+
+                                                <div class="form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="trip_gridCheckrt-1xs">
+                                                    <label class="form-check-label" for="trip_gridCheckrt-1xs">
+                    <span>
+                        <i class="icofont-star review"></i>
+                        <i class="icofont-star review"></i>
+                        <i class="icofont-star review"></i>
+                        <i class="icofont-star review"></i>
+                        <i class="icofont-star review"></i>
+
+                    </span>
+                                                    </label>
+                                                </div><!-- ./orm-group -->
+
+                                            </li>
+                                            <li class="clearfix">
+
+                                                <div class="form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="trip_gridCheckrt-2xs">
+                                                    <label class="form-check-label" for="trip_gridCheckrt-2xs">
+                    <span>
+                        <i class="icofont-star review"></i>
+                        <i class="icofont-star review"></i>
+                        <i class="icofont-star review"></i>
+                        <i class="icofont-star review"></i>
+                    </span>
+                                                    </label>
+                                                </div><!-- ./orm-group -->
+
+                                            </li>
+                                            <li class="clearfix">
+
+                                                <div class="form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="trip_gridCheckrt-2xss">
+                                                    <label class="form-check-label" for="trip_gridCheckrt-2xss">
+                    <span>
+                        <i class="icofont-star review"></i>
+                        <i class="icofont-star review"></i>
+                        <i class="icofont-star review"></i>
+                    </span>
+                                                    </label>
+                                                </div><!-- ./orm-group -->
+
+                                            </li>
+                                            <li class="clearfix">
+
+                                                <div class="form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="trip_gridCheckrt-2xssa">
+                                                    <label class="form-check-label" for="trip_gridCheckrt-2xssa">
+                    <span>
+                        <i class="icofont-star review"></i>
+                        <i class="icofont-star review"></i>
+                    </span>
+                                                    </label>
+                                                </div><!-- ./orm-group -->
+
+                                            </li>
+                                        </ul>
+                                    </div><!-- /.rt-widget -->
+                                    <div class="rt-widget widget_range-slider">
+                                        <h3 class="rt-widget-title">
+                                            Filter by Price
+                                        </h3><!-- /.rt-widget-title -->
+
+                                        <div class="slider-range"></div>
+                                        <div class="price_slider_amount">
+                                            <div class="clearfix">
+                                                <div class="float-left">
+                                                    <span>Price:</span>
+                                                </div><!-- /.float-left -->
+                                                <div class="float-right">
+                                                    <input type="text" class="amount" name="price" placeholder="Add Your Price" />
+                                                </div><!-- /.float-right -->
+                                            </div><!-- /.clearfix -->
+                                        </div>
+                                        <div class="text-center">
+                                            <input type="submit" value="Filter" class="rt-btn rt-gradient rounded-sm rt-sm text-uppercase" />
+                                        </div><!-- /.text-center -->
+                                    </div><!-- /.rt-widget -->
+                                    <div class="rt-widget widget_plane_time">
+                                        <h3 class="rt-widget-title">
+                                            Payment options
+                                        </h3><!-- /.rt-widget-title -->
+                                        <ul>
+                                            <li class="clearfix">
+
+                                                <div class="form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="trip_gridCheckrt-1">
+                                                    <label class="form-check-label" for="trip_gridCheckrt-1">
+                                                        Pay now (72)
+                                                    </label>
+                                                </div><!-- ./orm-group -->
+                                                <span class="float-right">$30</span>
+
+                                            </li>
+                                            <li class="clearfix">
+
+                                                <div class="form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="trip_gridCheckrt-2">
+                                                    <label class="form-check-label" for="trip_gridCheckrt-2">
+                                                        Pay later (425)
+                                                    </label>
+                                                </div><!-- ./orm-group -->
+                                                <span class="float-right">$32</span>
+
+                                            </li>
+                                        </ul>
+                                    </div><!-- /.rt-widget -->
+                                    <div class="rt-widget widget_tag">
+                                        <h3 class="rt-widget-title">
+                                            Activities Transport
+                                        </h3><!-- /.rt-widget-title -->
+                                        <a href="#" class="rt-tag-cloud d-block text-333"><span class="rt-mr-4"><i class="icofont-tag"></i></span> Cycling</a>
+                                        <a href="#" class="rt-tag-cloud d-block text-333"><span class="rt-mr-4"><i class="icofont-tag"></i></span> City Tour</a>
+                                        <a href="#" class="rt-tag-cloud d-block text-333"><span class="rt-mr-4"><i class="icofont-tag"></i></span> Meet the Locals</a>
+                                        <a href="#" class="rt-tag-cloud d-block text-333"><span class="rt-mr-4"><i class="icofont-tag"></i></span> Train</a>
+                                        <a href="#" class="rt-tag-cloud d-block text-333"><span class="rt-mr-4"><i class="icofont-tag"></i></span> Car with driver</a>
+                                    </div><!-- /.rt-widget -->
+                                    <div class="rt-widget widget_">
+                                        <h3 class="rt-widget-title">
+                                            Main travel focus
+                                        </h3><!-- /.rt-widget-title -->
+                                        <a href="#" class="rt-tag-cloud d-block text-333"><span class="rt-mr-4 primary-color"><i class="icofont-check"></i></span> Cultural visits</a>
+                                        <a href="#" class="rt-tag-cloud d-block text-333"><span class="rt-mr-4 primary-color"><i class="icofont-check"></i></span> Nature & landscapes</a>
+                                        <a href="#" class="rt-tag-cloud d-block text-333"><span class="rt-mr-4 primary-color"><i class="icofont-check"></i></span> Relaxing moments</a>
+                                    </div><!-- /.rt-widget -->
+                                </div><!-- /.rt-sidebar-group -->
+                            </div><!-- /.col-lg-3 -->
+                            <div class="col-lg-9">
+                                <div class="flight-list-box sortcoll rt-mb-30">
+                                    <form action="#" class="row">
+                                        <div class="col-lg-3 col-md-6 mb-3 mb-lg-0">
+                                            <button class="rt-btn pill rt-sm rt-gradient d-block">Recommended</button>
+                                        </div><!-- /.col-lg-4 -->
+                                        <div class="col-lg-3 col-md-6 mb-3 mb-lg-0">
+                                            <select class="rt-selectactive banner-select" name="from" style="width: 100%">
+                                                <option value="1">Price</option>
+                                                <option value="2">100</option>
+                                                <option value="3">100</option>
+                                                <option value="4">400</option>
+                                                <option value="5">500</option>
+                                            </select>
+                                        </div><!-- /.col-lg-3 -->
+                                        <div class="col-lg-3 rt-input-group mini col-md-6  mb-3 mb-md-0">
+                                            <input type="text" class="rt-date-picker form-control" placeholder="Departure Time">
+                                        </div><!-- /.col-lg-3 -->
+                                        <div class="col-lg-3 rt-input-group mini col-md-6 ">
+                                            <input type="text" class="form-control rt-date-picker" placeholder="Arrival Time ">
+                                        </div><!-- /.col-lg-3 -->
+                                    </form>
+                                </div><!-- /.flight-list-box -->
+
+                                <div class="box-style__1 rt-mb-30">
+                                    <div class="hotel-inner-content row">
+                                        <div class="hotel-thumb col-md-3  mb-5 mb-md-0">
+                                            <div class="hotel-bg rtbgprefix-cover" style="background-image: url(assets/images/all-img/trip-1.jpg)"></div>
+                                        </div><!-- /.hotel-thumb -->
+                                        <div class="hotel-text col-md-9">
+                                            <div class="top">
+                                                <h5>12 Day Beijing to Shanghai Discovery <span> <i class="icofont-star review"></i><i class="icofont-star review"></i> <i class="icofont-star review"></i><i class="icofont-star review"></i> <i class="icofont-star"></i></span></h5>
+                                                <p>Culture and lifestyle <span> - Leisure walking</span></p>
+                                            </div><!-- /.top -->
+                                            <div class="middle-text d-md-flex justify-content-md-between rt-mt-20">
+                                                <div class="left_column">
+                                                    <span class="badge rt-gradinet-badge pill rt-mr-10">4.3 <small>/5</small></span>
+                                                    <span class="primary-color">Excellent</span>
+                                                    <span class="f-size-12 text-878">( 86 Reviews )</span>
+                                                    <span class="text-555 f-size-16 d-block rt-mt-15"><span class="rt-mr-15"><i class="icofont-users-alt-5 primary-color rt-mr-4"></i>Family Trip</span> <span> <i class="icofont-user primary-color rt-mr-4"></i>Private Tour</span></span>
+                                                </div><!-- /.left- -->
+                                                <div class="right_column text-left text-md-right">
+                                                    <span class="d-block text-primary f-size-24 rt-semiblod title-font">$2707</span>
+                                                    <span class="d-block f-size-12 text-878">Per Person</span>
+                                                </div><!-- /.right -->
+                                            </div><!-- /.middle-text -->
+                                            <div class="footer-elements d-flex justify-content-between align-items-center align-items-end">
+                                                <div class="left">
+                                                    <a href="#">Customize & Request</a>
+                                                </div><!-- /.left -->
+                                                <div class="right">
+                                                    <a href="{{route('tour_details')}}" class="rt-btn rt-gradient pill rt-sm3 text-uppercase">View Details</a>
+                                                </div><!-- /.right -->
+                                            </div><!-- /.footer-elements -->
+                                        </div><!-- /.hotel-text -->
+                                    </div><!-- /.hotel-inner-content -->
+                                </div><!-- /.hotel-list-box -->
+                                <div class="box-style__1 rt-mb-30">
+                                    <div class="hotel-inner-content row">
+                                        <div class="hotel-thumb col-md-3  mb-5 mb-md-0">
+                                            <div class="hotel-bg rtbgprefix-cover" style="background-image: url(assets/images/all-img/trip-2.jpg)">
+                                                <div class="inaner-badge">
+                                                    <span class="bg-gradient-primary text-white text-capitalize rt-pl-10 rt-pr-10 rt-pt-5 rt-pb-5">new</span>
+                                                </div><!-- /.inaner-badge -->
+                                            </div>
+                                        </div><!-- /.hotel-thumb -->
+                                        <div class="hotel-text col-md-9">
+                                            <div class="top">
+                                                <h5>14 Day China And Pingyao Tour<span> <i class="icofont-star review"></i><i class="icofont-star review"></i> <i class="icofont-star review"></i><i class="icofont-star review"></i> <i class="icofont-star"></i></span></h5>
+                                                <p>Culture and lifestyle <span> - Leisure walking</span></p>
+                                            </div><!-- /.top -->
+                                            <div class="middle-text d-md-flex justify-content-md-between rt-mt-20">
+                                                <div class="left_column">
+                                                    <span class="badge rt-gradinet-badge pill rt-mr-10">4.3 <small>/5</small></span>
+                                                    <span class="primary-color">Excellent</span>
+                                                    <span class="f-size-12 text-878">( 86 Reviews )</span>
+                                                    <span class="text-555 f-size-16 d-block rt-mt-15"><span class="rt-mr-15"><i class="icofont-users-alt-5 primary-color rt-mr-4"></i>Family Trip</span> <span> <i class="icofont-user primary-color rt-mr-4"></i>Private Tour</span></span>
+                                                </div><!-- /.left- -->
+                                                <div class="right_column text-left text-md-right">
+                                                    <span class="d-block text-primary f-size-24 rt-semiblod title-font">$2707</span>
+                                                    <span class="d-block f-size-12 text-878">Per Person</span>
+                                                </div><!-- /.right -->
+                                            </div><!-- /.middle-text -->
+                                            <div class="footer-elements d-flex justify-content-between align-items-center align-items-end">
+                                                <div class="left">
+                                                    <a href="#">Customize & Request</a>
+                                                </div><!-- /.left -->
+                                                <div class="right">
+                                                    <a href="trip-2.html" class="rt-btn rt-gradient pill rt-sm3 text-uppercase">View Details</a>
+                                                </div><!-- /.right -->
+                                            </div><!-- /.footer-elements -->
+                                        </div><!-- /.hotel-text -->
+                                    </div><!-- /.hotel-inner-content -->
+                                </div><!-- /.hotel-list-box -->
+                                <div class="box-style__1 rt-mb-30">
+                                    <div class="hotel-inner-content row">
+                                        <div class="hotel-thumb col-md-3  mb-5 mb-md-0">
+                                            <div class="hotel-bg rtbgprefix-cover" style="background-image: url(assets/images/all-img/trip-3.jpg)">
+                                                <div class="inaner-badge">
+                                                    <span class="bg-gradient-primary text-white text-capitalize rt-pl-10 rt-pr-10 rt-pt-5 rt-pb-5">new</span>
+                                                </div><!-- /.inaner-badge -->
+                                            </div>
+                                        </div><!-- /.hotel-thumb -->
+                                        <div class="hotel-text col-md-9">
+                                            <div class="top">
+                                                <h5>12 Day China Highlights<span> <i class="icofont-star review"></i><i class="icofont-star review"></i> <i class="icofont-star review"></i><i class="icofont-star review"></i> <i class="icofont-star"></i></span></h5>
+                                                <p>Culture and lifestyle <span> - Leisure walking</span></p>
+                                            </div><!-- /.top -->
+                                            <div class="middle-text d-md-flex justify-content-md-between rt-mt-20">
+                                                <div class="left_column">
+                                                    <span class="badge rt-gradinet-badge pill rt-mr-10">4.3 <small>/5</small></span>
+                                                    <span class="primary-color">Excellent</span>
+                                                    <span class="f-size-12 text-878">( 86 Reviews )</span>
+                                                    <span class="text-555 f-size-16 d-block rt-mt-15"><span class="rt-mr-15"><i class="icofont-users-alt-5 primary-color rt-mr-4"></i>Family Trip</span> <span> <i class="icofont-user primary-color rt-mr-4"></i>Private Tour</span></span>
+                                                </div><!-- /.left- -->
+                                                <div class="right_column text-left text-md-right">
+                                                    <span class="d-block text-primary f-size-24 rt-semiblod title-font">$2707</span>
+                                                    <span class="d-block f-size-12 text-878">Per Person</span>
+                                                </div><!-- /.right -->
+                                            </div><!-- /.middle-text -->
+                                            <div class="footer-elements d-flex justify-content-between align-items-center align-items-end">
+                                                <div class="left">
+                                                    <a href="#">Customize & Request</a>
+                                                </div><!-- /.left -->
+                                                <div class="right">
+                                                    <a href="trip-2.html" class="rt-btn rt-gradient pill rt-sm3 text-uppercase">View Details</a>
+                                                </div><!-- /.right -->
+                                            </div><!-- /.footer-elements -->
+                                        </div><!-- /.hotel-text -->
+                                    </div><!-- /.hotel-inner-content -->
+                                </div><!-- /.hotel-list-box -->
+                                <div class="box-style__1 rt-mb-30">
+                                    <div class="hotel-inner-content row">
+                                        <div class="hotel-thumb col-md-3  mb-5 mb-md-0">
+                                            <div class="hotel-bg rtbgprefix-cover" style="background-image: url(assets/images/all-img/trip-4.jpg)">
+                                                <div class="inaner-badge">
+                                                    <span class="bg-gradient-primary text-white text-capitalize rt-pl-10 rt-pr-10 rt-pt-5 rt-pb-5">new</span>
+                                                </div><!-- /.inaner-badge -->
+                                            </div>
+                                        </div><!-- /.hotel-thumb -->
+                                        <div class="hotel-text col-md-9">
+                                            <div class="top">
+                                                <h5>The Cultural Essential China Travel<span> <i class="icofont-star review"></i><i class="icofont-star review"></i> <i class="icofont-star review"></i><i class="icofont-star review"></i> <i class="icofont-star"></i></span></h5>
+                                                <p>Culture and lifestyle <span> - Leisure walking</span></p>
+                                            </div><!-- /.top -->
+                                            <div class="middle-text d-md-flex justify-content-md-between rt-mt-20">
+                                                <div class="left_column">
+                                                    <span class="badge rt-gradinet-badge pill rt-mr-10">4.3 <small>/5</small></span>
+                                                    <span class="primary-color">Excellent</span>
+                                                    <span class="f-size-12 text-878">( 86 Reviews )</span>
+                                                    <span class="text-555 f-size-16 d-block rt-mt-15"><span class="rt-mr-15"><i class="icofont-users-alt-5 primary-color rt-mr-4"></i>Family Trip</span> <span> <i class="icofont-user primary-color rt-mr-4"></i>Private Tour</span></span>
+                                                </div><!-- /.left- -->
+                                                <div class="right_column text-left text-md-right">
+                                                    <span class="d-block text-primary f-size-24 rt-semiblod title-font">$2707</span>
+                                                    <span class="d-block f-size-12 text-878">Per Person</span>
+                                                </div><!-- /.right -->
+                                            </div><!-- /.middle-text -->
+                                            <div class="footer-elements d-flex justify-content-between align-items-center align-items-end">
+                                                <div class="left">
+                                                    <a href="#">Customize & Request</a>
+                                                </div><!-- /.left -->
+                                                <div class="right">
+                                                    <a href="trip-2.html" class="rt-btn rt-gradient pill rt-sm3 text-uppercase">View Details</a>
+                                                </div><!-- /.right -->
+                                            </div><!-- /.footer-elements -->
+                                        </div><!-- /.hotel-text -->
+                                    </div><!-- /.hotel-inner-content -->
+                                </div><!-- /.hotel-list-box -->
+                                <div class="box-style__1 rt-mb-30">
+                                    <div class="hotel-inner-content row">
+                                        <div class="hotel-thumb col-md-3  mb-5 mb-md-0">
+                                            <div class="hotel-bg rtbgprefix-cover" style="background-image: url(assets/images/all-img/trip-4.jpg)">
+                                                <div class="inaner-badge">
+                                                    <span class="bg-gradient-primary text-white text-capitalize rt-pl-10 rt-pr-10 rt-pt-5 rt-pb-5">new</span>
+                                                </div><!-- /.inaner-badge -->
+                                            </div>
+                                        </div><!-- /.hotel-thumb -->
+                                        <div class="hotel-text col-md-9">
+                                            <div class="top">
+                                                <h5>The Cultural Essential China Travel<span> <i class="icofont-star review"></i><i class="icofont-star review"></i> <i class="icofont-star review"></i><i class="icofont-star review"></i> <i class="icofont-star"></i></span></h5>
+                                                <p>Culture and lifestyle <span> - Leisure walking</span></p>
+                                            </div><!-- /.top -->
+                                            <div class="middle-text d-md-flex justify-content-md-between rt-mt-20">
+                                                <div class="left_column">
+                                                    <span class="badge rt-gradinet-badge pill rt-mr-10">4.3 <small>/5</small></span>
+                                                    <span class="primary-color">Excellent</span>
+                                                    <span class="f-size-12 text-878">( 86 Reviews )</span>
+                                                    <span class="text-555 f-size-16 d-block rt-mt-15"><span class="rt-mr-15"><i class="icofont-users-alt-5 primary-color rt-mr-4"></i>Family Trip</span> <span> <i class="icofont-user primary-color rt-mr-4"></i>Private Tour</span></span>
+                                                </div><!-- /.left- -->
+                                                <div class="right_column text-left text-md-right">
+                                                    <span class="d-block text-primary f-size-24 rt-semiblod title-font">$2707</span>
+                                                    <span class="d-block f-size-12 text-878">Per Person</span>
+                                                </div><!-- /.right -->
+                                            </div><!-- /.middle-text -->
+                                            <div class="footer-elements d-flex justify-content-between align-items-center align-items-end">
+                                                <div class="left">
+                                                    <a href="#">Customize & Request</a>
+                                                </div><!-- /.left -->
+                                                <div class="right">
+                                                    <a href="trip-2.html" class="rt-btn rt-gradient pill rt-sm3 text-uppercase">View Details</a>
+                                                </div><!-- /.right -->
+                                            </div><!-- /.footer-elements -->
+                                        </div><!-- /.hotel-text -->
+                                    </div><!-- /.hotel-inner-content -->
+                                </div><!-- /.hotel-list-box -->
+                                <div class="box-style__1 rt-mb-30">
+                                    <div class="hotel-inner-content row">
+                                        <div class="hotel-thumb col-md-3  mb-5 mb-md-0">
+                                            <div class="hotel-bg rtbgprefix-cover" style="background-image: url(assets/images/all-img/trip-5.jpg)">
+                                                <div class="inaner-badge">
+                                                    <span class="bg-gradient-primary text-white text-capitalize rt-pl-10 rt-pr-10 rt-pt-5 rt-pb-5">new</span>
+                                                </div><!-- /.inaner-badge -->
+                                            </div>
+                                        </div><!-- /.hotel-thumb -->
+                                        <div class="hotel-text col-md-9">
+                                            <div class="top">
+                                                <h5>Great Family Tour with Shaolin Kung Fu !<span> <i class="icofont-star review"></i><i class="icofont-star review"></i> <i class="icofont-star review"></i><i class="icofont-star review"></i> <i class="icofont-star"></i></span></h5>
+                                                <p>Culture and lifestyle <span> - Leisure walking</span></p>
+                                            </div><!-- /.top -->
+                                            <div class="middle-text d-md-flex justify-content-md-between rt-mt-20">
+                                                <div class="left_column">
+                                                    <span class="badge rt-gradinet-badge pill rt-mr-10">4.3 <small>/5</small></span>
+                                                    <span class="primary-color">Excellent</span>
+                                                    <span class="f-size-12 text-878">( 86 Reviews )</span>
+                                                    <span class="text-555 f-size-16 d-block rt-mt-15"><span class="rt-mr-15"><i class="icofont-users-alt-5 primary-color rt-mr-4"></i>Family Trip</span> <span> <i class="icofont-user primary-color rt-mr-4"></i>Private Tour</span></span>
+                                                </div><!-- /.left- -->
+                                                <div class="right_column text-left text-md-right">
+                                                    <span class="d-block text-primary f-size-24 rt-semiblod title-font">$2707</span>
+                                                    <span class="d-block f-size-12 text-878">Per Person</span>
+                                                </div><!-- /.right -->
+                                            </div><!-- /.middle-text -->
+                                            <div class="footer-elements d-flex justify-content-between align-items-center align-items-end">
+                                                <div class="left">
+                                                    <a href="#">Customize & Request</a>
+                                                </div><!-- /.left -->
+                                                <div class="right">
+                                                    <a href="trip-2.html" class="rt-btn rt-gradient pill rt-sm3 text-uppercase">View Details</a>
+                                                </div><!-- /.right -->
+                                            </div><!-- /.footer-elements -->
+                                        </div><!-- /.hotel-text -->
+                                    </div><!-- /.hotel-inner-content -->
+                                </div><!-- /.hotel-list-box -->
+                                <div class="box-style__1 rt-mb-30">
+                                    <div class="hotel-inner-content row">
+                                        <div class="hotel-thumb col-md-3  mb-5 mb-md-0">
+                                            <div class="hotel-bg rtbgprefix-cover" style="background-image: url(assets/images/all-img/trip-6.jpg)">
+                                                <div class="inaner-badge">
+                                                    <span class="bg-gradient-primary text-white text-capitalize rt-pl-10 rt-pr-10 rt-pt-5 rt-pb-5">new</span>
+                                                </div><!-- /.inaner-badge -->
+                                            </div>
+                                        </div><!-- /.hotel-thumb -->
+                                        <div class="hotel-text col-md-9">
+                                            <div class="top">
+                                                <h5>14 Day China Discovery Tour<span> <i class="icofont-star review"></i><i class="icofont-star review"></i> <i class="icofont-star review"></i><i class="icofont-star review"></i> <i class="icofont-star"></i></span></h5>
+                                                <p>Culture and lifestyle <span> - Leisure walking</span></p>
+                                            </div><!-- /.top -->
+                                            <div class="middle-text d-md-flex justify-content-md-between rt-mt-20">
+                                                <div class="left_column">
+                                                    <span class="badge rt-gradinet-badge pill rt-mr-10">4.3 <small>/5</small></span>
+                                                    <span class="primary-color">Excellent</span>
+                                                    <span class="f-size-12 text-878">( 86 Reviews )</span>
+                                                    <span class="text-555 f-size-16 d-block rt-mt-15"><span class="rt-mr-15"><i class="icofont-users-alt-5 primary-color rt-mr-4"></i>Family Trip</span> <span> <i class="icofont-user primary-color rt-mr-4"></i>Private Tour</span></span>
+                                                </div><!-- /.left- -->
+                                                <div class="right_column text-left text-md-right">
+                                                    <span class="d-block text-primary f-size-24 rt-semiblod title-font">$2707</span>
+                                                    <span class="d-block f-size-12 text-878">Per Person</span>
+                                                </div><!-- /.right -->
+                                            </div><!-- /.middle-text -->
+                                            <div class="footer-elements d-flex justify-content-between align-items-center align-items-end">
+                                                <div class="left">
+                                                    <a href="#">Customize & Request</a>
+                                                </div><!-- /.left -->
+                                                <div class="right">
+                                                    <a href="trip-2.html" class="rt-btn rt-gradient pill rt-sm3 text-uppercase">View Details</a>
+                                                </div><!-- /.right -->
+                                            </div><!-- /.footer-elements -->
+                                        </div><!-- /.hotel-text -->
+                                    </div><!-- /.hotel-inner-content -->
+                                </div><!-- /.hotel-list-box -->
+
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination  rt-paganation justify-content-center">
+                                        <li class="page-item"><a class="page-link" href="#"><i class="icofont-rounded-double-left"></i></a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link" href="#">01</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">02</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">03</a></li>
+                                        <li class="page-item"><a class="page-link" href="#"><i class="icofont-rounded-double-right"></i></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div><!-- /.col-lg-9 -->
+                        </div><!-- /.row -->
+                    </div>
+    <div class="tab-pane {{$page=='insurance'?"show active":"rtIncative"}} fade-in-bottom" id="rt-item_b_eigth" role="tabpanel" aria-labelledby="rt-item_b_eigth">
+        <div class="row">
+            <div class="col-lg-3 mx-auto mb-5 mb-lg-0 col-md-6">
+                <div class="rt-sidebar-group filtercoll">
+    <div class="rt-widget widget_range-slider">
+        <h3 class="rt-widget-title">
+            Filter by Price
+        </h3><!-- /.rt-widget-title -->
+
+        <div class="slider-range"></div>
+        <div class="price_slider_amount">
+            <div class="clearfix">
+                <div class="float-left">
+                    <span>Price:</span>
+                </div><!-- /.float-left -->
+                <div class="float-right">
+                    <input type="text" class="amount" name="price" placeholder="Add Your Price" />
+                </div><!-- /.float-right -->
+            </div><!-- /.clearfix -->
+        </div>
+        <div class="text-center">
+            <input type="submit" value="Filter" class="rt-btn rt-gradient rounded-sm rt-sm text-uppercase" />
+        </div><!-- /.text-center -->
+    </div><!-- /.rt-widget -->
+    <div class="rt-widget widget_plane_time">
+        <h3 class="rt-widget-title">
+            Departure Time
+        </h3><!-- /.rt-widget-title -->
+        <ul>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-1">
+                    <label class="form-check-label" for="train_gridCheckrt-1">
+                        00:00-06:00
+                    </label>
+                </div><!-- ./orm-group -->
+            </li>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-2">
+                    <label class="form-check-label" for="train_gridCheckrt-2">
+                    06:00-12:00
+                    </label>
+                </div><!-- ./orm-group -->
+            </li>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-2-train-1">
+                    <label class="form-check-label" for="train_gridCheckrt-2-train-1">
+                    12:00-18:00
+                    </label>
+                </div><!-- ./orm-group -->
+            </li>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-2-train-2">
+                    <label class="form-check-label" for="train_gridCheckrt-2-train-2">
+                    18:00-24:00
+                    </label>
+                </div><!-- ./orm-group -->
+            </li>
+        </ul>
+    </div><!-- /.rt-widget -->
+    <div class="rt-widget widget_plane_time">
+        <h3 class="rt-widget-title">
+            Arrival Time
+        </h3><!-- /.rt-widget-title -->
+        <ul>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-3tx">
+                    <label class="form-check-label" for="train_gridCheckrt-3tx">
+                    00:00-06:00
+                    </label>
+                </div><!-- ./orm-group -->
+
+            </li>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-4sa">
+                    <label class="form-check-label" for="train_gridCheckrt-4sa">
+                        06:00-12:00
+                    </label>
+                </div><!-- ./orm-group -->
+
+            </li>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-5">
+                    <label class="form-check-label" for="train_gridCheckrt-5">
+                    12:00-18:00
+                    </label>
+                </div><!-- ./orm-group -->
+
+            </li>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-51">
+                    <label class="form-check-label" for="train_gridCheckrt-51">
+                        18:00-24:00
+                    </label>
+                </div><!-- ./orm-group -->
+            </li>
+         </ul>
+    </div><!-- /.rt-widget -->
+    <div class="rt-widget widget_plane_time">
+        <h3 class="rt-widget-title">
+            Arrival Station
+        </h3><!-- /.rt-widget-title -->
+        <ul>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-11">
+                    <label class="form-check-label" for="train_gridCheckrt-11">
+                        Beijing South
+                    </label>
+                </div><!-- ./orm-group -->
+
+            </li>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-111">
+                    <label class="form-check-label" for="train_gridCheckrt-111">
+                        Beijing
+                    </label>
+                </div><!-- ./orm-group -->
+
+            </li>
+
+        </ul>
+
+    </div><!-- /.rt-widget -->
+</div><!-- /.rt-sidebar-group -->
+            </div><!-- /.col-lg-3 -->
+            <div class="col-lg-9">
+                <div class="flight-list-box sortcoll rt-mb-30">
+    <form action="#" class="row">
+        <div class="col-lg-3 col-md-6 mb-3 mb-lg-0">
+            <button class="rt-btn pill rt-sm rt-gradient d-block">Recommended</button>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3 col-md-6 mb-3 mb-lg-0">
+            <select class="rt-selectactive banner-select" name="from" style="width: 100%">
+                <option value="1">Price</option>
+                <option value="2">100</option>
+                <option value="3">100</option>
+                <option value="4">400</option>
+                <option value="5">500</option>
+            </select>
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3 rt-input-group mini col-md-6  mb-3 mb-md-0">
+            <input type="text" class="rt-date-picker form-control" placeholder="Departure Time">
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3 rt-input-group mini col-md-6 ">
+            <input type="text" class="form-control rt-date-picker" placeholder="Arrival Time ">
+        </div><!-- /.col-lg-3 -->
+    </form>
+</div><!-- /.flight-list-box -->
+
+<div class="flight-list-box rt-mb-30 row">
+    <div class="col-md-3 mb-md-0 mb-4">
+        <div class="d-flex justify-content-between">
+            <span class="rt-medium f-size-24 primary-color">G102</span>
+            <ul class="rt-llist train-timeline">
+                <li class="f-size-18 text-424">
+                    06:26
+                </li>
+                <li class="f-size-18 text-424">
+                    12:29
+                </li>
+            </ul>
+        </div>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-3 mb-md-0 mb-4 text-center text-md-right train-border">
+        <span class="f-size-12 text-424"><i class="icofont-clock-time rt-mr-3"></i>4h5m</span>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-6">
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>25.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    </div><!-- /.col-md-4 -->
+</div><!-- /.flight-box -->
+<div class="flight-list-box rt-mb-30 row">
+    <div class="col-md-3 mb-md-0 mb-4">
+        <div class="d-flex justify-content-between">
+            <span class="rt-medium f-size-24 primary-color">G102</span>
+            <ul class="rt-llist train-timeline">
+                <li class="f-size-18 text-424">
+                    06:26
+                </li>
+                <li class="f-size-18 text-424">
+                    12:29
+                </li>
+            </ul>
+        </div>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-3 mb-md-0 mb-4 text-center text-md-right train-border">
+        <span class="f-size-12 text-424"><i class="icofont-clock-time rt-mr-3"></i>4h5m</span>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-6">
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>25.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    </div><!-- /.col-md-4 -->
+</div><!-- /.flight-box -->
+<div class="flight-list-box rt-mb-30 row">
+    <div class="col-md-3 mb-md-0 mb-4">
+        <div class="d-flex justify-content-between">
+            <span class="rt-medium f-size-24 primary-color">G102</span>
+            <ul class="rt-llist train-timeline">
+                <li class="f-size-18 text-424">
+                    06:26
+                </li>
+                <li class="f-size-18 text-424">
+                    12:29
+                </li>
+            </ul>
+        </div>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-3 mb-md-0 mb-4 text-center text-md-right train-border">
+        <span class="f-size-12 text-424"><i class="icofont-clock-time rt-mr-3"></i>4h5m</span>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-6">
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>25.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    </div><!-- /.col-md-4 -->
+</div><!-- /.flight-box -->
+<div class="flight-list-box rt-mb-30 row">
+    <div class="col-md-3 mb-md-0 mb-4">
+        <div class="d-flex justify-content-between">
+            <span class="rt-medium f-size-24 primary-color">G102</span>
+            <ul class="rt-llist train-timeline">
+                <li class="f-size-18 text-424">
+                    06:26
+                </li>
+                <li class="f-size-18 text-424">
+                    12:29
+                </li>
+            </ul>
+        </div>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-3 mb-md-0 mb-4 text-center text-md-right train-border">
+        <span class="f-size-12 text-424"><i class="icofont-clock-time rt-mr-3"></i>4h5m</span>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-6">
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>25.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    </div><!-- /.col-md-4 -->
+</div><!-- /.flight-box -->
+<div class="flight-list-box rt-mb-30 row">
+    <div class="col-md-3 mb-md-0 mb-4">
+        <div class="d-flex justify-content-between">
+            <span class="rt-medium f-size-24 primary-color">G102</span>
+            <ul class="rt-llist train-timeline">
+                <li class="f-size-18 text-424">
+                    06:26
+                </li>
+                <li class="f-size-18 text-424">
+                    12:29
+                </li>
+            </ul>
+        </div>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-3 mb-md-0 mb-4 text-center text-md-right train-border">
+        <span class="f-size-12 text-424"><i class="icofont-clock-time rt-mr-3"></i>4h5m</span>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-6">
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>25.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    </div><!-- /.col-md-4 -->
+</div><!-- /.flight-box -->
+                <nav aria-label="Page navigation example">
+    <ul class="pagination  rt-paganation justify-content-center">
+        <li class="page-item"><a class="page-link" href="#"><i class="icofont-rounded-double-left"></i></a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="#">01</a></li>
+        <li class="page-item"><a class="page-link" href="#">02</a></li>
+        <li class="page-item"><a class="page-link" href="#">03</a></li>
+        <li class="page-item"><a class="page-link" href="#"><i class="icofont-rounded-double-right"></i></a>
+        </li>
+    </ul>
+</nav>
+            </div><!-- /.col-lg-9 -->
+        </div><!-- /.row -->
+    </div>
+    <div class="tab-pane {{$page=='special ticket'?"show active":"rtIncative"}} fade-in-bottom" id="rt-item_b_ninth" role="tabpanel" aria-labelledby="rt-item_b_ninth">
+        <div class="row">
+            <div class="col-lg-3 mx-auto mb-5 mb-lg-0 col-md-6">
+                <div class="rt-sidebar-group filtercoll">
+    <div class="rt-widget widget_range-slider">
+        <h3 class="rt-widget-title">
+            Filter by Price
+        </h3><!-- /.rt-widget-title -->
+
+        <div class="slider-range"></div>
+        <div class="price_slider_amount">
+            <div class="clearfix">
+                <div class="float-left">
+                    <span>Price:</span>
+                </div><!-- /.float-left -->
+                <div class="float-right">
+                    <input type="text" class="amount" name="price" placeholder="Add Your Price" />
+                </div><!-- /.float-right -->
+            </div><!-- /.clearfix -->
+        </div>
+        <div class="text-center">
+            <input type="submit" value="Filter" class="rt-btn rt-gradient rounded-sm rt-sm text-uppercase" />
+        </div><!-- /.text-center -->
+    </div><!-- /.rt-widget -->
+    <div class="rt-widget widget_plane_time">
+        <h3 class="rt-widget-title">
+            Departure Time
+        </h3><!-- /.rt-widget-title -->
+        <ul>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-1">
+                    <label class="form-check-label" for="train_gridCheckrt-1">
+                        00:00-06:00
+                    </label>
+                </div><!-- ./orm-group -->
+            </li>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-2">
+                    <label class="form-check-label" for="train_gridCheckrt-2">
+                    06:00-12:00
+                    </label>
+                </div><!-- ./orm-group -->
+            </li>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-2-train-1">
+                    <label class="form-check-label" for="train_gridCheckrt-2-train-1">
+                    12:00-18:00
+                    </label>
+                </div><!-- ./orm-group -->
+            </li>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-2-train-2">
+                    <label class="form-check-label" for="train_gridCheckrt-2-train-2">
+                    18:00-24:00
+                    </label>
+                </div><!-- ./orm-group -->
+            </li>
+        </ul>
+    </div><!-- /.rt-widget -->
+    <div class="rt-widget widget_plane_time">
+        <h3 class="rt-widget-title">
+            Arrival Time
+        </h3><!-- /.rt-widget-title -->
+        <ul>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-3tx">
+                    <label class="form-check-label" for="train_gridCheckrt-3tx">
+                    00:00-06:00
+                    </label>
+                </div><!-- ./orm-group -->
+
+            </li>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-4sa">
+                    <label class="form-check-label" for="train_gridCheckrt-4sa">
+                        06:00-12:00
+                    </label>
+                </div><!-- ./orm-group -->
+
+            </li>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-5">
+                    <label class="form-check-label" for="train_gridCheckrt-5">
+                    12:00-18:00
+                    </label>
+                </div><!-- ./orm-group -->
+
+            </li>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-51">
+                    <label class="form-check-label" for="train_gridCheckrt-51">
+                        18:00-24:00
+                    </label>
+                </div><!-- ./orm-group -->
+            </li>
+         </ul>
+    </div><!-- /.rt-widget -->
+    <div class="rt-widget widget_plane_time">
+        <h3 class="rt-widget-title">
+            Arrival Station
+        </h3><!-- /.rt-widget-title -->
+        <ul>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-11">
+                    <label class="form-check-label" for="train_gridCheckrt-11">
+                        Beijing South
+                    </label>
+                </div><!-- ./orm-group -->
+
+            </li>
+            <li class="clearfix">
+
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="train_gridCheckrt-111">
+                    <label class="form-check-label" for="train_gridCheckrt-111">
+                        Beijing
+                    </label>
+                </div><!-- ./orm-group -->
+
+            </li>
+
+        </ul>
+
+    </div><!-- /.rt-widget -->
+</div><!-- /.rt-sidebar-group -->
+            </div><!-- /.col-lg-3 -->
+            <div class="col-lg-9">
+                <div class="flight-list-box sortcoll rt-mb-30">
+    <form action="#" class="row">
+        <div class="col-lg-3 col-md-6 mb-3 mb-lg-0">
+            <button class="rt-btn pill rt-sm rt-gradient d-block">Recommended</button>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3 col-md-6 mb-3 mb-lg-0">
+            <select class="rt-selectactive banner-select" name="from" style="width: 100%">
+                <option value="1">Price</option>
+                <option value="2">100</option>
+                <option value="3">100</option>
+                <option value="4">400</option>
+                <option value="5">500</option>
+            </select>
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3 rt-input-group mini col-md-6  mb-3 mb-md-0">
+            <input type="text" class="rt-date-picker form-control" placeholder="Departure Time">
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3 rt-input-group mini col-md-6 ">
+            <input type="text" class="form-control rt-date-picker" placeholder="Arrival Time ">
+        </div><!-- /.col-lg-3 -->
+    </form>
+</div><!-- /.flight-list-box -->
+
+<div class="flight-list-box rt-mb-30 row">
+    <div class="col-md-3 mb-md-0 mb-4">
+        <div class="d-flex justify-content-between">
+            <span class="rt-medium f-size-24 primary-color">G102</span>
+            <ul class="rt-llist train-timeline">
+                <li class="f-size-18 text-424">
+                    06:26
+                </li>
+                <li class="f-size-18 text-424">
+                    12:29
+                </li>
+            </ul>
+        </div>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-3 mb-md-0 mb-4 text-center text-md-right train-border">
+        <span class="f-size-12 text-424"><i class="icofont-clock-time rt-mr-3"></i>4h5m</span>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-6">
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>25.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    </div><!-- /.col-md-4 -->
+</div><!-- /.flight-box -->
+<div class="flight-list-box rt-mb-30 row">
+    <div class="col-md-3 mb-md-0 mb-4">
+        <div class="d-flex justify-content-between">
+            <span class="rt-medium f-size-24 primary-color">G102</span>
+            <ul class="rt-llist train-timeline">
+                <li class="f-size-18 text-424">
+                    06:26
+                </li>
+                <li class="f-size-18 text-424">
+                    12:29
+                </li>
+            </ul>
+        </div>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-3 mb-md-0 mb-4 text-center text-md-right train-border">
+        <span class="f-size-12 text-424"><i class="icofont-clock-time rt-mr-3"></i>4h5m</span>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-6">
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>25.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    </div><!-- /.col-md-4 -->
+</div><!-- /.flight-box -->
+<div class="flight-list-box rt-mb-30 row">
+    <div class="col-md-3 mb-md-0 mb-4">
+        <div class="d-flex justify-content-between">
+            <span class="rt-medium f-size-24 primary-color">G102</span>
+            <ul class="rt-llist train-timeline">
+                <li class="f-size-18 text-424">
+                    06:26
+                </li>
+                <li class="f-size-18 text-424">
+                    12:29
+                </li>
+            </ul>
+        </div>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-3 mb-md-0 mb-4 text-center text-md-right train-border">
+        <span class="f-size-12 text-424"><i class="icofont-clock-time rt-mr-3"></i>4h5m</span>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-6">
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>25.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    </div><!-- /.col-md-4 -->
+</div><!-- /.flight-box -->
+<div class="flight-list-box rt-mb-30 row">
+    <div class="col-md-3 mb-md-0 mb-4">
+        <div class="d-flex justify-content-between">
+            <span class="rt-medium f-size-24 primary-color">G102</span>
+            <ul class="rt-llist train-timeline">
+                <li class="f-size-18 text-424">
+                    06:26
+                </li>
+                <li class="f-size-18 text-424">
+                    12:29
+                </li>
+            </ul>
+        </div>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-3 mb-md-0 mb-4 text-center text-md-right train-border">
+        <span class="f-size-12 text-424"><i class="icofont-clock-time rt-mr-3"></i>4h5m</span>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-6">
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>25.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    </div><!-- /.col-md-4 -->
+</div><!-- /.flight-box -->
+<div class="flight-list-box rt-mb-30 row">
+    <div class="col-md-3 mb-md-0 mb-4">
+        <div class="d-flex justify-content-between">
+            <span class="rt-medium f-size-24 primary-color">G102</span>
+            <ul class="rt-llist train-timeline">
+                <li class="f-size-18 text-424">
+                    06:26
+                </li>
+                <li class="f-size-18 text-424">
+                    12:29
+                </li>
+            </ul>
+        </div>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-3 mb-md-0 mb-4 text-center text-md-right train-border">
+        <span class="f-size-12 text-424"><i class="icofont-clock-time rt-mr-3"></i>4h5m</span>
+    </div><!-- /.col-md-4 -->
+    <div class="col-md-6">
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>25.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between rt-mb-15">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    <div class="d-flex justify-content-between">
+        <span class="f-size-14 text-333">2nd Class</span>
+        <span class="f-size-24 text-primary rt-semiblod title-font"><span class="f-size-12">$</span>55.33</span>
+        <a href="train-2.html" class="rt-btn rt-gradient rt-sm3 pill text-uppercase">Book</a>
+    </div><!-- /.d-flex  -->
+    </div><!-- /.col-md-4 -->
+</div><!-- /.flight-box -->
+                <nav aria-label="Page navigation example">
+    <ul class="pagination  rt-paganation justify-content-center">
+        <li class="page-item"><a class="page-link" href="#"><i class="icofont-rounded-double-left"></i></a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="#">01</a></li>
+        <li class="page-item"><a class="page-link" href="#">02</a></li>
+        <li class="page-item"><a class="page-link" href="#">03</a></li>
+        <li class="page-item"><a class="page-link" href="#"><i class="icofont-rounded-double-right"></i></a>
+        </li>
+    </ul>
+</nav>
+            </div><!-- /.col-lg-9 -->
+        </div><!-- /.row -->
+    </div>
+
+
+                </div>
             </div><!-- /.col-12 -->
         </div><!-- /.row -->
     </div><!-- /.container -->
