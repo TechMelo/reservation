@@ -49,9 +49,9 @@ Route::get('/hotel_specs',function(){
 })->name('hotel_specs');
 
 Route::get('/voucher',function(){
-    return view('flight/voucher');
-})->name('voucher');
-Route::get('/voucher',function(){
     return view('voucher/index');
 })->name('voucher');
+Route::get('/visa_form',function(){
+    return view('visa/form');
+})->name('visa_form');
 

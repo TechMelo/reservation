@@ -25,6 +25,9 @@
     <link rel="stylesheet" href={{URL::asset('css/select2.min.css')}}>
     <link rel="stylesheet" href={{URL::asset('css/tippy.css')}}>
     <link rel="stylesheet" href={{URL::asset('css/app.css')}}>
+
+    <link rel="stylesheet" href="{{URL::asset('visa/fonts/material-icon/css/material-design-iconic-font.min.css')}}">
+
     <!-- ==================End Css Link===================== -->
 
 
@@ -462,6 +465,12 @@
 <script src="{{URL::asset('js/vivus.min.js')}}"></script>
 <script src="{{URL::asset('js/tippy.all.min.js')}}"></script>
 <script src="{{URL::asset('js/app.js')}}"></script>
+<script src="{{URL::asset('visa/vendor/jquery-validation/dist/jquery.validate.min.js')}}"></script>
+<script src="{{URL::asset('visa/vendor/jquery-validation/dist/additional-methods.min.js')}}"></script>
+<script src="{{URL::asset('visa/vendor/jquery-steps/jquery.steps.min.js')}}"></script>
+<script src="{{URL::asset('visa/js/main.js')}}"></script>
+
+
 
 <!-- ==================End Js Link===================== -->
 

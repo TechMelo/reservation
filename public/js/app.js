@@ -69,6 +69,7 @@ jQuery(document).ready(function ($) {
   02.Mobile Menu
   ================-------------------*/
 
+
   $(".menu-item-has-children > a").on("click", function () {
     var element = $(this).parent("li");
 
