@@ -66,7 +66,45 @@
 
 
     ----------------------------------------------------- */
-/* */
+/*Custom */
+.navbar-m
+{
+    -webkit-box-shadow: 0px -2px 4px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow: 0px -2px 4px rgba(50, 50, 50, 0.2);
+    box-shadow: 0px -2px 4px rgba(50, 50, 50, 0.2);
+    display: none !important;
+    justify-content: space-around !important;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index:500;
+    background-color: white;
+    width:100%;
+    height: 70px;
+    font-weight: bold;
+
+
+}
+.nm-active
+{
+    color: #496cfe !important;
+}
+.navbar-m a{
+    color: #777;
+}
+.navbar-m i{
+    color: #777;
+}
+.navbar-m-icon
+{
+    top: 5px;
+    position: relative;
+}
+.nav-col
+{
+    align-items: center;
+    flex-direction: column;
+}
 /*1.0 Root Css*/
 :root
 {
@@ -12773,7 +12811,9 @@ span.menu-title
     }
 
     /*     ************************Modifications*****************/
-
+.navbar-m{
+    display: flex !important;
+}
     .breadcrumbs-content h3
     {
         display: none !important;

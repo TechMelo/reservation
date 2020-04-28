@@ -296,6 +296,54 @@
         </div>
     </div>
 </div>
+<ul class="nav navbar-m">
+    <li class="nav-item nav-col align-items-center d-flex mt-2">
+                <span class="navbar-m-icon">
+                <i class="fas fa-home "></i>
+                    </span>
+        <span class="navbar-m-text">
+                <a href="#" class="nav-link nm-l">Home</a>
+                </span>
+
+    </li>
+    <li class="nav-item nav-col align-items-center d-flex mt-2">
+                <span class="navbar-m-icon">
+                <i class="fas fa-user-circle"></i>
+                    </span>
+        <span class="navbar-m-text">
+                <a href="#" class="nav-link nm-l">Account</a>
+                </span>
+
+    </li>
+    <li class="nav-item nav-col align-items-center d-flex mt-2">
+                <span class="navbar-m-icon">
+                <i class="fas fa-book"></i>
+                    </span>
+        <span class="navbar-m-text">
+                <a href="#" class="nav-link nm-l">Booking</a>
+                </span>
+
+    </li>
+    <li class="nav-item nav-col align-items-center d-flex mt-2">
+                <span class="navbar-m-icon">
+               <i class="far fa-credit-card"></i>
+                    </span>
+        <span class="navbar-m-text">
+                <a href="#" class="nav-link nm-l">E-cash</a>
+                </span>
+
+    </li>
+    <li class="nav-item nav-col align-items-center d-flex mt-2">
+                <span class="navbar-m-icon">
+              <i class="fas fa-phone-square"></i>
+                    </span>
+        <span class="">
+                <a href="#" class="nav-link nm-l">Support</a>
+                </span>
+
+    </li>
+
+</ul>
 @yield('content')
 <!--
 

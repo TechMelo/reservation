@@ -34,6 +34,13 @@ jQuery(document).ready(function ($) {
   01.Paralx Int
   ================-------------------*/
 
+        $(".nav-col").click(function(){
+            $(".navbar-m").find("i").removeClass("nm-active");
+            $(".navbar-m").find("a").removeClass("nm-active");
+          $(this).find("i").addClass("nm-active");
+          $(this).find("a").addClass("nm-active");
+        });
+
   function initparallax() {
     var a = {
       Android: function Android() {
