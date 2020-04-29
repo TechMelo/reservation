@@ -13568,10 +13568,12 @@ span.menu-title
             transform: translate(-50%, -50%);
 }
 @media (max-width: 767.98px)
-{.flt-dtls-box
+{
+    .flt-fix
 {
     margin-top: 70px;
 }
+
     .bb-fix
 {
     top: -250px !important;

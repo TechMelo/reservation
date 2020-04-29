@@ -111,7 +111,6 @@
                         </div>
                     </div>
                 </div><!-- /.alert -->
-                <div class="section-title-spacer"></div><!-- /.rt-section-title-spacer -->
                 <div class="flt-dtls-box rt-mb-30">
                     <div class="upper-top-content d-md-flex flex-md-row justify-content-md-between align-items-center">
                         <div class="left">
