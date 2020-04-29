@@ -64,7 +64,10 @@
     $(".visa-radio").on("click",function () {
     if($(".visa-radio").is(":checked")) {
         $(".visa-radio-bg").removeClass("visa-radio-active");
+        $(".visa-radio-active").addClass("visa-radio-bg");
+        $(".visa-radio-active").removeClass("visa-radio-active");
         $(this).closest( "div" ).addClass("visa-radio-active");
+        $(this).closest( "div" ).removeClass("visa-radio-bg");
     }
     });
 

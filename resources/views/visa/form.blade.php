@@ -102,17 +102,17 @@
                <div class="col-md-3 flags ">
                   <a href="#t1" data-toggle="tab" class="t-link active">
                     <div class="col-md-12 p-4 mb-3 text-white rt-btn   rt-gradient  btn-flag btn-flag-active">
-                   <img width="100px" src="{{URL::asset('visa/images/dubai.jpg')}}" alt=""><span class="cname float-right mt-4 mr-3"><h5>Dubai</h5></span>
+                   <img width="80px" src="{{URL::asset('visa/images/dubai.jpg')}}" alt=""><span class="cname float-right mt-3 mr-3"><h6>Dubai</h6></span>
                     </div>
                   </a>
                    <a href="#t2" data-toggle="tab" class="t-link">
                        <div class="col-md-12 p-4 mb-3 text-white rt-btn   rt-gradient  btn-flag">
-                           <img width="100px" src="{{URL::asset('visa/images/iran.png')}}" alt=""><span class="cname float-right mt-4 mr-3"><h5>Iran</h5></span>
+                           <img width="80px" src="{{URL::asset('visa/images/iran.png')}}" alt=""><span class="cname float-right mt-3 mr-3"><h6>Iran</h6></span>
                        </div>
                    </a>
                    <a href="#t3" data-toggle="tab" class="t-link">
                        <div class="col-md-12 p-4 mb-3 text-white rt-btn   rt-gradient  btn-flag">
-                           <img width="100px" src="{{URL::asset('visa/images/jorden.png')}}" alt=""><span class=" cname float-right mt-4 mr-3"><h5>Jorden</h5></span>
+                           <img width="80px" src="{{URL::asset('visa/images/jorden.png')}}" alt=""><span class=" cname float-right mt-3 mr-3"><h6>Jorden</h6></span>
                        </div>
                    </a>
 

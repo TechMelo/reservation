@@ -33,6 +33,29 @@ jQuery(document).ready(function ($) {
   /*---------------====================
   01.Paralx Int
   ================-------------------*/
+$(".btn-tog-down").click(function () {
+   $(".btn-hide").removeClass("btn-h");
+$("#rt-breadcump").addClass("rt-breadcump-height-fix");
+$("#rt-breadcump3").addClass("rt-breadcump-height-fix3");
+$("#rt-breadcump3").removeClass("rt-breadcump-height3");
+$("#index_search").addClass("rt-fix-drop ");
+$("#rt-breadcump").removeClass("rt-breadcump-height");
+$("#bottom-bar").addClass("bb-fix");
+$("#bottom-bar2").addClass("bb-fix2");
+$(".btn-tog-down").hide();
+$(".btn-tog-back").show();
+});
+$(".btn-tog-back").click(function () {
+    $("#index_search").removeClass("rt-fix-drop ");
+   $(".btn-hide").addClass("btn-h");
+$("#rt-breadcump").addClass("rt-breadcump-height");
+$("#rt-breadcump").removeClass("rt-breadcump-height-fix");
+$("#rt-breadcump3").removeClass("rt-breadcump-height-fix3");
+    $("#rt-breadcump3").addClass("rt-breadcump-height3");
+$(".bottom-bar").removeClass("bb-fix")
+$(".btn-tog-back").hide();
+$(".btn-tog-down").show();
+});
 
         $(".nav-col").click(function(){
             $(".navbar-m").find("i").removeClass("nm-active");
