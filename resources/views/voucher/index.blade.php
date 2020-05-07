@@ -89,7 +89,7 @@
     </div><!-- /.rt-bredcump -->
     <div class="container voucher-cont">
 
-        <div class="flt-dtls-box git flt-fix rt-mb-30">
+        <div class="flt-dtls-box flt-fix rt-mb-30">
             <div class="upper-top-content d-md-flex flex-md-row justify-content-md-between align-items-center">
                 <div class="left">
                     <span>Hong Kong</span> <span><img src="{{URL::asset('images/all-img/shp-ln-1.png')}}" alt="line image" draggable="false"></span> <span>Singapore</span>

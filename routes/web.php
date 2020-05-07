@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('flight/index');
-});
+})->name('index');
 Route::get('/flights',function(){
     $page='flight';
    return view('flight/search_page',compact('page'));
@@ -54,4 +54,15 @@ Route::get('/voucher',function(){
 Route::get('/visa_form',function(){
     return view('visa/form');
 })->name('visa_form');
+
+Route::get('/our_services',function(){
+    return view('static_pages/services');
+})->name('our_services');
+
+Route::get('/our_product',function(){
+    return view('static_pages/product');
+})->name('our_products');
+Route::get('/keys',function(){
+    return view('static_pages/keys');
+})->name('keys');
 

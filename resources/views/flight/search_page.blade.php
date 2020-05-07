@@ -969,17 +969,26 @@
                             <span class="d-block">HKG T2</span>
                         </div><!-- /.left -->
                         <div class="middle">
+                            <div class="flight-detils ml-3">
+                                <span class="d-block"><i class="icofont-clock-time"></i><!-- /.time -->4h5m</span>
+
+                            </div><!-- /.flight-detils -->
                             <img src="{{URL::asset('images/all-img/time-shape-line.png')}}" alt="time shape" draggable="false">
+                             <div class="flight-type ml-2 ">
+                                 <p >Economy</p>
+                             </div>
+
                         </div><!-- /.middle -->
                         <div class="right">
                             <span class="d-block">15.00</span>
                             <span class="d-block">SIN T2</span>
                         </div><!-- /.rght -->
                     </div><!-- /.flight-time -->
-                    <div class="flight-detils">
-                        <span class="d-block"><i class="icofont-clock-time"></i><!-- /.time -->4h5m</span>
+                    <div class="weight-allowed">
+                        <img class="mt-4" height="50px" src="{{URL::asset('images/details/baggage.png')}}"
+                                              alt=""><p class=" ml-3 ">30kg</p>
 
-                    </div><!-- /.flight-detils -->
+                    </div>
                     <div class="trip">
                         <span class="d-blok">$610</span>
                         <span class="d-block">Roundtrip</span>
@@ -991,13 +1000,18 @@
                 </div><!-- /.top-content -->
                 <div class="row ml-1">
                 <span class="d-block ml-1"><a href="#collapseExample00" class="flt-d-clic" data-toggle="collapse" role="button"
-                                              aria-expanded="false" aria-controls="collapseExample">Flight details <i
+                                              aria-expanded="false" aria-controls="collapseExample">
+                        <img height="30px" src="{{URL::asset('images/details/info.png')}}"
+                             alt="">Flight details <i
                             class="icofont-simple-down"></i></a></span>
-                    <span class="d-block ml-4"><a href="#collapseExample01" class="flt-d-clic" data-toggle="collapse" role="button"
-                                                  aria-expanded="false" aria-controls="collapseExample">Bagage <i
+                    <span class="d-block ml-4">
+                        <a href="#collapseExample01" class="flt-d-clic" data-toggle="collapse" role="button"
+                                                  aria-expanded="false" aria-controls="collapseExample"><img height="30px" src="{{URL::asset('images/details/baggage.png')}}"
+                                                                                                             alt=""> Bagage <i
                                 class="icofont-simple-down"></i></a></span>
                     <span class="d-block ml-4"><a href="#collapseExample02" class="flt-d-clic" data-toggle="collapse" role="button"
-                                                  aria-expanded="false" aria-controls="collapseExample">Fare rules<i
+                                                  aria-expanded="false" aria-controls="collapseExample"><img width="30px" src="{{URL::asset('images/details/rules.png')}}"
+                                                                                                             alt="">Fare rules<i
                                 class="icofont-simple-down"></i></a></span>
                 </div>
                 <div class="collapse bottom-content" id="collapseExample">
@@ -1068,64 +1082,65 @@
                     </ul>
                 </div>
             </div><!-- /.flight-list-box -->
-            <div class="flight-list-box tablet-v-details rt-mb-30">
+            <div class="flight-list-box desktop-v-details rt-mb-30">
                 <div
-                    class="row">
-                    <div class="col-2">
-                        <div class="flight-logo">
-                            <img src="{{URL::asset('images/all-img/flt-logo-1.png')}}" alt="flt logo" draggable="false">
-                        </div><!-- /.flight-logo -->
-                    </div>
-                    <div class="col-1"></div>
-                    <div class="col-2 ">
-                        <div class="pricing ">
-                            <h5>Scoot</h5>
-                            <p>TR978 | Airbus A320-212</p>
-                        </div><!-- /.pricing -->
-                    </div>
-                    <div class="col-2 ">
-                        <div class="flight-detils">
-                            <span class="d-block"><i class="icofont-clock-time"></i><!-- /.time -->4h5m</span>
-
-                        </div><!-- /.flight-detils -->
-                    </div>
-                    <div class="col-2">
-                        <div class="trip ">
-                            <span class="d-blok">$610</span>
-                            <span class="d-block">Roundtrip</span>
-                        </div><!-- /.trip -->
-                    </div>
-                    <div class="col-2">
-                        <div class="book-now ">
-                            <a href="#" class="rt-btn  pill rt-gradient text-uppercase">Book</a>
-                        </div><!-- /.book-now -->
-                    </div>
-                    <div class="col-1"></div>
-                </div><!-- /.top-content -->
-                <div class=" top-content ">
+                    class="top-content d-flex flex-lg-row flex-column align-items-lg-center justify-content-left  justify-content-lg-between">
+                    <div class="flight-logo">
+                        <img src="{{URL::asset('images/all-img/flt-logo-1.png')}}" alt="flt logo" draggable="false">
+                    </div><!-- /.flight-logo -->
+                    <div class="pricing">
+                        <h5>Scoot</h5>
+                        <p>TR978 | Airbus A320-212</p>
+                    </div><!-- /.pricing -->
                     <div class="flight-time d-flex justify-content-between align-items-center">
                         <div class="left">
                             <span class="d-block">10:55</span>
                             <span class="d-block">HKG T2</span>
                         </div><!-- /.left -->
                         <div class="middle">
+                            <div class="flight-detils ml-3">
+                                <span class="d-block"><i class="icofont-clock-time"></i><!-- /.time -->4h5m</span>
+
+                            </div><!-- /.flight-detils -->
                             <img src="{{URL::asset('images/all-img/time-shape-line.png')}}" alt="time shape" draggable="false">
+                             <div class="flight-type ml-2 ">
+                                 <p >Economy</p>
+                             </div>
+
                         </div><!-- /.middle -->
                         <div class="right">
                             <span class="d-block">15.00</span>
                             <span class="d-block">SIN T2</span>
                         </div><!-- /.rght -->
-                    </div><!-- /.flight-time --></div>
-                <div class="row ml-1">
+                    </div><!-- /.flight-time -->
+                    <div class="weight-allowed">
+                        <img class="mt-4" height="50px" src="{{URL::asset('images/details/baggage.png')}}"
+                                              alt=""><p class=" ml-3 ">30kg</p>
 
+                    </div>
+                    <div class="trip">
+                        <span class="d-blok">$610</span>
+                        <span class="d-block">Roundtrip</span>
+                    </div><!-- /.trip -->
+                    <div class="book-now">
+                        <a href="#" class="rt-btn  pill rt-gradient text-uppercase">Book</a>
+                    </div><!-- /.book-now -->
+
+                </div><!-- /.top-content -->
+                <div class="row ml-1">
                 <span class="d-block ml-1"><a href="#collapseExample00" class="flt-d-clic" data-toggle="collapse" role="button"
-                                              aria-expanded="false" aria-controls="collapseExample">Flight details <i
+                                              aria-expanded="false" aria-controls="collapseExample">
+                        <img height="30px" src="{{URL::asset('images/details/info.png')}}"
+                             alt="">Flight details <i
                             class="icofont-simple-down"></i></a></span>
-                    <span class="d-block ml-4"><a href="#collapseExample01" class="flt-d-clic" data-toggle="collapse" role="button"
-                                                  aria-expanded="false" aria-controls="collapseExample">Bagage <i
+                    <span class="d-block ml-4">
+                        <a href="#collapseExample01" class="flt-d-clic" data-toggle="collapse" role="button"
+                                                  aria-expanded="false" aria-controls="collapseExample"><img height="30px" src="{{URL::asset('images/details/baggage.png')}}"
+                                                                                                             alt=""> Bagage <i
                                 class="icofont-simple-down"></i></a></span>
                     <span class="d-block ml-4"><a href="#collapseExample02" class="flt-d-clic" data-toggle="collapse" role="button"
-                                                  aria-expanded="false" aria-controls="collapseExample">Fare rules<i
+                                                  aria-expanded="false" aria-controls="collapseExample"><img width="30px" src="{{URL::asset('images/details/rules.png')}}"
+                                                                                                             alt="">Fare rules<i
                                 class="icofont-simple-down"></i></a></span>
                 </div>
                 <div class="collapse bottom-content" id="collapseExample">
@@ -1195,7 +1210,9 @@
                         <li><span>SIN - Singapore Changi Airport T2</span></li>
                     </ul>
                 </div>
-            </div><!-- /.flight-list-box sm -->
+            </div><!-- /.flight-list-box -->
+
+
         </div><!-- /.col-lg-12 -->
         <div class="col-12 ">
             <div class="flight-list-box desktop-v-details rt-mb-30">

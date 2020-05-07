@@ -95,7 +95,7 @@
 
 
                 <div class="main-menu ">
-                    <ul>
+                    <ul class="show-mobile">
                         <li class="menu-logo d-none">
                             <div class="row">
                                 <div class="col-8"><a href="index.html" class=""><img src="{{URL::asset('images/logo/logo-white.png')}}" alt=""></a></div>
@@ -115,6 +115,84 @@
                         <li><a href="service-1.html">Bus</a></li>
                         <li><a href="service-1.html">Special Ticket</a></li>
                         <li class="d-lg-none"><a href="service-1.html">Contact Us</a></li>
+{{--                        <li class="menu-item-has-children"><a href="#">Pages</a>--}}
+{{--                            <ul class="sub-menu">--}}
+{{--                                <li class="menu-item-has-children"><a href="#">Home Pages</a>--}}
+{{--                                    <ul class="sub-menu">--}}
+{{--                                        <li><a href="index.html">Home One</a></li>--}}
+{{--                                        <li><a href="index-02.html">Home Two</a></li>--}}
+{{--                                    </ul>--}}
+{{--                                </li>--}}
+{{--                                <li class="menu-item-has-children"><a href="#">Hotel Pages</a>--}}
+{{--                                    <ul class="sub-menu">--}}
+{{--                                        <li><a href="hotel-1.html">Hotel One</a></li>--}}
+{{--                                        <li><a href="hotel-2.html">Hotel Two</a></li>--}}
+{{--                                        <li><a href="hotel-3.html">Hotel Three</a></li>--}}
+{{--                                    </ul>--}}
+{{--                                </li>--}}
+{{--                                <li class="menu-item-has-children"><a href="#">Flight Pages</a>--}}
+{{--                                    <ul class="sub-menu">--}}
+{{--                                        <li><a href="{{route('flight1')}}">Flight One</a></li>--}}
+{{--                                        <li><a href="{{route('flight2')}}">Flight Two</a></li>--}}
+{{--                                    </ul>--}}
+{{--                                </li>--}}
+{{--                                <li class="menu-item-has-children"><a href="#">train Pages</a>--}}
+{{--                                    <ul class="sub-menu">--}}
+{{--                                        <li><a href="train-1.html">train One</a></li>--}}
+{{--                                        <li><a href="train-2.html">train Two</a></li>--}}
+{{--                                    </ul>--}}
+{{--                                </li>--}}
+{{--                                <li class="menu-item-has-children"><a href="#">trip Pages</a>--}}
+{{--                                    <ul class="sub-menu">--}}
+{{--                                        <li><a href="trip-1.html">trip One</a></li>--}}
+{{--                                        <li><a href="trip-2.html">trip Two</a></li>--}}
+{{--                                        <li><a href="trip-3.html">trip Three</a></li>--}}
+{{--                                    </ul>--}}
+{{--                                </li>--}}
+{{--                                <li class="menu-item-has-children"><a href="#">car Pages</a>--}}
+{{--                                    <ul class="sub-menu">--}}
+{{--                                        <li><a href="car-1.html">car One</a></li>--}}
+{{--                                        <li><a href="car-2.html">car Two</a></li>--}}
+{{--                                    </ul>--}}
+{{--                                </li>--}}
+{{--                                <li class="menu-item-has-children"><a href="#">blog Pages</a>--}}
+{{--                                    <ul class="sub-menu">--}}
+{{--                                        <li><a href="blog.html">blog</a></li>--}}
+{{--                                        <li><a href="blog-grid.html">blog-grid</a></li>--}}
+{{--                                        <li><a href="single-blog.html">blog-single 1</a></li>--}}
+{{--                                        <li><a href="singleblog-lsidebar.html">blog-single 2</a></li>--}}
+{{--                                    </ul>--}}
+{{--                                </li>--}}
+{{--                                <li class="menu-item-has-children"><a href="#">Others Pages</a>--}}
+{{--                                    <ul class="sub-menu">--}}
+{{--                                        <li><a href="about.html">About</a></li>--}}
+{{--                                        <li><a href="service-1.html">service</a></li>--}}
+{{--                                        <li><a href="afflite.html">afflite</a></li>--}}
+{{--                                        <li><a href="help.html">help</a></li>--}}
+{{--                                        <li><a href="how-work.html">how-work</a></li>--}}
+{{--                                        <li><a href="contact.html">contact</a></li>--}}
+{{--                                        <li><a href="404.html">404</a></li>--}}
+{{--                                    </ul>--}}
+{{--                                </li>--}}
+{{--                            </ul>--}}
+{{--                        </li>--}}
+{{--                        <li> <a href="blog.html">Blog</a></li>--}}
+
+                    </ul>
+                    <ul class="show-desktop">
+                        <li class="menu-logo d-none">
+                            <div class="row">
+                                <div class="col-8"><a href="index.html" class=""><img src="{{URL::asset('images/logo/logo-white.png')}}" alt=""></a></div>
+                                <div class="col-4 my-auto"><a class="mb-3 menu-click menu-click-cross mr-3"
+                                                              href=""><i class="fas fa-times text-white"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="current-menu-item"><a href="{{route('index')}}">Home</a></li>
+                        <li ><a href="{{route('our_products')}}">OUR PRODUCT</a></li>
+                        <li ><a href="{{route('our_services')}}">OUR SERVICE</a></li>
+                        <li ><a href="{{route('keys')}}">KEYS</a></li>
+                        <li class="d-lg-none"><a href="#">CONTACT US</a></li>
 {{--                        <li class="menu-item-has-children"><a href="#">Pages</a>--}}
 {{--                            <ul class="sub-menu">--}}
 {{--                                <li class="menu-item-has-children"><a href="#">Home Pages</a>--}}
