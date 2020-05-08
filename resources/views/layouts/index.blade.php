@@ -114,7 +114,7 @@
                         <li><a href="service-1.html">Insurrance</a></li>
                         <li><a href="service-1.html">Bus</a></li>
                         <li><a href="service-1.html">Special Ticket</a></li>
-                        <li class="d-lg-none"><a href="service-1.html">Contact Us</a></li>
+                        <li class="d-lg-none"><a href="{{route("support")}}">Contact Us</a></li>
 {{--                        <li class="menu-item-has-children"><a href="#">Pages</a>--}}
 {{--                            <ul class="sub-menu">--}}
 {{--                                <li class="menu-item-has-children"><a href="#">Home Pages</a>--}}
@@ -188,11 +188,11 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="current-menu-item"><a href="{{route('index')}}">Home</a></li>
+                        <li class="current-menu-item"><a href="{{route('index')}}">HOME</a></li>
                         <li ><a href="{{route('our_products')}}">OUR PRODUCT</a></li>
                         <li ><a href="{{route('our_services')}}">OUR SERVICE</a></li>
                         <li ><a href="{{route('keys')}}">KEYS</a></li>
-                        <li class="d-lg-none"><a href="#">CONTACT US</a></li>
+                        <li class="d-lg-none"><a href="{{route("support")}}">CONTACT US</a></li>
 {{--                        <li class="menu-item-has-children"><a href="#">Pages</a>--}}
 {{--                            <ul class="sub-menu">--}}
 {{--                                <li class="menu-item-has-children"><a href="#">Home Pages</a>--}}
@@ -468,10 +468,10 @@
                         <h3 class="rt-footer-title">Company Info</h3><!-- /.rt-footer-title -->
                         <ul class="rt-usefulllinks">
                             <li>
-                                <a href="#">About Us</a>
+                                <a href="{{route("about_us")}}">About Us</a>
                             </li>
                             <li>
-                                <a href="#">Contact Us</a>
+                                <a href="{{route("support")}}">Support</a>
                             </li>
                             <li>
                                 <a href="#">Authenticity Guarantee</a>
@@ -480,7 +480,7 @@
                                 <a href="#">Customer Reviews</a>
                             </li>
                             <li>
-                                <a href="#">Privacy Policy</a>
+                                <a href="{{route("privacy_policy")}}">Privacy Policy</a>
                             </li>
                             <li>
                                 <a href="#">Business License</a>

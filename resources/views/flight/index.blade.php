@@ -93,8 +93,7 @@
                         </div>
                         <div class="explore">
                         <h1 class="wow fade-in-bottom" data-wow-duration="1s" data-wow-delay="0.5s">
-                            Explore <br>
-                            The World!
+                            Your dream <br> is real
                         </h1>
                         <p class="wow fade-in-top">
                             You can create a Custom Trip.Search Our Lowest Fares to <br>
@@ -118,29 +117,26 @@
                                 <input type="radio" id="customRadioInline3" name="customRadioInline3" class="custom-control-input">
                                 <label class="custom-control-label" for="customRadioInline3">Multi-city</label>
                             </div>
-                            <div class="dropdown form-check-inline rt-searchlink mr-md-5">
-                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-                                   aria-haspopup="true" aria-expanded="false">
-                                    1 Adult
-                                </a>
+                            <div class=" form-check-inline rt-searchlink mr-md-5">
+                                <select class="select">
+                                    <option value="mr" selected="">1 Adult</option>
+                                    <option value="mrs">2</option>
+                                    <option value="mrs">3</option>
 
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Room one</a>
-                                    <a class="dropdown-item" href="#">Room two</a>
-                                    <a class="dropdown-item" href="#">Room three</a>
-                                </div>
+                                </select>
+
+
                             </div><!-- ./dropdown -->
-                            <div class="dropdown form-check-inline rt-searchlink">
-                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown"
-                                   aria-haspopup="true" aria-expanded="false">
-                                    Economy
-                                </a>
+                            <div class=" form-check-inline rt-searchlink">
 
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
-                                    <a class="dropdown-item" href="#">Room one</a>
-                                    <a class="dropdown-item" href="#">Room two</a>
-                                    <a class="dropdown-item" href="#">Room three</a>
-                                </div>
+                                <select class="select">
+                                    <option value="mr" selected disabled>Economy</option>
+                                    <option value="mr">Room one</option>
+                                    <option value="mrs">Room two</option>
+                                    <option value="mrs">Room three</option>
+
+                                </select>
+
                             </div><!-- ./dropdown -->
                         </div><!-- /.radio-group -->
                         <div class="rt-input-group">
@@ -154,7 +150,7 @@
                                 </datalist>
                                 <span class="input-iconbadge"><img src="{{URL::asset('images/icons-image/s_icon_1.png')}}" alt="" draggable="false"></span>
                             </div><!-- /.single-input -->
-                            <div class="single-input  col-rt-in-3">
+                            <div class="single-input  col-rt-in-3 trip-to">
                                 <input type="text" list="tlist" placeholder="To" class=" banner-select form-control has-icon" name="to" style="width: 100%">
                                 <datalist id="tlist">
                                     <option value="Alaska"></option>

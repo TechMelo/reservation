@@ -25,11 +25,26 @@
     11.WOW Active1
     12.team Testimonilas
     13.Multitab active
+    14. searchbar
 
 * ----------------------------------------------------------------------------------------
 */
 jQuery(document).ready(function ($) {
   "use strict";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /*---------------====================
   01.Paralx Int
   ================-------------------*/
@@ -98,8 +113,28 @@ $(".btn-tog-down").show();
   /*---------------====================
   02.Mobile Menu
   ================-------------------*/
+$("#fcol").on("click",function()
+{    if ($(".filtercoll").hasClass("show")){
 
+}
+else {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#rt-BototmTab").offset().top
+    }, 300);
+    e.preventDefault();
+}
+});
+$("#scol").on("click",function()
+{    if ($(".sortcoll").hasClass("show")){
 
+}
+else {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#rt-BototmTab").offset().top
+    }, 300);
+    e.preventDefault();
+}
+});
   $(".menu-item-has-children > a").on("click", function () {
     var element = $(this).parent("li");
 
@@ -526,6 +561,15 @@ $(".btn-tog-down").show();
     $(window).resize(function(){
         alterClass();
     });
+
+    //search bar settings
+    $(".custom-radio").on("click",function () {
+        if($("#one-way").prop("checked", true)) {
+           $(".return").addClass("hideit");
+        }
+
+    });
+
     //Fire it when the page first loads:
     alterClass();
 }); // end ready function

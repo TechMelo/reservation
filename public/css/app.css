@@ -67,6 +67,59 @@
 
     ----------------------------------------------------- */
 /*Custom */
+
+.select
+{
+    border: none !important;
+    color:#333;
+}
+.brand-logo img{
+    width:150px;
+}
+.book-btn a
+{
+    position: relative !important;
+    right: 18px !important;
+}
+.f-last-col
+{
+    position: relative;
+    bottom:15px;
+}
+.arrow-img
+{    position: relative;
+    bottom: 10px;
+}
+.flight-logo img
+
+{
+    padding-bottom: 20px;
+}
+.f-time p
+{
+    font-weight: bold;
+    font-size: 15px;
+}
+.f-flight p
+{
+    font-size:10px !important;
+}
+.f-flight
+{
+    position:relative;
+    bottom: 15px;
+}
+.f-arrow
+{
+    width:40px;
+    padding-left:0px  ;
+    padding-right:0px ;
+}
+.f-div
+{
+ padding-right:8px !important;
+ padding-left:8px !important;
+}
 .show-mobile
 {
     display: none;
@@ -89,6 +142,15 @@
 {
     font-size: 14px ;
 
+}
+.flight-type2 p
+{
+    font-size: 14px ;
+
+}
+.flight-type2
+{position: relative;
+    bottom: 15px;
 }
 .weight-allowed p
 {
@@ -852,6 +914,7 @@ img.mfp-img
 }
 @media (max-width: 767.98px)
 {
+
     .site-badge.has-arrow-primary:after
     {
         bottom: -5px;
@@ -9855,8 +9918,8 @@ p
 {
     line-height: 86px;
 
-    width: 79px;
-    height: 86px;
+    width:70px;
+    height:70px;
 
     text-align: center;
 
@@ -9924,6 +9987,7 @@ p
     {
         margin-bottom: 15px;
     }
+
 }
 .flight-list-box .flight-detils span:nth-child(1)
 {
@@ -12730,6 +12794,7 @@ span.menu-title
 @media(min-width: 990px) {
     .tablet-v-details{
         display: none !important;
+
     }
 
     /*.main-menu ul li a*/
@@ -12899,6 +12964,7 @@ span.menu-title
     }
 
     /*     ************************Modifications*****************/
+
     .show-mobile
     {
         display: block;
@@ -19529,6 +19595,12 @@ background-image: url("../images/all-img/deal-bg.jpg");
     .voucher-cont{
         top: -50px;
         position: relative;
+    }
+}
+@media screen and(max-width:500px) {
+    .f-last-col
+    {
+        right: 20px;
     }
 }
 /*# sourceMappingURL=app.css.map */

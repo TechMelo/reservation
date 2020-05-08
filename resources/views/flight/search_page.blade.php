@@ -130,29 +130,26 @@
                                            <label class="custom-control-label"
                                                for="customRadioInline3">Multi-city</label>
                                        </div>
-                                       <div class="dropdown form-check-inline rt-searchlink mr-md-5">
-                                           <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                               1 Adult
-                                           </a>
+                                       <div class=" form-check-inline rt-searchlink mr-md-5">
+                                           <select class="select">
+                                               <option value="mr" selected="">1 Adult</option>
+                                               <option value="mrs">2</option>
+                                               <option value="mrs">3</option>
 
-                                           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                               <a class="dropdown-item" href="#">Room one</a>
-                                               <a class="dropdown-item" href="#">Room two</a>
-                                               <a class="dropdown-item" href="#">Room three</a>
-                                           </div>
+                                           </select>
+
+
                                        </div><!-- ./dropdown -->
-                                       <div class="dropdown form-check-inline rt-searchlink">
-                                           <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink2"
-                                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                               Economy
-                                           </a>
+                                       <div class=" form-check-inline rt-searchlink">
 
-                                           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
-                                               <a class="dropdown-item" href="#">Room one</a>
-                                               <a class="dropdown-item" href="#">Room two</a>
-                                               <a class="dropdown-item" href="#">Room three</a>
-                                           </div>
+                                           <select class="select">
+                                               <option value="mr" selected disabled>Economy</option>
+                                               <option value="mr">Room one</option>
+                                               <option value="mrs">Room two</option>
+                                               <option value="mrs">Room three</option>
+
+                                           </select>
+
                                        </div><!-- ./dropdown -->
                                    </div><!-- /.radio-group -->
                                    <div class="rt-input-group">
@@ -619,14 +616,14 @@
             <li class="nav-item sf-col align-items-center d-flex mt-2 mx-auto">
 
                 <span class="navbar-m-text">
-                <a href=".filtercoll" class="nav-link nm-l" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample"><h5>Filter  <i class="fas fa-sort"></i></h5></a>
+                <a id="fcol" href=".filtercoll" class="nav-link nm-l" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample"><h5>Filter  <i class="fas fa-sort"></i></h5></a>
                 </span>
 
             </li>
             <li class="nav-item sf-col align-items-center d-flex mt-2 mx-auto">
 
                 <span class="navbar-m-text">
-                <a href=".sortcoll" class="" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <a id="scol" href=".sortcoll" class="" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
                     <h5>Sort  <i class="fas fa-filter"></i></h5></a>
                 </span>
 
@@ -651,7 +648,7 @@
 
         <div  class="row ">
             <div class="col-xl-3 col-lg-4 col-md-12 mx-auto">
-                <div class="rt-sidebar-group filtercoll" >
+                <div class="rt-sidebar-group filtercoll " >
     <div class="rt-widget widget_range-slider">
         <h3 class="rt-widget-title">
             Filter by Price
@@ -929,10 +926,10 @@
             <div class="col-xl-9 col-lg-10 mx-auto mt-5 mt-xl-0">
                 <div class="row">
                            <div class="col-lg-12">
-            <div id="" class="flight-list-box rt-mb-30 sortcoll ">
+            <div  class="flight-list-box rt-mb-30 sortcoll ">
                 <form action="#" class="row">
                     <div class="col-lg-3 col-md-6 mb-3 mb-lg-0">
-                        <button class="rt-btn pill rt-sm rt-gradient d-block">Recommended</button>
+                        <button   class="rt-btn pill rt-sm rt-gradient d-block">Recommended</button>
                     </div><!-- /.col-lg-4 -->
                     <div class="col-lg-3 col-md-6 mb-3 mb-lg-0">
                         <select class="rt-selectactive banner-select" name="from" style="width: 100%">
@@ -1333,61 +1330,61 @@
             <div class="flight-list-box tablet-v-details rt-mb-30">
                 <div
                     class="row">
-                    <div class="col-2">
+                    <div class="col-2 mr-5">
                         <div class="flight-logo">
                             <img src="{{URL::asset('images/all-img/flt-logo-1.png')}}" alt="flt logo" draggable="false">
                         </div><!-- /.flight-logo -->
                     </div>
-                    <div class="col-1"></div>
-                    <div class="col-2 ">
+                    <div class="col-2 f-div ">
                         <div class="pricing ">
-                            <h5>Scoot</h5>
-                            <p>TR978 | Airbus A320-212</p>
+                            <h6>Scoot</h6>
+                           <span class="pb-5"> <p>TR978</p></span>
+
                         </div><!-- /.pricing -->
                     </div>
-                    <div class="col-2 ">
-                        <div class="flight-detils">
-                            <span class="d-block"><i class="icofont-clock-time"></i><!-- /.time -->4h5m</span>
-
+                    <div class="col-5">
+                        <div class="row">
+                            <div class="col-3 f-div"> <span class="f-time"><p >10:55</p></span>
+                                <span class=" f-flight"><p>HKG</p> </span></div>
+                            <div class="col-5  ">
+                                    <span class="d-block"><i class="icofont-clock-time"></i><!-- /.time -->4h5m</span>
+                                    <img class="arrow-img" src="{{URL::asset('images/all-img/time-shape-line.png')}}" alt="time shape" draggable="false">
+                                <div class="flight-type2 ml-2 mb-3 ">
+                                    <p >Economy</p>
+                                </div>
+                            </div>
+                            <div class="col-3 f-div"><span class="f-time"><p>15.00</p></span>
+                                <span class="f-flight"><p>SIN T2</p></span></div>
                         </div><!-- /.flight-detils -->
                     </div>
-                    <div class="col-2">
+                    <div class="col-2 f-last-col">
+                        <div class="weight-allowed">
+                            <img class="mt-4" height="50px" src="{{URL::asset('images/details/baggage.png')}}"
+                                 alt=""><p class=" ml-3 ">30kg</p>
+                        </div>
                         <div class="trip ">
                             <span class="d-blok">$610</span>
-                            <span class="d-block">Roundtrip</span>
+{{--                            <span class="d-block">Roundtrip</span>--}}
                         </div><!-- /.trip -->
-                    </div>
-                    <div class="col-2">
-                        <div class="book-now ">
+                        <div class="book-now book-btn">
                             <a href="#" class="rt-btn  pill rt-gradient text-uppercase">Book</a>
                         </div><!-- /.book-now -->
                     </div>
-                    <div class="col-1"></div>
                 </div><!-- /.top-content -->
-                <div class=" top-content ">
-                    <div class="flight-time d-flex justify-content-between align-items-center">
-                        <div class="left">
-                            <span class="d-block">10:55</span>
-                            <span class="d-block">HKG T2</span>
-                        </div><!-- /.left -->
-                        <div class="middle">
-                            <img src="{{URL::asset('images/all-img/time-shape-line.png')}}" alt="time shape" draggable="false">
-                        </div><!-- /.middle -->
-                        <div class="right">
-                            <span class="d-block">15.00</span>
-                            <span class="d-block">SIN T2</span>
-                        </div><!-- /.rght -->
-                    </div><!-- /.flight-time --></div>
                 <div class="row ml-1">
-
                 <span class="d-block ml-1"><a href="#collapseExample00" class="flt-d-clic" data-toggle="collapse" role="button"
-                                              aria-expanded="false" aria-controls="collapseExample">Flight details <i
+                                              aria-expanded="false" aria-controls="collapseExample">
+                        <img height="30px" src="{{URL::asset('images/details/info.png')}}"
+                             alt="">Flight details <i
                             class="icofont-simple-down"></i></a></span>
-                    <span class="d-block ml-4"><a href="#collapseExample01" class="flt-d-clic" data-toggle="collapse" role="button"
-                                                  aria-expanded="false" aria-controls="collapseExample">Bagage <i
+                    <span class="d-block ml-4">
+                        <a href="#collapseExample01" class="flt-d-clic" data-toggle="collapse" role="button"
+                           aria-expanded="false" aria-controls="collapseExample"><img height="30px" src="{{URL::asset('images/details/baggage.png')}}"
+                                                                                      alt=""> Bagage <i
                                 class="icofont-simple-down"></i></a></span>
                     <span class="d-block ml-4"><a href="#collapseExample02" class="flt-d-clic" data-toggle="collapse" role="button"
-                                                  aria-expanded="false" aria-controls="collapseExample">Fare rules<i
+                                                  aria-expanded="false" aria-controls="collapseExample"><img width="30px" src="{{URL::asset('images/details/rules.png')}}"
+                                                                                                             alt="">Fare rules<i
                                 class="icofont-simple-down"></i></a></span>
                 </div>
                 <div class="collapse bottom-content" id="collapseExample">

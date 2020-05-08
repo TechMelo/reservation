@@ -65,4 +65,18 @@ Route::get('/our_product',function(){
 Route::get('/keys',function(){
     return view('static_pages/keys');
 })->name('keys');
+Route::get('/support',function(){
+    return view('static_pages/support');
+})->name('support');
+Route::get('/about_us',function(){
+    return view('static_pages/about_us');
+})->name('about_us');
+
+Route::get('/privacy_policy',function(){
+    return view('static_pages/privacy_policy');
+})->name('privacy_policy');
+
+Route::get('/terms_conditions',function(){
+    return view('static_pages/terms_conditions');
+})->name('terms_conditions');
 
