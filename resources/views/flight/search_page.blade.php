@@ -29,7 +29,6 @@
             </div><!-- /.col-12 -->
         </div><!-- /.row -->
     </div><!-- /.container -->
-
     <div class="bredcump-search">
         <div class="container">
             <div class="row">
@@ -154,7 +153,7 @@
                                    </div><!-- /.radio-group -->
                                    <div class="rt-input-group">
                                        <div class="single-input  col-rt-in-3">
-                                           <input list="dlist" type="text " class="banner-select form-control has-icon" placeholder="from" name="from" style="width: 100%">
+                                           <input d list="dlist" type="text " class="banner-select form-control has-icon" placeholder="from" name="from" style="width: 100%">
                                            <datalist id="dlist">
                                                <option value="Alaska"></option>
                                                <option value="Bahamas"></option>

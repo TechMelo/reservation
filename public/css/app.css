@@ -67,7 +67,14 @@
 
     ----------------------------------------------------- */
 /*Custom */
+#mb-modal-1{
+    background-color:white ;
+}
 
+.rt-input-group::placeholder
+{
+    font-size:35px;
+}
 .select
 {
     border: none !important;
@@ -12969,7 +12976,10 @@ span.menu-title
     }
 
     /*     ************************Modifications*****************/
-
+    .bt-bg {
+        background-image: none !important;
+        background: linear-gradient(8deg, #9932f5 0%, #4933f1 53%, #4950f8 70%, #496cfe 100%) !important;
+    }
     .show-mobile
     {
         display: block;
@@ -19032,19 +19042,7 @@ pre
     -ms-flex-pack: center;
             justify-content: center;
 }
-.rt-preloder .preloder-box
-{
-    width: 200px;
-    height: 200px;
-}
-.preloder-box img
-{
-    width: 300px;
-    position: absolute;
-    top: 40%;
-    left: 40% !important;
 
-}
 /*6.0 Footer Css*/
 .rt-site-footer
 {

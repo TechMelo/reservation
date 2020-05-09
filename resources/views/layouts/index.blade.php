@@ -278,13 +278,13 @@
                         </div>
           </span>
                     <span class="d-none d-sm-inline right-nav">
-                    <a href="#" class="text-white"><i class="fas fa-sign-in-alt mr-2"></i>Login</a>
+                    <a data-target="#rtmodal-1" data-toggle="modal" href="#" class="text-white"><i class="fas fa-sign-in-alt mr-2"></i>Login</a>
                   </span>
                     <span class="d-none d-sm-inline right-nav">
-                    <a href="#" class="text-white"><i class="fas fa-user-plus mr-2"></i>Register</a>
+                    <a data-target="#rtmodal-1" data-toggle="modal" href="#" class="text-white"><i class="fas fa-user-plus mr-2"></i>Register</a>
                   </span>
                 </div>
-                <span id="cbtn"  class=""><a  href="contact.html" class="rt-btn rt-gradient2 rt-rounded text-uppercase rt-Bshadow-1">Contact
+                <span id="cbtn"  class=""><a  href="{{route("support")}}" class="rt-btn rt-gradient2 rt-rounded text-uppercase rt-Bshadow-1">Contact
             Us</a>
          </span>
 
