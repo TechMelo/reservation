@@ -79,4 +79,6 @@ Route::get('/privacy_policy',function(){
 Route::get('/terms_conditions',function(){
     return view('static_pages/terms_conditions');
 })->name('terms_conditions');
-
+Route::get('error',function (){
+    return view('errors/404');
+});

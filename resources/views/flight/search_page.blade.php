@@ -113,20 +113,20 @@
                             <div class="tab-pane {{$page=='flight'?"show active":"rtIncative"}}" id="rt-item_a_first" role="tabpanel" aria-labelledby="rt-item_a_first">
                                <form action="#">
                                    <div class="rt-radio-group">
-                                       <div class="custom-control custom-radio custom-control-inline">
-                                           <input type="radio" id="customRadioInline1" name="customRadioInline1"
-                                               class="custom-control-input">
+                                       <div class="custom-control custom-radio custom-control-inline ">
+                                           <input type="radio" id="customRadioInline1" name="trip-type"
+                                               class="custom-control-input one-way-radio trip-type-radio">
                                            <label class="custom-control-label" for="customRadioInline1">One-way</label>
                                        </div>
                                        <div class="custom-control custom-radio custom-control-inline">
-                                           <input type="radio" id="customRadioInline2" name="customRadioInline2"
-                                               class="custom-control-input">
+                                           <input type="radio" id="customRadioInline2" name="trip-type"
+                                               class="custom-control-input trip-type-radio">
                                            <label class="custom-control-label"
                                                for="customRadioInline2">Round-trip</label>
                                        </div>
                                        <div class="custom-control custom-radio custom-control-inline">
-                                           <input type="radio" id="customRadioInline3" name="customRadioInline3"
-                                               class="custom-control-input">
+                                           <input type="radio" id="customRadioInline3" name="trip-type"
+                                               class="custom-control-input trip-type-radio">
                                            <label class="custom-control-label"
                                                for="customRadioInline3">Multi-city</label>
                                        </div>
@@ -203,8 +203,8 @@
                                                placeholder="Depart">
                                            <span class="input-iconbadge"><i class="icofont-ui-calendar"></i></span>
                                        </div><!-- /.single-input -->
-                                       <div class="single-input  col-rt-in-3">
-                                           <input type="text" class="form-control rt-date-picker has-icon"
+                                       <div class="single-input return-field  col-rt-in-3">
+                                           <input type="text" class="form-control rt-date-picker has-icon "
                                                placeholder="Return">
                                            <span class="input-iconbadge"><i class="icofont-ui-calendar"></i></span>
                                        </div><!-- /.single-input -->

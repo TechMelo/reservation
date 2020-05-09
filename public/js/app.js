@@ -563,10 +563,16 @@ else {
     });
 
     //search bar settings
-    $(".custom-radio").on("click",function () {
-        if($("#one-way").prop("checked", true)) {
-           $(".return").addClass("hideit");
-        }
+    $(".trip-type-radio").on("click",function () {
+
+       if($(this).hasClass("one-way-radio"))
+       {
+           $(".return-field").hide();
+       }
+       else
+       {
+           $(".return-field").show();
+       }
 
     });
 

@@ -106,15 +106,15 @@
                     <form action="#">
                         <div class="rt-radio-group">
                             <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                <input type="radio" id="customRadioInline1" name="trip-type" class="custom-control-input trip-type-radio one-way-radio">
                                 <label class="custom-control-label" for="customRadioInline1">One-way</label>
                             </div>
                             <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="customRadioInline2" name="customRadioInline2" class="custom-control-input">
+                                <input type="radio" id="customRadioInline2" name="trip-type" class="custom-control-input trip-type-radio">
                                 <label class="custom-control-label" for="customRadioInline2">Round-trip</label>
                             </div>
                             <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="customRadioInline3" name="customRadioInline3" class="custom-control-input">
+                                <input type="radio" id="customRadioInline3" name="trip-type" class="custom-control-input trip-type-radio">
                                 <label class="custom-control-label" for="customRadioInline3">Multi-city</label>
                             </div>
                             <div class=" form-check-inline rt-searchlink mr-md-5">
@@ -174,7 +174,7 @@
                                 <input type="text" class="form-control rt-date-picker has-icon" placeholder="Depart">
                                 <span class="input-iconbadge"><i class="icofont-ui-calendar"></i></span>
                             </div><!-- /.single-input -->
-                            <div class="single-input  col-rt-in-3">
+                            <div class="single-input  col-rt-in-3 return-field">
                                 <input type="text" class="form-control rt-date-picker has-icon" placeholder="Return">
                                 <span class="input-iconbadge"><i class="icofont-ui-calendar"></i></span>
                             </div><!-- /.single-input -->
@@ -579,8 +579,8 @@
                 <div class="media counter-box-1 align-items-center wow fadeInUp">
                     <img src="{{URL::asset('images/counter-icons/counter_iocn_1.png')}}" alt="counter_iocn" draggable="false">
                     <div class="media-body">
-                        <h5>Trusted Members</h5>
-                        <h6><span class="counter">90,000</span><span>+</span></h6>
+                        <h5>trusted clients</h5>
+                        <h6><span class="counter">90,000</span></h6>
                     </div>
                 </div>
             </div><!-- /.col-lg-4 -->
@@ -588,8 +588,8 @@
                 <div class="media counter-box-1 align-items-center wow fadeInUp" data-wow-duration="1.5s">
                     <img src="{{URL::asset('images/counter-icons/counter_iocn_2.png')}}" alt="counter_iocn" draggable="false">
                     <div class="media-body">
-                        <h5>Trusted Members</h5>
-                        <h6><span class="counter">2,00</span></h6>
+                        <h5>trusted agents</h5>
+                        <h6><span class="counter">3700</span></h6>
                     </div>
                 </div>
             </div><!-- /.col-lg-4 -->
@@ -597,8 +597,8 @@
                 <div class="media counter-box-1 align-items-center wow fadeInUp" data-wow-duration="2s">
                 <img src="{{URL::asset('images/counter-icons/counter_iocn_3.png')}}" alt="counter_iocn" draggable="false">
                     <div class="media-body">
-                        <h5>Trusted Members</h5>
-                        <h6><span class="counter">80,000</span><span>+</span></h6>
+                        <h5>trusted technology costumer</h5>
+                        <h6><span class="counter">1030</span></h6>
                     </div>
                 </div>
             </div><!-- /.col-lg-4 -->
@@ -653,6 +653,46 @@
                     <h4>Expert Trip Planning</h4>
                     <p>Our Talented and Expert Trip Planning Team can make itinerary that suits our clients the best. We will make your travel</p>
                 </div><!-- /.services-box-1 -->
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4 col-md-6 mx-auto text-center">
+                <div class="services-box-1 wow fade-in-bottom" data-wow-duration="2s">
+                    <div class="services-thumb">
+                    <img src="{{URL::asset('images/service-icons/s_icon_3.png')}}" alt="" draggable="false">
+                    </div><!-- /.services-thumb -->
+                    <h4>car rental</h4>
+                    <p>No matter where you are travelling, STE is here to help you get the best deals in CARS around the world.
+                        and also you can define your car availbailty and connect them to the other </p>   </div><!-- /.services-box-1 -->
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4 col-md-6 mx-auto text-center">
+                <div class="services-box-1 wow fade-in-bottom" data-wow-duration="2s">
+                    <div class="services-thumb">
+                    <img src="{{URL::asset('images/service-icons/s_icon_3.png')}}" alt="" draggable="false">
+                    </div><!-- /.services-thumb -->
+                    <h4>transfer</h4>
+                   <p>getting vehicle from a point to take you is the esesit way from STE
+
+                       share your power with transfer of STE and share your schedule</p>  </div><!-- /.services-box-1 -->
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4 col-md-6 mx-auto text-center">
+                <div class="services-box-1 wow fade-in-bottom" data-wow-duration="2s">
+                    <div class="services-thumb">
+                    <img src="{{URL::asset('images/service-icons/s_icon_3.png')}}" alt="" draggable="false">
+                    </div><!-- /.services-thumb -->
+                    <h4>Bus</h4>
+                   <p>share and get  bus deals  with  STE and share your schedule
+                   </p>  </div><!-- /.services-box-1 -->
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4 col-md-6 mx-auto text-center">
+                <div class="services-box-1 wow fade-in-bottom" data-wow-duration="2s">
+                    <div class="services-thumb">
+                    <img src="{{URL::asset('images/service-icons/s_icon_3.png')}}" alt="" draggable="false">
+                    </div><!-- /.services-thumb -->
+                    <h4>insurance </h4>
+                    <p>
+                        Travel insurance could cover medical expenses, trip cancellation or delays, lost or stolen baggage and personal liability while you’re travelling.
+
+
+                    </p>   </div><!-- /.services-box-1 -->
             </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
     </div><!-- /.container -->
@@ -1287,307 +1327,8 @@
     </div><!-- /.container -->
 </div>
 
-<!--
-    ============= Testimonilas area start==========
- -->
-<section class="testimonials-area" data-scrollax-parent="true">
-    <div class="rt-shape-emenetns-1 f22"
-        data-scrollax="properties: { translateY: '-140px' }"></div><!-- /.rt-shape-emenetns-1 -->
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-9 mx-auto text-center">
-                <div class="rt-section-title-wrapper">
-                    <h2 class="rt-section-title">
-                        <span>testimonials</span>
-                        What Our Customers Say
-                    </h2><!-- /.rt-section-title -->
-                    <p>
-                        We have many happy customers that have booked holidays with us.Some Impresions from our
-                        Customers! Please read some of the lovely things our Customers say about us.
-                    </p>
-                </div><!-- /.rt-section-title-wrapper -->
-            </div><!-- /.col-lg-9 -->
-        </div><!-- /.row -->
-        <div class="section-title-spacer"></div><!-- /.section-title-spacer -->
-        <div class="row">
-            <div class="col-lg-12 mx-auto">
-                <div class="testimoninal-active-1">
-    <div class="singleTbox-1 text-center active position-1" data-position="position-1">
-        <div class="testi-thumb">
-            <div class="inner-bg f23"></div><!-- /.inner-bg -->
-            <span class="social-badge"><i class="fab fa-linkedin-in    "></i></span>
-        </div>
-        <!-- /.testi-thumb -->
-        <div class="autor-bio">
-            <h5>Oliver Wolfe</h5>
-            <p>United Kingdom,15th December, 2018</p>
-            <span class="rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </span>
-        </div><!-- /.autor-bio -->
-        <div class="inner-content">
-            <p>
-                Memorable holidays planned an amazing trip for us to Italy. The trip had a mix of all activities that we
-                were interested
-                in. The hotels were nice and situated very close to the station. This made travelling in the city very
-                easy. The tours
-                planned were also very good with very nice guides. We would definitely recommend a trip with them.
-            </p>
-        </div><!-- /.inner-content -->
-    </div><!-- /.singleTbox-1 -->
-    <div class="singleTbox-1 text-center inactive position-2" data-position="position-2">
-        <div class="testi-thumb">
-            <div class="inner-bg f24" ></div><!-- /.inner-bg -->
-            <span class="social-badge"><i class="fab fa-linkedin-in    "></i></span>
-        </div>
-        <!-- /.testi-thumb -->
-        <div class="autor-bio">
-            <h5>Oliver Wolfe</h5>
-            <p>United Kingdom,15th December, 2018</p>
-            <span class="rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </span>
-        </div><!-- /.autor-bio -->
-        <div class="inner-content">
-            <p>
-                Memorable holidays planned an amazing trip for us to Italy. The trip had a mix of all activities that we
-                were interested
-                in. The hotels were nice and situated very close to the station. This made travelling in the city very
-                easy. The tours
-                planned were also very good with very nice guides. We would definitely recommend a trip with them.
-            </p>
-        </div><!-- /.inner-content -->
-    </div><!-- /.singleTbox-1 -->
-    <div class="singleTbox-1 text-center inactive position-3" data-position="position-3">
-        <div class="testi-thumb">
-            <div class="inner-bg f25" ></div><!-- /.inner-bg -->
-            <span class="social-badge"><i class="fab fa-linkedin-in    "></i></span>
-        </div>
-        <!-- /.testi-thumb -->
-        <div class="autor-bio">
-            <h5>Oliver Wolfe</h5>
-            <p>United Kingdom,15th December, 2018</p>
-            <span class="rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </span>
-        </div><!-- /.autor-bio -->
-        <div class="inner-content">
-            <p>
-                Memorable holidays planned an amazing trip for us to Italy. The trip had a mix of all activities that we
-                were interested
-                in. The hotels were nice and situated very close to the station. This made travelling in the city very
-                easy. The tours
-                planned were also very good with very nice guides. We would definitely recommend a trip with them.
-            </p>
-        </div><!-- /.inner-content -->
-    </div><!-- /.singleTbox-1 -->
-    <div class="singleTbox-1 text-center inactive position-4" data-position="position-4">
-        <div class="testi-thumb">
-            <div class="inner-bg f26" ></div><!-- /.inner-bg -->
-            <span class="social-badge"><i class="fab fa-linkedin-in    "></i></span>
-        </div>
-        <!-- /.testi-thumb -->
-        <div class="autor-bio">
-            <h5>Oliver Wolfe</h5>
-            <p>United Kingdom,15th December, 2018</p>
-            <span class="rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </span>
-        </div><!-- /.autor-bio -->
-        <div class="inner-content">
-            <p>
-                Memorable holidays planned an amazing trip for us to Italy. The trip had a mix of all activities that we
-                were interested
-                in. The hotels were nice and situated very close to the station. This made travelling in the city very
-                easy. The tours
-                planned were also very good with very nice guides. We would definitely recommend a trip with them.
-            </p>
-        </div><!-- /.inner-content -->
-    </div><!-- /.singleTbox-1 -->
-    <div class="singleTbox-1 text-center inactive position-5" data-position="position-5">
-        <div class="testi-thumb">
-            <div class="inner-bg f27" ></div><!-- /.inner-bg -->
-            <span class="social-badge"><i class="fab fa-linkedin-in    "></i></span>
-        </div>
-        <!-- /.testi-thumb -->
-        <div class="autor-bio">
-            <h5>Oliver Wolfe</h5>
-            <p>United Kingdom,15th December, 2018</p>
-            <span class="rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </span>
-        </div><!-- /.autor-bio -->
-        <div class="inner-content">
-            <p>
-                Memorable holidays planned an amazing trip for us to Italy. The trip had a mix of all activities that we
-                were interested
-                in. The hotels were nice and situated very close to the station. This made travelling in the city very
-                easy. The tours
-                planned were also very good with very nice guides. We would definitely recommend a trip with them.
-            </p>
-        </div><!-- /.inner-content -->
-    </div><!-- /.singleTbox-1 -->
-    <div class="singleTbox-1 text-center inactive position-6" data-position="position-6">
-        <div class="testi-thumb">
-            <div class="inner-bg f28" ></div><!-- /.inner-bg -->
-            <span class="social-badge"><i class="fab fa-linkedin-in    "></i></span>
-        </div>
-        <!-- /.testi-thumb -->
-        <div class="autor-bio">
-            <h5>Oliver Wolfe</h5>
-            <p>United Kingdom,15th December, 2018</p>
-            <span class="rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </span>
-        </div><!-- /.autor-bio -->
-        <div class="inner-content">
-            <p>
-                Memorable holidays planned an amazing trip for us to Italy. The trip had a mix of all activities that we
-                were interested
-                in. The hotels were nice and situated very close to the station. This made travelling in the city very
-                easy. The tours
-                planned were also very good with very nice guides. We would definitely recommend a trip with them.
-            </p>
-        </div><!-- /.inner-content -->
-    </div><!-- /.singleTbox-1 -->
-    <div class="singleTbox-1 text-center inactive position-7" data-position="position-7">
-        <div class="testi-thumb">
-            <div class="inner-bg f29"</div><!-- /.inner-bg -->
-            <span class="social-badge"><i class="fab fa-linkedin-in    "></i></span>
-        </div>
-        <!-- /.testi-thumb -->
-        <div class="autor-bio">
-            <h5>Oliver Wolfe</h5>
-            <p>United Kingdom,15th December, 2018</p>
-            <span class="rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </span>
-        </div><!-- /.autor-bio -->
-        <div class="inner-content">
-            <p>
-                Memorable holidays planned an amazing trip for us to Italy. The trip had a mix of all activities that we
-                were interested
-                in. The hotels were nice and situated very close to the station. This made travelling in the city very
-                easy. The tours
-                planned were also very good with very nice guides. We would definitely recommend a trip with them.
-            </p>
-        </div><!-- /.inner-content -->
-    </div><!-- /.singleTbox-1 -->
-    <div class="singleTbox-1 text-center inactive position-8" data-position="position-8">
-        <div class="testi-thumb">
-            <div class="inner-bg f30" ></div><!-- /.inner-bg -->
-            <span class="social-badge"><i class="fab fa-linkedin-in    "></i></span>
-        </div>
-        <!-- /.testi-thumb -->
-        <div class="autor-bio">
-            <h5>Oliver Wolfe</h5>
-            <p>United Kingdom,15th December, 2018</p>
-            <span class="rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </span>
-        </div><!-- /.autor-bio -->
-        <div class="inner-content">
-            <p>
-                Memorable holidays planned an amazing trip for us to Italy. The trip had a mix of all activities that we
-                were interested
-                in. The hotels were nice and situated very close to the station. This made travelling in the city very
-                easy. The tours
-                planned were also very good with very nice guides. We would definitely recommend a trip with them.
-            </p>
-        </div><!-- /.inner-content -->
-    </div><!-- /.singleTbox-1 -->
-    <div class="singleTbox-1 text-center inactive position-9" data-position="position-9">
-        <div class="testi-thumb">
-            <div class="inner-bg f31" ></div><!-- /.inner-bg -->
-            <span class="social-badge"><i class="fab fa-linkedin-in    "></i></span>
-        </div>
-        <!-- /.testi-thumb -->
-        <div class="autor-bio">
-            <h5>Oliver Wolfe</h5>
-            <p>United Kingdom,15th December, 2018</p>
-            <span class="rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </span>
-        </div><!-- /.autor-bio -->
-        <div class="inner-content">
-            <p>
-                Memorable holidays planned an amazing trip for us to Italy. The trip had a mix of all activities that we
-                were interested
-                in. The hotels were nice and situated very close to the station. This made travelling in the city very
-                easy. The tours
-                planned were also very good with very nice guides. We would definitely recommend a trip with them.
-            </p>
-        </div><!-- /.inner-content -->
-    </div><!-- /.singleTbox-1 -->
-    <div class="singleTbox-1 text-center inactive position-10" data-position="position-10">
-        <div class="testi-thumb">
-            <div class="inner-bg f32" ></div><!-- /.inner-bg -->
-            <span class="social-badge"><i class="fab fa-linkedin-in    "></i></span>
-        </div>
-        <!-- /.testi-thumb -->
-        <div class="autor-bio">
-            <h5>Oliver Wolfe</h5>
-            <p>United Kingdom,15th December, 2018</p>
-            <span class="rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </span>
-        </div><!-- /.autor-bio -->
-        <div class="inner-content">
-            <p>
-                Memorable holidays planned an amazing trip for us to Italy. The trip had a mix of all activities that we
-                were interested
-                in. The hotels were nice and situated very close to the station. This made travelling in the city very
-                easy. The tours
-                planned were also very good with very nice guides. We would definitely recommend a trip with them.
-            </p>
-        </div><!-- /.inner-content -->
-    </div><!-- /.singleTbox-1 -->
-</div><!-- /.testimoninal-active-1 -->
-            </div><!-- /.col-lg-7 -->
-        </div><!-- /.row -->
-        <div class="rt-divider style-one rt-margin-top"></div><!-- /.divider -->
-    </div><!-- /.containe -->
-</section>
+
+
 
 
 <!--
@@ -1619,44 +1360,50 @@
                 <ul class="rt-border-brands">
     <li class="single-border-brands">
         <a href="#" class="wow flipInX d-block">
-            <img src="{{URL::asset('images/brands/brands-1.png')}}" alt="brands image" draggable="false">
+            <img src="{{URL::asset('images/partners/trus1.png')}}" alt="brands image" draggable="false">
         </a>
     </li><!-- /.single-border-brands -->
     <li class="single-border-brands">
         <a href="#" class="wow flipInX d-block" data-wow-duration="1s">
-            <img src="{{URL::asset('images/brands/brands-2.png')}}" alt="brands image" draggable="false">
+            <img src="{{URL::asset('images/partners/trus2.png')}}" alt="brands image" draggable="false">
         </a>
     </li><!-- /.single-border-brands -->
     <li class="single-border-brands">
         <a href="#" class="wow flipInX d-block" data-wow-duration="1.5s">
-            <img src="{{URL::asset('images/brands/brands-3.png')}}" alt="brands image" draggable="false">
+            <img src="{{URL::asset('images/partners/trus3.png')}}" alt="brands image" draggable="false">
         </a>
     </li><!-- /.single-border-brands -->
     <li class="single-border-brands">
         <a href="#" class="wow flipInX d-block" data-wow-duration="2s">
-            <img src="{{URL::asset('images/brands/brands-4.png')}}" alt="brands image" draggable="false">
+            <img src="{{URL::asset('images/partners/trus4.png')}}" alt="brands image" draggable="false">
         </a>
     </li><!-- /.single-border-brands -->
     <li class="single-border-brands">
         <a href="#" class="wow flipInX d-block" data-wow-duration="2.5s">
-            <img src="{{URL::asset('images/brands/brands-4.png')}}" alt="brands image" draggable="false">
+            <img src="{{URL::asset('images/partners/trus5.png')}}" alt="brands image" draggable="false">
         </a>
     </li><!-- /.single-border-brands -->
     <li class="single-border-brands">
         <a href="#" class="wow flipInX d-block" data-wow-duration="3s">
-            <img src="{{URL::asset('images/brands/brands-3.png')}}" alt="brands image" draggable="false">
+            <img src="{{URL::asset('images/partners/trus6.png')}}" alt="brands image" draggable="false">
         </a>
     </li><!-- /.single-border-brands -->
     <li class="single-border-brands">
         <a href="#" class="wow flipInX d-block" data-wow-duration="3.5s">
-            <img src="{{URL::asset('images/brands/brands-2.png')}}" alt="brands image" draggable="false">
+            <img src="{{URL::asset('images/partners/trus7.png')}}" alt="brands image" draggable="false">
         </a>
     </li><!-- /.single-border-brands -->
     <li class="single-border-brands">
         <a href="#" class="wow flipInX d-block" data-wow-duration="4s">
-            <img src="{{URL::asset('images/brands/brands-1.png')}}" alt="brands image" draggable="false">
+            <img src="{{URL::asset('images/partners/trus8.jpg')}}" alt="brands image" draggable="false">
         </a>
     </li><!-- /.single-border-brands -->
+    <li class="single-border-brands">
+        <a href="#" class="wow flipInX d-block" data-wow-duration="4s">
+            <img src="{{URL::asset('images/partners/trus9.png')}}" alt="brands image" draggable="false">
+        </a>
+    </li><!-- /.single-border-brands -->
+
 </ul><!-- /.rt-border-brands -->
             </div><!-- /.col-lg-7 -->
         </div><!-- /.row -->

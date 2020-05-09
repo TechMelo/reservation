@@ -49,7 +49,7 @@
 
 <div class="rt-preloder">
     <div class="preloder-box">
-        <img src="{{URL::asset('images/all-img/preloder.svg')}}" alt="preloder image" draggable="false">
+        <img src="{{URL::asset('images/all-img/preloader.gif')}}" alt="preloder image" draggable="false">
     </div><!-- /.preloder-box -->
 </div><!-- /.rt-preloder -->
 
